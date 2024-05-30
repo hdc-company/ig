@@ -1,2 +1,0 @@
-# ig
-Public Implementation Guide

@@ -1,0 +1,35 @@
+[
+  {
+    "id" : "MedicationSummary",
+    "type" : "CapabilityStatement",
+    "url" : "http://ig.v8-lust.net/fsh-ig/CapabilityStatement/MedicationSummary",
+    "version" : "0.1.0",
+    "name" : "MedicationSummary"
+  },
+  {
+    "id" : "PatientSummary",
+    "type" : "CapabilityStatement",
+    "url" : "http://ig.v8-lust.net/fsh-ig/CapabilityStatement/PatientSummary",
+    "version" : "0.1.0",
+    "name" : "PatientSummary"
+  },
+  {
+    "id" : "fsh.ig",
+    "type" : "ImplementationGuide",
+    "url" : "http://ig.v8-lust.net/fsh-ig/ImplementationGuide/fsh.ig",
+    "version" : "0.1.0",
+    "name" : "NewRepublicFHIRIG"
+  },
+  {
+    "id" : "MedicationRequestQuestionnaire",
+    "type" : "Questionnaire",
+    "url" : "https://ig.v8-lust.net/Questionnaire-MedicationRequestQuestionnaire.html",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "PatientSummaryQuestionnaire",
+    "type" : "Questionnaire",
+    "url" : "https://ig.v8-lust.net/Questionnaire-PatientSummaryQuestionnaire.html",
+    "version" : "0.1.0"
+  }
+]
