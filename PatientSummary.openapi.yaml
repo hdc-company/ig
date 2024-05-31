@@ -1,0 +1,213 @@
+openapi: 3.0.2
+info:
+  title: FHIR Server Patient Summary
+  description: Search for Prescribed Patient
+  license:
+    name: Creative Commons Zero v1.0 Universal
+    url: http://spdx.org/licenses/CC0-1.0.html
+  version: 0.1.0
+  contact:
+    name: FHIR New Republic
+    url: http://ig.opennz.org
+servers:
+  - url: https://hapi.fhir.org/baseR4
+    description: Canonical Based Examples
+externalDocs:
+  url: http://ig.opennz.org/fsh-ig/CapabilityStatement/PatientSummary
+  description: FHIR CapabilityStatement
+paths:
+  /metadata:
+    summary: Access to the Server's Capability Statement
+    description: >-
+      All FHIR Servers return a CapabilityStatement that describes what services
+      they perform
+    get:
+      summary: Return the server's capability statement
+      operationId: metadata
+      responses:
+        '200':
+          description: the capbility statement
+          content:
+            application/fhir+json:
+              schema:
+                $ref: >-
+                  https://build.fhir.org/fhir.schema.json#/definitions/CapabilityStatement
+        default:
+          description: Error, with details
+          content:
+            application/fhir+json:
+              schema:
+                $ref: >-
+                  https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome
+      parameters:
+        - $ref: '#/components/parameters/format'
+        - $ref: '#/components/parameters/pretty'
+        - $ref: '#/components/parameters/summary'
+        - $ref: '#/components/parameters/elements'
+  /Patient:
+    summary: manage the collection of resources of type Patient
+    description: >-
+      Access to services to manage the collection of all resources of type
+      Patient
+    get:
+      summary: Search all resources of type Patient based on a set of criteria
+      operationId: searchPatient
+      responses:
+        '200':
+          description: the resource being returned
+          content:
+            application/fhir+json:
+              schema:
+                $ref: https://build.fhir.org/fhir.schema.json#/definitions/Bundle
+        default:
+          description: Error, with details
+          content:
+            application/fhir+json:
+              schema:
+                $ref: >-
+                  https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome
+      parameters:
+        - $ref: '#/components/parameters/format'
+        - $ref: '#/components/parameters/pretty'
+        - $ref: '#/components/parameters/summary'
+        - $ref: '#/components/parameters/elements'
+        - name: disability
+          in: query
+          description: Search for patients with specific disabilities
+          schema:
+            type: string
+  /Condition:
+    summary: manage the collection of resources of type Condition
+    description: >-
+      Access to services to manage the collection of all resources of type
+      Condition
+    get:
+      summary: Search all resources of type Condition based on a set of criteria
+      operationId: searchCondition
+      responses:
+        '200':
+          description: the resource being returned
+          content:
+            application/fhir+json:
+              schema:
+                $ref: https://build.fhir.org/fhir.schema.json#/definitions/Bundle
+        default:
+          description: Error, with details
+          content:
+            application/fhir+json:
+              schema:
+                $ref: >-
+                  https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome
+      parameters:
+        - $ref: '#/components/parameters/format'
+        - $ref: '#/components/parameters/pretty'
+        - $ref: '#/components/parameters/summary'
+        - $ref: '#/components/parameters/elements'
+        - name: category
+          in: query
+          description: The category of the condition
+          schema:
+            type: string
+  /:
+    summary: System level operations
+    description: System level operations
+    put:
+      summary: Batch or Transaction
+      operationId: transaction
+      requestBody:
+        description: The batch or transaction
+        required: true
+        content:
+          application/fhir+json:
+            schema:
+              $ref: https://build.fhir.org/fhir.schema.json#/definitions/Bundle
+      responses:
+        '200':
+          description: Batch or Transaction response
+          content:
+            application/fhir+json:
+              schema:
+                $ref: https://build.fhir.org/fhir.schema.json#/definitions/Bundle
+        default:
+          description: Error, with details
+          content:
+            application/fhir+json:
+              schema:
+                $ref: >-
+                  https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome
+      parameters:
+        - $ref: '#/components/parameters/format'
+        - $ref: '#/components/parameters/pretty'
+components:
+  parameters:
+    rid:
+      name: rid
+      in: path
+      description: id of the resource (=Resource.id)
+      required: true
+      allowEmptyValue: false
+      style: simple
+      schema:
+        type: string
+    hid:
+      name: hid
+      in: path
+      description: id of the history entry (=Resource.meta.versionId)
+      required: true
+      allowEmptyValue: false
+      style: simple
+      schema:
+        type: string
+    summary:
+      name: _summary
+      in: query
+      description: Requests the server to return a designated subset of the resource
+      allowEmptyValue: true
+      style: form
+      schema:
+        type: string
+        enum:
+          - 'true'
+          - text
+          - data
+          - count
+          - 'false'
+    format:
+      name: _format
+      in: query
+      description: >-
+        Specify alternative response formats by their MIME-types (when a client
+        is unable acccess accept: header)
+      allowEmptyValue: true
+      style: form
+      schema:
+        type: string
+        format: mime-type
+    pretty:
+      name: _pretty
+      in: query
+      description: Ask for a pretty printed response for human convenience
+      allowEmptyValue: true
+      style: form
+      schema:
+        type: boolean
+    elements:
+      name: _elements
+      in: query
+      description: Requests the server to return a collection of elements from the resource
+      allowEmptyValue: true
+      style: form
+      explode: false
+      schema:
+        type: array
+        format: string
+        items:
+          format: string
+    count:
+      name: _count
+      in: query
+      description: >-
+        The maximum number of search results on a page. The server is not bound
+        to return the number requested, but cannot return more
+      schema:
+        type: number

@@ -10,7 +10,7 @@
     "version": "0.1.0",
     "contact": {
       "name": "FHIR New Republic",
-      "url": "http://ig.v8-lust.net"
+      "url": "http://ig.opennz.org"
     }
   },
   "servers": [
@@ -20,7 +20,7 @@
     }
   ],
   "externalDocs": {
-    "url": "http://ig.v8-lust.net/fsh-ig/CapabilityStatement/PatientSummary",
+    "url": "http://ig.opennz.org/fsh-ig/CapabilityStatement/PatientSummary",
     "description": "FHIR CapabilityStatement"
   },
   "paths": {
@@ -36,7 +36,7 @@
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome"
                 }
               }
             }
@@ -46,7 +46,7 @@
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/CapabilityStatement"
+                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/CapabilityStatement"
                 }
               }
             }
@@ -69,8 +69,8 @@
       }
     },
     "/Patient": {
-      "summary": "Manager for resources of type Patient",
-      "description": "The Manager for resources of type Patient: provides services to manage the collection of all the Patient instances",
+      "summary": "manage the collection of resources of type Patient",
+      "description": "Access to services to manage the collection of all resources of type Patient",
       "get": {
         "summary": "Search all resources of type Patient based on a set of criteria",
         "operationId": "searchPatient",
@@ -80,7 +80,7 @@
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome"
                 }
               }
             }
@@ -90,7 +90,7 @@
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Bundle"
+                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/Bundle"
                 }
               }
             }
@@ -108,112 +108,47 @@
           },
           {
             "$ref": "#/components/parameters/elements"
-          }
-        ]
-      },
-      "post": {
-        "summary": "Create a new resource",
-        "operationId": "createPatient",
-        "requestBody": {
-          "description": "The new state of the resource",
-          "required": true,
-          "content": {
-            "application/fhir+json": {
-              "schema": {
-                "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Patient"
-              }
+          },
+          {
+            "name": "disability",
+            "in": "query",
+            "description": "Search for patients with specific disabilities",
+            "schema": {
+              "type": "string"
             }
-          }
-        },
-        "responses": {
-          "default": {
-            "description": "Error, with details",
-            "content": {
-              "application/fhir+json": {
-                "schema": {
-                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
-                }
-              }
-            }
-          },
-          "200": {
-            "description": "the resource being returned after being updated",
-            "headers": {
-              "ETag": {
-                "description": "Version from Resource.meta.version as a weak ETag",
-                "schema": {
-                  "type": "string"
-                }
-              }
-            },
-            "content": {
-              "application/fhir+json": {
-                "schema": {
-                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Patient"
-                }
-              }
-            }
-          }
-        },
-        "parameters": [
-          {
-            "$ref": "#/components/parameters/summary"
-          },
-          {
-            "$ref": "#/components/parameters/format"
-          },
-          {
-            "$ref": "#/components/parameters/pretty"
-          },
-          {
-            "$ref": "#/components/parameters/elements"
           }
         ]
       }
     },
-    "/Patient/{rid}": {
-      "summary": "Read/Write/etc resource instance of type Patient",
-      "description": "Access to services to manage the state of a single resource of type Patient",
+    "/Condition": {
+      "summary": "manage the collection of resources of type Condition",
+      "description": "Access to services to manage the collection of all resources of type Condition",
       "get": {
-        "summary": "Read the current state of the resource",
-        "operationId": "readPatient",
+        "summary": "Search all resources of type Condition based on a set of criteria",
+        "operationId": "searchCondition",
         "responses": {
           "default": {
             "description": "Error, with details",
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome"
                 }
               }
             }
           },
           "200": {
             "description": "the resource being returned",
-            "headers": {
-              "ETag": {
-                "description": "Version from Resource.meta.version as a weak ETag",
-                "schema": {
-                  "type": "string"
-                }
-              }
-            },
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Patient"
+                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/Bundle"
                 }
               }
             }
           }
         },
         "parameters": [
-          {
-            "$ref": "#/components/parameters/rid"
-          },
-          {
-            "$ref": "#/components/parameters/summary"
-          },
           {
             "$ref": "#/components/parameters/format"
           },
@@ -221,159 +156,18 @@
             "$ref": "#/components/parameters/pretty"
           },
           {
-            "$ref": "#/components/parameters/elements"
-          }
-        ]
-      },
-      "put": {
-        "summary": "Update the current state of the resource",
-        "operationId": "updatePatient",
-        "requestBody": {
-          "description": "The new state of the resource",
-          "required": true,
-          "content": {
-            "application/fhir+json": {
-              "schema": {
-                "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Patient"
-              }
-            }
-          }
-        },
-        "responses": {
-          "default": {
-            "description": "Error, with details",
-            "content": {
-              "application/fhir+json": {
-                "schema": {
-                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
-                }
-              }
-            }
-          },
-          "200": {
-            "description": "the resource being returned after being updated",
-            "headers": {
-              "ETag": {
-                "description": "Version from Resource.meta.version as a weak ETag",
-                "schema": {
-                  "type": "string"
-                }
-              }
-            },
-            "content": {
-              "application/fhir+json": {
-                "schema": {
-                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Patient"
-                }
-              }
-            }
-          }
-        },
-        "parameters": [
-          {
-            "$ref": "#/components/parameters/rid"
-          },
-          {
             "$ref": "#/components/parameters/summary"
           },
           {
-            "$ref": "#/components/parameters/format"
-          },
-          {
-            "$ref": "#/components/parameters/pretty"
-          },
-          {
             "$ref": "#/components/parameters/elements"
-          }
-        ]
-      },
-      "delete": {
-        "summary": "Delete the resource so that it no exists (no read, search etc)",
-        "operationId": "deletePatient",
-        "responses": {
-          "default": {
-            "description": "Error, with details",
-            "content": {
-              "application/fhir+json": {
-                "schema": {
-                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
-                }
-              }
+          },
+          {
+            "name": "category",
+            "in": "query",
+            "description": "The category of the condition",
+            "schema": {
+              "type": "string"
             }
-          },
-          "204": {
-            "description": "If the resource is deleted - no content is returned",
-            "headers": {
-              "ETag": {
-                "description": "Version from Resource.meta.version as a weak ETag",
-                "schema": {
-                  "type": "string"
-                }
-              }
-            }
-          }
-        },
-        "parameters": [
-          {
-            "$ref": "#/components/parameters/rid"
-          }
-        ]
-      }
-    },
-    "/Patient/{rid}/_history/{hid}": {
-      "summary": "Read a past version of resource instance of type Patient",
-      "description": "Access a to specified previous version of a single resource of type Patient",
-      "get": {
-        "summary": "Read a past state of the resource",
-        "operationId": "vreadPatient",
-        "responses": {
-          "default": {
-            "description": "Error, with details",
-            "content": {
-              "application/fhir+json": {
-                "schema": {
-                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
-                }
-              }
-            }
-          },
-          "200": {
-            "description": "the resource being returned",
-            "headers": {
-              "ETag": {
-                "description": "Version from Resource.meta.version as a weak ETag for that version",
-                "schema": {
-                  "type": "string"
-                }
-              }
-            },
-            "content": {
-              "application/fhir+json": {
-                "schema": {
-                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Patient"
-                }
-              }
-            }
-          }
-        },
-        "parameters": [
-          {
-            "$ref": "#/components/parameters/rid"
-          },
-          {
-            "$ref": "#/components/parameters/hid"
-          },
-          {
-            "$ref": "#/components/parameters/summary"
-          },
-          {
-            "$ref": "#/components/parameters/format"
-          },
-          {
-            "$ref": "#/components/parameters/pretty"
-          },
-          {
-            "$ref": "#/components/parameters/elements"
           }
         ]
       }
@@ -390,7 +184,7 @@
           "content": {
             "application/fhir+json": {
               "schema": {
-                "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Bundle"
+                "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/Bundle"
               }
             }
           }
@@ -401,7 +195,7 @@
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome"
                 }
               }
             }
@@ -411,7 +205,7 @@
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Bundle"
+                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/Bundle"
                 }
               }
             }

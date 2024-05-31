@@ -1,29 +1,31 @@
 NewRepublicFHIRIG : Validation Results
 =========================================
 
-err = 5, warn = 4, info = 0
+err = 6, warn = 4, info = 0
 IG Publisher Version: 1.6.10
-Generated Fri May 31 11:28:53 NZST 2024. FHIR version 4.0.1 for fsh.ig#0.1.0 (canonical = http://ig.v8-lust.net/fsh-ig)
- Build Errors : 1 / 4 / 0
- /home/jules/fsh/fsh-generated/resources/CapabilityStatement-MedicationSummary : 0 / 0 / 1
- /home/jules/fsh/fsh-generated/resources/CapabilityStatement-PatientSummary : 0 / 0 / 1
- /home/jules/fsh/fsh-generated/resources/ImplementationGuide-fsh.ig : 1 / 0 / 1
- /home/jules/fsh/fsh-generated/resources/Questionnaire-MedicationRequestQuestionnaire : 2 / 0 / 1
- /home/jules/fsh/fsh-generated/resources/Questionnaire-PatientSummaryQuestionnaire : 2 / 0 / 1
+Generated Fri May 31 04:23:23 UTC 2024. FHIR version 4.3.0 for fsh.ig#0.1.0 (canonical = http://ig.opennz.org/fsh-ig)
+ Build Errors : 2 / 4 / 0
+ /solution/workspace/fsh-generated/resources/CapabilityStatement-MedicationRequest : 0 / 0 / 1
+ /solution/workspace/fsh-generated/resources/CapabilityStatement-PatientSummary : 1 / 0 / 1
+ /solution/workspace/fsh-generated/resources/ImplementationGuide-fsh.ig : 1 / 0 / 1
+ /solution/workspace/fsh-generated/resources/Questionnaire-MedicationRequestQuestionnaire : 2 / 0 / 1
+ /solution/workspace/fsh-generated/resources/Questionnaire-PatientSummaryQuestionnaire : 2 / 0 / 1
 </table>
 == n/a ==
-ERROR: /home/jules/fsh/output/index.html#/html/body/div/div/div/div/div/ul/li/a at Line 190, column 147: The link 'Questionnaire-MedicationRequestQuestionnaire.yaml' for "Questionnaire-MedicationRequestQuestionnaire.yaml" cannot be resolved
+ERROR: /solution/workspace/output/index.html#/html/body/div/div/div/div/div/ul/li/a at Line 191, column 8: The link '/PatientSummary.openapi.yaml' for "Patient Summary" cannot be resolved
+ERROR: /solution/workspace/output/index.html#/html/body/div/div/div/div/div/ul/li/a at Line 192, column 8: The link '/MedicationRequest.openapi.yaml' for "Prescribed Medication (MedicationRequest)" cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
-== fsh-generated/resources/CapabilityStatement-MedicationSummary.json ==
+== fsh-generated/resources/CapabilityStatement-MedicationRequest.json ==
 == fsh-generated/resources/CapabilityStatement-PatientSummary.json ==
+ERROR: CapabilityStatement/PatientSummary: CapabilityStatement.rest[0].resource[0].searchParam[0].definition: Canonical URL 'http://hl7.org/fhir/SearchParameter/Patient-disability' does not resolve
 == fsh-generated/resources/ImplementationGuide-fsh.ig.json ==
 ERROR: ImplementationGuide/fsh.ig: ImplementationGuide.dependsOn[2].uri: Canonical URL 'http://hl7.org/fhir/ca/baseline/ImplementationGuide/hl7.fhir.ca.baseline' does not resolve
 == fsh-generated/resources/Questionnaire-MedicationRequestQuestionnaire.json ==
-ERROR: Questionnaire.where(url = 'https://ig.v8-lust.net/Questionnaire-MedicationRequestQuestionnaire.html'): Conformance resource /home/jules/fsh/fsh-generated/resources/Questionnaire-MedicationRequestQuestionnaire.json - the canonical URL (http://ig.v8-lust.net/fsh-ig/Questionnaire/MedicationRequestQuestionnaire) does not match the URL (https://ig.v8-lust.net/Questionnaire-MedicationRequestQuestionnaire.html)
-ERROR: /home/jules/fsh/fsh-generated/resources/Questionnaire-MedicationRequestQuestionnaire: URL Mismatch http://ig.v8-lust.net/fsh-ig/Questionnaire/MedicationRequestQuestionnaire vs https://ig.v8-lust.net/Questionnaire-MedicationRequestQuestionnaire.html
+ERROR: Questionnaire.where(url = 'https://ig.opennz.org/Questionnaire-MedicationRequestQuestionnaire.html'): Conformance resource /solution/workspace/fsh-generated/resources/Questionnaire-MedicationRequestQuestionnaire.json - the canonical URL (http://ig.opennz.org/fsh-ig/Questionnaire/MedicationRequestQuestionnaire) does not match the URL (https://ig.opennz.org/Questionnaire-MedicationRequestQuestionnaire.html)
+ERROR: /solution/workspace/fsh-generated/resources/Questionnaire-MedicationRequestQuestionnaire: URL Mismatch http://ig.opennz.org/fsh-ig/Questionnaire/MedicationRequestQuestionnaire vs https://ig.opennz.org/Questionnaire-MedicationRequestQuestionnaire.html
 == fsh-generated/resources/Questionnaire-PatientSummaryQuestionnaire.json ==
-ERROR: Questionnaire.where(url = 'https://ig.v8-lust.net/Questionnaire-PatientSummaryQuestionnaire.html'): Conformance resource /home/jules/fsh/fsh-generated/resources/Questionnaire-PatientSummaryQuestionnaire.json - the canonical URL (http://ig.v8-lust.net/fsh-ig/Questionnaire/PatientSummaryQuestionnaire) does not match the URL (https://ig.v8-lust.net/Questionnaire-PatientSummaryQuestionnaire.html)
-ERROR: /home/jules/fsh/fsh-generated/resources/Questionnaire-PatientSummaryQuestionnaire: URL Mismatch http://ig.v8-lust.net/fsh-ig/Questionnaire/PatientSummaryQuestionnaire vs https://ig.v8-lust.net/Questionnaire-PatientSummaryQuestionnaire.html
+ERROR: Questionnaire.where(url = 'https://ig.opennz.org/Questionnaire-PatientSummaryQuestionnaire.html'): Conformance resource /solution/workspace/fsh-generated/resources/Questionnaire-PatientSummaryQuestionnaire.json - the canonical URL (http://ig.opennz.org/fsh-ig/Questionnaire/PatientSummaryQuestionnaire) does not match the URL (https://ig.opennz.org/Questionnaire-PatientSummaryQuestionnaire.html)
+ERROR: /solution/workspace/fsh-generated/resources/Questionnaire-PatientSummaryQuestionnaire: URL Mismatch http://ig.opennz.org/fsh-ig/Questionnaire/PatientSummaryQuestionnaire vs https://ig.opennz.org/Questionnaire-PatientSummaryQuestionnaire.html

@@ -5,30 +5,30 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://ig.v8-lust.net/fsh-ig/ImplementationGuide/fsh.ig> a fhir:ImplementationGuide ;
+<http://ig.opennz.org/fsh-ig/ImplementationGuide/fsh.ig> a fhir:ImplementationGuide ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "fsh.ig"] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>NewRepublicFHIRIG</h2><p>The official URL for this implementation guide is: </p><pre>http://ig.v8-lust.net/fsh-ig/ImplementationGuide/fsh.ig</pre></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>NewRepublicFHIRIG</h2><p>The official URL for this implementation guide is: </p><pre>http://ig.opennz.org/fsh-ig/ImplementationGuide/fsh.ig</pre></div>"
   ] ; # 
-  fhir:url [ fhir:v "http://ig.v8-lust.net/fsh-ig/ImplementationGuide/fsh.ig"^^xsd:anyURI] ; # 
+  fhir:url [ fhir:v "http://ig.opennz.org/fsh-ig/ImplementationGuide/fsh.ig"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "NewRepublicFHIRIG"] ; # 
   fhir:title [ fhir:v "New Republic FHIR Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-05-31T11:28:34+12:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-05-31T04:04:36+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "FHIR New Republic"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "FHIR New Republic" ] ;
      fhir:telecom ( [
        fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "http://ig.v8-lust.net" ]
+       fhir:value [ fhir:v "http://ig.opennz.org" ]
      ] )
   ] ) ; # 
   fhir:packageId [ fhir:v "fsh.ig"] ; # 
   fhir:license [ fhir:v "CC0-1.0"] ; # 
-  fhir:fhirVersion ( [ fhir:v "4.0.1"] ) ; # 
+  fhir:fhirVersion ( [ fhir:v "4.3.0"] ) ; # 
   fhir:dependsOn ( [
      fhir:id [ fhir:v "hl7tx" ] ;
      fhir:extension ( [
@@ -150,7 +150,7 @@
          fhir:value [ fhir:v "path-history" ]
        ] [
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "http://ig.v8-lust.net/fsh-ig/history.html" ]
+         fhir:value [ fhir:v "http://ig.opennz.org/fsh-ig/history.html" ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
      ] [
@@ -378,7 +378,7 @@
          fhir:value [ fhir:v "path-history" ]
        ] [
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "http://ig.v8-lust.net/fsh-ig/history.html" ]
+         fhir:value [ fhir:v "http://ig.opennz.org/fsh-ig/history.html" ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
      ] [
@@ -523,8 +523,8 @@
          fhir:value [ fhir:v "CapabilityStatement" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://ig.v8-lust.net/fsh-ig/CapabilityStatement/MedicationSummary> ;
-         fhir:reference [ fhir:v "CapabilityStatement/MedicationSummary" ]
+         fhir:link <http://ig.opennz.org/fsh-ig/CapabilityStatement/MedicationRequest> ;
+         fhir:reference [ fhir:v "CapabilityStatement/MedicationRequest" ]
        ] ;
        fhir:name [ fhir:v "FHIR Server Medication Summary" ] ;
        fhir:description [ fhir:v "Search for Prescribed Medication" ] ;
@@ -535,7 +535,7 @@
          fhir:value [ fhir:v "CapabilityStatement" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://ig.v8-lust.net/fsh-ig/CapabilityStatement/PatientSummary> ;
+         fhir:link <http://ig.opennz.org/fsh-ig/CapabilityStatement/PatientSummary> ;
          fhir:reference [ fhir:v "CapabilityStatement/PatientSummary" ]
        ] ;
        fhir:name [ fhir:v "FHIR Server Patient Summary" ] ;
@@ -547,7 +547,7 @@
          fhir:value [ fhir:v "Questionnaire" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://ig.v8-lust.net/fsh-ig/Questionnaire/PatientSummaryQuestionnaire> ;
+         fhir:link <http://ig.opennz.org/fsh-ig/Questionnaire/PatientSummaryQuestionnaire> ;
          fhir:reference [ fhir:v "Questionnaire/PatientSummaryQuestionnaire" ]
        ] ;
        fhir:name [ fhir:v "Patient Summary Search" ] ;
@@ -559,26 +559,18 @@
          fhir:value [ fhir:v "Questionnaire" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://ig.v8-lust.net/fsh-ig/Questionnaire/MedicationRequestQuestionnaire> ;
+         fhir:link <http://ig.opennz.org/fsh-ig/Questionnaire/MedicationRequestQuestionnaire> ;
          fhir:reference [ fhir:v "Questionnaire/MedicationRequestQuestionnaire" ]
        ] ;
-       fhir:name [ fhir:v "Search Prescribed Medication" ] ;
-       fhir:description [ fhir:v "Submit a search for Prescribed Medication" ] ;
+       fhir:name [ fhir:v "Prescribed Medication" ] ;
+       fhir:description [ fhir:v "Prescribed Medication (MedicationRequest)" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] ) ;
      fhir:page [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "toc.html"^^xsd:anyURI ]
-       ] ) ;
        fhir:name [ fhir:v "toc.html"^^xsd:anyURI ] ;
        fhir:title [ fhir:v "Table of Contents" ] ;
        fhir:generation [ fhir:v "html" ] ;
        fhir:page ( [
-         fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "index.html"^^xsd:anyURI ]
-         ] ) ;
          fhir:name [ fhir:v "index.html"^^xsd:anyURI ] ;
          fhir:title [ fhir:v "Home" ] ;
          fhir:generation [ fhir:v "markdown" ]

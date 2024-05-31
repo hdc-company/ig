@@ -3,25 +3,25 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="fsh.ig"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>NewRepublicFHIRIG</h2><p>The official URL for this implementation guide is: </p><pre>http://ig.v8-lust.net/fsh-ig/ImplementationGuide/fsh.ig</pre></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>NewRepublicFHIRIG</h2><p>The official URL for this implementation guide is: </p><pre>http://ig.opennz.org/fsh-ig/ImplementationGuide/fsh.ig</pre></div>
   </text>
-  <url value="http://ig.v8-lust.net/fsh-ig/ImplementationGuide/fsh.ig"/>
+  <url value="http://ig.opennz.org/fsh-ig/ImplementationGuide/fsh.ig"/>
   <version value="0.1.0"/>
   <name value="NewRepublicFHIRIG"/>
   <title value="New Republic FHIR Implementation Guide"/>
   <status value="draft"/>
-  <date value="2024-05-31T11:28:34+12:00"/>
+  <date value="2024-05-31T04:04:36+00:00"/>
   <publisher value="FHIR New Republic"/>
   <contact>
     <name value="FHIR New Republic"/>
     <telecom>
       <system value="url"/>
-      <value value="http://ig.v8-lust.net"/>
+      <value value="http://ig.opennz.org"/>
     </telecom>
   </contact>
   <packageId value="fsh.ig"/>
   <license value="CC0-1.0"/>
-  <fhirVersion value="4.0.1"/>
+  <fhirVersion value="4.3.0"/>
   <dependsOn id="hl7tx">
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
       <valueMarkdown value="Automatically added as a dependency - all IGs depend on HL7 Terminology"/>
@@ -121,7 +121,7 @@
         <valueString value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="http://ig.v8-lust.net/fsh-ig/history.html"/>
+        <valueString value="http://ig.opennz.org/fsh-ig/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -324,7 +324,7 @@
         <valueCode value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="http://ig.v8-lust.net/fsh-ig/history.html"/>
+        <valueString value="http://ig.opennz.org/fsh-ig/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -452,7 +452,7 @@
         <valueString value="CapabilityStatement"/>
       </extension>
       <reference>
-        <reference value="CapabilityStatement/MedicationSummary"/>
+        <reference value="CapabilityStatement/MedicationRequest"/>
       </reference>
       <name value="FHIR Server Medication Summary"/>
       <description value="Search for Prescribed Medication"/>
@@ -487,21 +487,15 @@
       <reference>
         <reference value="Questionnaire/MedicationRequestQuestionnaire"/>
       </reference>
-      <name value="Search Prescribed Medication"/>
-      <description value="Submit a search for Prescribed Medication"/>
+      <name value="Prescribed Medication"/>
+      <description value="Prescribed Medication (MedicationRequest)"/>
       <exampleBoolean value="false"/>
     </resource>
     <page>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-        <valueUrl value="toc.html"/>
-      </extension>
       <nameUrl value="toc.html"/>
       <title value="Table of Contents"/>
       <generation value="html"/>
       <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="index.html"/>
-        </extension>
         <nameUrl value="index.html"/>
         <title value="Home"/>
         <generation value="markdown"/>

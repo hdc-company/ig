@@ -3,25 +3,25 @@
   "id" : "fsh.ig",
   "text" : {
     "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>NewRepublicFHIRIG</h2><p>The official URL for this implementation guide is: </p><pre>http://ig.v8-lust.net/fsh-ig/ImplementationGuide/fsh.ig</pre></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>NewRepublicFHIRIG</h2><p>The official URL for this implementation guide is: </p><pre>http://ig.opennz.org/fsh-ig/ImplementationGuide/fsh.ig</pre></div>"
   },
-  "url" : "http://ig.v8-lust.net/fsh-ig/ImplementationGuide/fsh.ig",
+  "url" : "http://ig.opennz.org/fsh-ig/ImplementationGuide/fsh.ig",
   "version" : "0.1.0",
   "name" : "NewRepublicFHIRIG",
   "title" : "New Republic FHIR Implementation Guide",
   "status" : "draft",
-  "date" : "2024-05-31T11:28:34+12:00",
+  "date" : "2024-05-31T04:04:36+00:00",
   "publisher" : "FHIR New Republic",
   "contact" : [{
     "name" : "FHIR New Republic",
     "telecom" : [{
       "system" : "url",
-      "value" : "http://ig.v8-lust.net"
+      "value" : "http://ig.opennz.org"
     }]
   }],
   "packageId" : "fsh.ig",
   "license" : "CC0-1.0",
-  "fhirVersion" : ["4.0.1"],
+  "fhirVersion" : ["4.3.0"],
   "dependsOn" : [{
     "id" : "hl7tx",
     "extension" : [{
@@ -155,7 +155,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "http://ig.v8-lust.net/fsh-ig/history.html"
+        "valueString" : "http://ig.opennz.org/fsh-ig/history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -434,7 +434,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "http://ig.v8-lust.net/fsh-ig/history.html"
+        "valueString" : "http://ig.opennz.org/fsh-ig/history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -609,7 +609,7 @@
         "valueString" : "CapabilityStatement"
       }],
       "reference" : {
-        "reference" : "CapabilityStatement/MedicationSummary"
+        "reference" : "CapabilityStatement/MedicationRequest"
       },
       "name" : "FHIR Server Medication Summary",
       "description" : "Search for Prescribed Medication",
@@ -647,23 +647,15 @@
       "reference" : {
         "reference" : "Questionnaire/MedicationRequestQuestionnaire"
       },
-      "name" : "Search Prescribed Medication",
-      "description" : "Submit a search for Prescribed Medication",
+      "name" : "Prescribed Medication",
+      "description" : "Prescribed Medication (MedicationRequest)",
       "exampleBoolean" : false
     }],
     "page" : {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-        "valueUrl" : "toc.html"
-      }],
       "nameUrl" : "toc.html",
       "title" : "Table of Contents",
       "generation" : "html",
       "page" : [{
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "index.html"
-        }],
         "nameUrl" : "index.html",
         "title" : "Home",
         "generation" : "markdown"

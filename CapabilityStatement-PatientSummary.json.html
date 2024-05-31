@@ -73,7 +73,7 @@
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
             </button>
-            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4B/index.html">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
               <!-- menu.xml  -->
 
@@ -109,7 +109,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 8" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">New Republic FHIR Implementation Guide - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://ig.v8-lust.net/fsh-ig/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">New Republic FHIR Implementation Guide - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://ig.opennz.org/fsh-ig/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -182,110 +182,115 @@
 
   <pre class="json" style="white-space: pre; text-wrap: nowrap;"><code class="language-json" style="white-space: pre; text-wrap: nowrap;">
 {
-  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement">resourceType</a>" : "CapabilityStatement",
-  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.id">id</a>" : "PatientSummary",
-  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.text">text</a>" : {
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "extensions",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;h2 id=\&quot;title\&quot;&gt;FHIR Server Patient Summary&lt;/h2&gt;&lt;ul&gt;&lt;li&gt;Implementation Guide Version: 0.1.0 &lt;/li&gt;&lt;li&gt;FHIR Version: 4.0.1 &lt;/li&gt;&lt;li&gt;Supported Formats: &lt;code&gt;json&lt;/code&gt;&lt;/li&gt;&lt;li&gt;Supported Patch Formats: &lt;/li&gt;&lt;li&gt;Published on: 2023-10-19 &lt;/li&gt;&lt;li&gt;Published by: FHIR New Republic &lt;/li&gt;&lt;/ul&gt;&lt;blockquote class=\&quot;impl-note\&quot;&gt;&lt;p&gt;&lt;strong&gt;Note to Implementers: FHIR Capabilities&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Any FHIR capability may be 'allowed' by the system unless explicitly marked as 'SHALL NOT'. A few items are marked as MAY in the Implementation Guide to highlight their potential relevance to the use case.&lt;/p&gt;&lt;/blockquote&gt;&lt;h2 id=\&quot;rest\&quot;&gt;FHIR RESTful Capabilities&lt;/h2&gt;&lt;div class=\&quot;panel panel-default\&quot;&gt;&lt;div class=\&quot;panel-heading\&quot;&gt;&lt;h3 id=\&quot;mode1\&quot; class=\&quot;panel-title\&quot;&gt;Mode: &lt;code&gt;server&lt;/code&gt;&lt;/h3&gt;&lt;/div&gt;&lt;div class=\&quot;panel-body\&quot;&gt;&lt;div class=\&quot;lead\&quot;&gt;&lt;em&gt;Security&lt;/em&gt;&lt;/div&gt;&lt;div class=\&quot;row\&quot;&gt;&lt;div class=\&quot;col-lg-6\&quot;&gt;Enable CORS: yes&lt;/div&gt;&lt;div class=\&quot;col-lg-6\&quot;&gt;Security services supported: &lt;code&gt;OAuth&lt;/code&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=\&quot;lead\&quot;&gt;&lt;em&gt;Summary of System-wide Interactions&lt;/em&gt;&lt;/div&gt;&lt;ul&gt;&lt;li&gt;Supports the &lt;code&gt;transaction&lt;/code&gt;interaction.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;h3 id=\&quot;resourcesCap1\&quot;&gt;Capabilities by Resource/Profile&lt;/h3&gt;&lt;h4 id=\&quot;resourcesSummary1\&quot;&gt;Summary&lt;/h4&gt;&lt;p&gt;The summary table lists the resources that are part of this configuration, and for each resource it lists:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The relevant profiles (if any)&lt;/li&gt;&lt;li&gt;The interactions supported by each resource (&lt;b&gt;&lt;span class=\&quot;bg-info\&quot;&gt;R&lt;/span&gt;&lt;/b&gt;ead, &lt;b&gt;&lt;span class=\&quot;bg-info\&quot;&gt;S&lt;/span&gt;&lt;/b&gt;earch, &lt;b&gt;&lt;span class=\&quot;bg-info\&quot;&gt;U&lt;/span&gt;&lt;/b&gt;pdate, and &lt;b&gt;&lt;span class=\&quot;bg-info\&quot;&gt;C&lt;/span&gt;&lt;/b&gt;reate, are always shown, while &lt;b&gt;&lt;span class=\&quot;bg-info\&quot;&gt;VR&lt;/span&gt;&lt;/b&gt;ead, &lt;b&gt;&lt;span class=\&quot;bg-info\&quot;&gt;P&lt;/span&gt;&lt;/b&gt;atch, &lt;b&gt;&lt;span class=\&quot;bg-info\&quot;&gt;D&lt;/span&gt;&lt;/b&gt;elete, &lt;b&gt;&lt;span class=\&quot;bg-info\&quot;&gt;H&lt;/span&gt;&lt;/b&gt;istory on &lt;b&gt;&lt;span class=\&quot;bg-info\&quot;&gt;I&lt;/span&gt;&lt;/b&gt;nstance, or &lt;b&gt;&lt;span class=\&quot;bg-info\&quot;&gt;H&lt;/span&gt;&lt;/b&gt;istory on &lt;b&gt;&lt;span class=\&quot;bg-info\&quot;&gt;T&lt;/span&gt;&lt;/b&gt;ype are only present if at least one of the resources has support for them.&lt;/li&gt;&lt;li&gt;&lt;span&gt;The required, recommended, and some optional search parameters (if any). &lt;/span&gt;&lt;/li&gt;&lt;li&gt;The linked resources enabled for &lt;code&gt;_include&lt;/code&gt;&lt;/li&gt;&lt;li&gt;The other resources enabled for &lt;code&gt;_revinclude&lt;/code&gt;&lt;/li&gt;&lt;li&gt;The operations on the resource (if any)&lt;/li&gt;&lt;/ul&gt;&lt;div class=\&quot;table-responsive\&quot;&gt;&lt;table class=\&quot;table table-condensed table-hover\&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;&lt;b&gt;Resource Type&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b&gt;Profile&lt;/b&gt;&lt;/th&gt;&lt;th class=\&quot;text-center\&quot;&gt;&lt;b title=\&quot;GET a resource (read interaction)\&quot;&gt;R&lt;/b&gt;&lt;/th&gt;&lt;th class=\&quot;text-center\&quot;&gt;&lt;b title=\&quot;GET past versions of resources (vread interaction)\&quot;&gt;V-R&lt;/b&gt;&lt;/th&gt;&lt;th class=\&quot;text-center\&quot;&gt;&lt;b title=\&quot;GET all set of resources of the type (search interaction)\&quot;&gt;S&lt;/b&gt;&lt;/th&gt;&lt;th class=\&quot;text-center\&quot;&gt;&lt;b title=\&quot;PUT a new resource version (update interaction)\&quot;&gt;U&lt;/b&gt;&lt;/th&gt;&lt;th class=\&quot;text-center\&quot;&gt;&lt;b title=\&quot;POST a new resource (create interaction)\&quot;&gt;C&lt;/b&gt;&lt;/th&gt;&lt;th class=\&quot;text-center\&quot;&gt;&lt;b title=\&quot;DELETE a resource (delete interaction)\&quot;&gt;D&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b title=\&quot;Required and recommended search parameters\&quot;&gt;Searches&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;code&gt;&lt;b&gt;_include&lt;/b&gt;&lt;/code&gt;&lt;/th&gt;&lt;th&gt;&lt;code&gt;&lt;b&gt;_revinclude&lt;/b&gt;&lt;/code&gt;&lt;/th&gt;&lt;th&gt;&lt;b&gt;Operations&lt;/b&gt;&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;#Patient1-1\&quot;&gt;Patient&lt;/a&gt;&lt;/td&gt;&lt;td&gt;\u00a0&lt;/td&gt;&lt;td&gt;y&lt;/td&gt;&lt;td class=\&quot;text-center\&quot;&gt;y&lt;/td&gt;&lt;td class=\&quot;text-center\&quot;&gt;y&lt;/td&gt;&lt;td class=\&quot;text-center\&quot;&gt;y&lt;/td&gt;&lt;td class=\&quot;text-center\&quot;&gt;y&lt;/td&gt;&lt;td class=\&quot;text-center\&quot;&gt;y&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;*&lt;/code&gt;&lt;/td&gt;&lt;td/&gt;&lt;td/&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;hr/&gt;&lt;div class=\&quot;panel panel-default\&quot;&gt;&lt;div class=\&quot;panel-heading\&quot;&gt;&lt;h4 id=\&quot;Patient1-1\&quot; class=\&quot;panel-title\&quot;&gt;&lt;span style=\&quot;float: right;\&quot;&gt;Resource Conformance: supported &lt;/span&gt;Patient&lt;/h4&gt;&lt;/div&gt;&lt;div class=\&quot;panel-body\&quot;&gt;&lt;div class=\&quot;container\&quot;&gt;&lt;div class=\&quot;row\&quot;&gt;&lt;div class=\&quot;col-lg-4\&quot;&gt;&lt;span class=\&quot;lead\&quot;&gt;Core FHIR Resource&lt;/span&gt;&lt;br/&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/patient.html\&quot;&gt;Patient&lt;/a&gt;&lt;/div&gt;&lt;div class=\&quot;col-lg-4\&quot;&gt;&lt;span class=\&quot;lead\&quot;&gt;Reference Policy&lt;/span&gt;&lt;br/&gt;&lt;/div&gt;&lt;div class=\&quot;col-lg-4\&quot;&gt;&lt;span class=\&quot;lead\&quot;&gt;Interaction summary&lt;/span&gt;&lt;br/&gt;&lt;ul&gt;&lt;li&gt;Supports &lt;code&gt;create&lt;/code&gt;, &lt;code&gt;read&lt;/code&gt;, &lt;code&gt;update&lt;/code&gt;, &lt;code&gt;delete&lt;/code&gt;, &lt;code&gt;vread&lt;/code&gt;, &lt;code&gt;search-type&lt;/code&gt;.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;p/&gt;&lt;p/&gt;&lt;div class=\&quot;row\&quot;&gt;&lt;div class=\&quot;col-12\&quot;&gt;&lt;span class=\&quot;lead\&quot;&gt;Documentation&lt;/span&gt;&lt;blockquote&gt;&lt;div&gt;&lt;p&gt;This server supports one profile in addition to the base FHIR Patient resource.&lt;/p&gt;\n&lt;/div&gt;&lt;/blockquote&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+  "<a href="http://hl7.org/fhir/R4B/capabilitystatement.html#CapabilityStatement">resourceType</a>" : "CapabilityStatement",
+  "<a href="http://hl7.org/fhir/R4B/capabilitystatement.html#CapabilityStatement.id">id</a>" : "PatientSummary",
+  "<a href="http://hl7.org/fhir/R4B/capabilitystatement.html#CapabilityStatement.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R4B/narrative.html#Narrative#Narrative.status">status</a>" : "extensions",
+    "<a href="http://hl7.org/fhir/R4B/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;h2 id=\&quot;title\&quot;&gt;FHIR Server Patient Summary&lt;/h2&gt;&lt;ul&gt;&lt;li&gt;Implementation Guide Version: 0.1.0 &lt;/li&gt;&lt;li&gt;FHIR Version: 4.3.0 &lt;/li&gt;&lt;li&gt;Supported Formats: &lt;code&gt;json&lt;/code&gt;&lt;/li&gt;&lt;li&gt;Supported Patch Formats: &lt;/li&gt;&lt;li&gt;Published on: 2023-10-19 &lt;/li&gt;&lt;li&gt;Published by: FHIR New Republic &lt;/li&gt;&lt;/ul&gt;&lt;blockquote class=\&quot;impl-note\&quot;&gt;&lt;p&gt;&lt;strong&gt;Note to Implementers: FHIR Capabilities&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Any FHIR capability may be 'allowed' by the system unless explicitly marked as 'SHALL NOT'. A few items are marked as MAY in the Implementation Guide to highlight their potential relevance to the use case.&lt;/p&gt;&lt;/blockquote&gt;&lt;h2 id=\&quot;rest\&quot;&gt;FHIR RESTful Capabilities&lt;/h2&gt;&lt;div class=\&quot;panel panel-default\&quot;&gt;&lt;div class=\&quot;panel-heading\&quot;&gt;&lt;h3 id=\&quot;mode1\&quot; class=\&quot;panel-title\&quot;&gt;Mode: &lt;code&gt;server&lt;/code&gt;&lt;/h3&gt;&lt;/div&gt;&lt;div class=\&quot;panel-body\&quot;&gt;&lt;div class=\&quot;lead\&quot;&gt;&lt;em&gt;Security&lt;/em&gt;&lt;/div&gt;&lt;div class=\&quot;row\&quot;&gt;&lt;div class=\&quot;col-lg-6\&quot;&gt;Enable CORS: yes&lt;/div&gt;&lt;div class=\&quot;col-lg-6\&quot;&gt;Security services supported: &lt;code&gt;OAuth&lt;/code&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=\&quot;lead\&quot;&gt;&lt;em&gt;Summary of System-wide Interactions&lt;/em&gt;&lt;/div&gt;&lt;ul&gt;&lt;li&gt;Supports the &lt;code&gt;transaction&lt;/code&gt;interaction described as follows:&lt;div&gt;&lt;p&gt;Transaction interaction is not supported&lt;/p&gt;\n&lt;/div&gt;&lt;/li&gt;&lt;li&gt;Supports the &lt;code&gt;batch&lt;/code&gt;interaction described as follows:&lt;div&gt;&lt;p&gt;Batch interaction is not supported&lt;/p&gt;\n&lt;/div&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;h3 id=\&quot;resourcesCap1\&quot;&gt;Capabilities by Resource/Profile&lt;/h3&gt;&lt;h4 id=\&quot;resourcesSummary1\&quot;&gt;Summary&lt;/h4&gt;&lt;p&gt;The summary table lists the resources that are part of this configuration, and for each resource it lists:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;The relevant profiles (if any)&lt;/li&gt;&lt;li&gt;The interactions supported by each resource (&lt;b&gt;&lt;span class=\&quot;bg-info\&quot;&gt;R&lt;/span&gt;&lt;/b&gt;ead, &lt;b&gt;&lt;span class=\&quot;bg-info\&quot;&gt;S&lt;/span&gt;&lt;/b&gt;earch, &lt;b&gt;&lt;span class=\&quot;bg-info\&quot;&gt;U&lt;/span&gt;&lt;/b&gt;pdate, and &lt;b&gt;&lt;span class=\&quot;bg-info\&quot;&gt;C&lt;/span&gt;&lt;/b&gt;reate, are always shown, while &lt;b&gt;&lt;span class=\&quot;bg-info\&quot;&gt;VR&lt;/span&gt;&lt;/b&gt;ead, &lt;b&gt;&lt;span class=\&quot;bg-info\&quot;&gt;P&lt;/span&gt;&lt;/b&gt;atch, &lt;b&gt;&lt;span class=\&quot;bg-info\&quot;&gt;D&lt;/span&gt;&lt;/b&gt;elete, &lt;b&gt;&lt;span class=\&quot;bg-info\&quot;&gt;H&lt;/span&gt;&lt;/b&gt;istory on &lt;b&gt;&lt;span class=\&quot;bg-info\&quot;&gt;I&lt;/span&gt;&lt;/b&gt;nstance, or &lt;b&gt;&lt;span class=\&quot;bg-info\&quot;&gt;H&lt;/span&gt;&lt;/b&gt;istory on &lt;b&gt;&lt;span class=\&quot;bg-info\&quot;&gt;T&lt;/span&gt;&lt;/b&gt;ype are only present if at least one of the resources has support for them.&lt;/li&gt;&lt;li&gt;&lt;span&gt;The required, recommended, and some optional search parameters (if any). &lt;/span&gt;&lt;/li&gt;&lt;li&gt;The linked resources enabled for &lt;code&gt;_include&lt;/code&gt;&lt;/li&gt;&lt;li&gt;The other resources enabled for &lt;code&gt;_revinclude&lt;/code&gt;&lt;/li&gt;&lt;li&gt;The operations on the resource (if any)&lt;/li&gt;&lt;/ul&gt;&lt;div class=\&quot;table-responsive\&quot;&gt;&lt;table class=\&quot;table table-condensed table-hover\&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;&lt;b&gt;Resource Type&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b&gt;Profile&lt;/b&gt;&lt;/th&gt;&lt;th class=\&quot;text-center\&quot;&gt;&lt;b title=\&quot;GET a resource (read interaction)\&quot;&gt;R&lt;/b&gt;&lt;/th&gt;&lt;th class=\&quot;text-center\&quot;&gt;&lt;b title=\&quot;GET all set of resources of the type (search interaction)\&quot;&gt;S&lt;/b&gt;&lt;/th&gt;&lt;th class=\&quot;text-center\&quot;&gt;&lt;b title=\&quot;PUT a new resource version (update interaction)\&quot;&gt;U&lt;/b&gt;&lt;/th&gt;&lt;th class=\&quot;text-center\&quot;&gt;&lt;b title=\&quot;POST a new resource (create interaction)\&quot;&gt;C&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b title=\&quot;Required and recommended search parameters\&quot;&gt;Searches&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;code&gt;&lt;b&gt;_include&lt;/b&gt;&lt;/code&gt;&lt;/th&gt;&lt;th&gt;&lt;code&gt;&lt;b&gt;_revinclude&lt;/b&gt;&lt;/code&gt;&lt;/th&gt;&lt;th&gt;&lt;b&gt;Operations&lt;/b&gt;&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;#Patient1-1\&quot;&gt;Patient&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4B/patient.html\&quot;&gt;http://hl7.org/fhir/StructureDefinition/Patient&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td class=\&quot;text-center\&quot;&gt;y&lt;/td&gt;&lt;td class=\&quot;text-center\&quot;&gt;&lt;/td&gt;&lt;td class=\&quot;text-center\&quot;&gt;&lt;/td&gt;&lt;td&gt;disability&lt;/td&gt;&lt;td/&gt;&lt;td/&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;#Condition1-2\&quot;&gt;Condition&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4B/condition.html\&quot;&gt;http://hl7.org/fhir/StructureDefinition/Condition&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td class=\&quot;text-center\&quot;&gt;y&lt;/td&gt;&lt;td class=\&quot;text-center\&quot;&gt;&lt;/td&gt;&lt;td class=\&quot;text-center\&quot;&gt;&lt;/td&gt;&lt;td&gt;category&lt;/td&gt;&lt;td/&gt;&lt;td/&gt;&lt;td/&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;hr/&gt;&lt;div class=\&quot;panel panel-default\&quot;&gt;&lt;div class=\&quot;panel-heading\&quot;&gt;&lt;h4 id=\&quot;Patient1-1\&quot; class=\&quot;panel-title\&quot;&gt;&lt;span style=\&quot;float: right;\&quot;&gt;Resource Conformance: supported &lt;/span&gt;Patient&lt;/h4&gt;&lt;/div&gt;&lt;div class=\&quot;panel-body\&quot;&gt;&lt;div class=\&quot;container\&quot;&gt;&lt;div class=\&quot;row\&quot;&gt;&lt;div class=\&quot;col-lg-6\&quot;&gt;&lt;span class=\&quot;lead\&quot;&gt;Base System Profile&lt;/span&gt;&lt;br/&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4B/patient.html\&quot;&gt;http://hl7.org/fhir/StructureDefinition/Patient&lt;/a&gt;&lt;/div&gt;&lt;div class=\&quot;col-lg-3\&quot;&gt;&lt;span class=\&quot;lead\&quot;&gt;Profile Conformance&lt;/span&gt;&lt;br/&gt;&lt;b&gt;SHALL&lt;/b&gt;&lt;/div&gt;&lt;div class=\&quot;col-lg-3\&quot;&gt;&lt;span class=\&quot;lead\&quot;&gt;Reference Policy&lt;/span&gt;&lt;br/&gt;&lt;/div&gt;&lt;/div&gt;&lt;p/&gt;&lt;div class=\&quot;row\&quot;&gt;&lt;div class=\&quot;col-lg-6\&quot;&gt;&lt;span class=\&quot;lead\&quot;&gt;Interaction summary&lt;/span&gt;&lt;br/&gt;&lt;ul&gt;&lt;li&gt;Supports &lt;code&gt;search-type&lt;/code&gt;.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;p/&gt;&lt;div class=\&quot;row\&quot;&gt;&lt;div class=\&quot;col-lg-7\&quot;&gt;&lt;span class=\&quot;lead\&quot;&gt;Search Parameters&lt;/span&gt;&lt;table class=\&quot;table table-condensed table-hover\&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Conformance&lt;/th&gt;&lt;th&gt;Parameter&lt;/th&gt;&lt;th&gt;Type&lt;/th&gt;&lt;th&gt;Documentation&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;SHALL&lt;/b&gt;&lt;/td&gt;&lt;td&gt;disability&lt;/td&gt;&lt;td&gt;&lt;code&gt;token&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Search for patients with specific disabilities&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;div class=\&quot;col-lg-5\&quot;&gt;\u00a0&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=\&quot;panel panel-default\&quot;&gt;&lt;div class=\&quot;panel-heading\&quot;&gt;&lt;h4 id=\&quot;Condition1-2\&quot; class=\&quot;panel-title\&quot;&gt;&lt;span style=\&quot;float: right;\&quot;&gt;Resource Conformance: supported &lt;/span&gt;Condition&lt;/h4&gt;&lt;/div&gt;&lt;div class=\&quot;panel-body\&quot;&gt;&lt;div class=\&quot;container\&quot;&gt;&lt;div class=\&quot;row\&quot;&gt;&lt;div class=\&quot;col-lg-6\&quot;&gt;&lt;span class=\&quot;lead\&quot;&gt;Base System Profile&lt;/span&gt;&lt;br/&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4B/condition.html\&quot;&gt;http://hl7.org/fhir/StructureDefinition/Condition&lt;/a&gt;&lt;/div&gt;&lt;div class=\&quot;col-lg-3\&quot;&gt;&lt;span class=\&quot;lead\&quot;&gt;Profile Conformance&lt;/span&gt;&lt;br/&gt;&lt;b&gt;SHALL&lt;/b&gt;&lt;/div&gt;&lt;div class=\&quot;col-lg-3\&quot;&gt;&lt;span class=\&quot;lead\&quot;&gt;Reference Policy&lt;/span&gt;&lt;br/&gt;&lt;/div&gt;&lt;/div&gt;&lt;p/&gt;&lt;div class=\&quot;row\&quot;&gt;&lt;div class=\&quot;col-lg-6\&quot;&gt;&lt;span class=\&quot;lead\&quot;&gt;Interaction summary&lt;/span&gt;&lt;br/&gt;&lt;ul&gt;&lt;li&gt;Supports &lt;code&gt;search-type&lt;/code&gt;.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;p/&gt;&lt;div class=\&quot;row\&quot;&gt;&lt;div class=\&quot;col-lg-7\&quot;&gt;&lt;span class=\&quot;lead\&quot;&gt;Search Parameters&lt;/span&gt;&lt;table class=\&quot;table table-condensed table-hover\&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Conformance&lt;/th&gt;&lt;th&gt;Parameter&lt;/th&gt;&lt;th&gt;Type&lt;/th&gt;&lt;th&gt;Documentation&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;SHALL&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4B/condition.html#search\&quot;&gt;category&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;token&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Search for conditions related to disabilities&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;div class=\&quot;col-lg-5\&quot;&gt;\u00a0&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
   },
-  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.url">url</a>" : "http://ig.v8-lust.net/fsh-ig/CapabilityStatement/PatientSummary",
-  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.version">version</a>" : "0.1.0",
-  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.name">name</a>" : "PatientSummary",
-  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.title">title</a>" : "FHIR Server Patient Summary",
-  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.status">status</a>" : "active",
-  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.date">date</a>" : "2023-10-19",
-  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.publisher">publisher</a>" : "FHIR New Republic",
-  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.contact">contact</a>" : [
+  "<a href="http://hl7.org/fhir/R4B/capabilitystatement.html#CapabilityStatement.url">url</a>" : "http://ig.opennz.org/fsh-ig/CapabilityStatement/PatientSummary",
+  "<a href="http://hl7.org/fhir/R4B/capabilitystatement.html#CapabilityStatement.version">version</a>" : "0.1.0",
+  "<a href="http://hl7.org/fhir/R4B/capabilitystatement.html#CapabilityStatement.name">name</a>" : "PatientSummary",
+  "<a href="http://hl7.org/fhir/R4B/capabilitystatement.html#CapabilityStatement.title">title</a>" : "FHIR Server Patient Summary",
+  "<a href="http://hl7.org/fhir/R4B/capabilitystatement.html#CapabilityStatement.status">status</a>" : "active",
+  "<a href="http://hl7.org/fhir/R4B/capabilitystatement.html#CapabilityStatement.date">date</a>" : "2023-10-19",
+  "<a href="http://hl7.org/fhir/R4B/capabilitystatement.html#CapabilityStatement.publisher">publisher</a>" : "FHIR New Republic",
+  "<a href="http://hl7.org/fhir/R4B/capabilitystatement.html#CapabilityStatement.contact">contact</a>" : [
     {
-      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "FHIR New Republic",
-      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
+      "<a href="http://hl7.org/fhir/R4B/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "FHIR New Republic",
+      "<a href="http://hl7.org/fhir/R4B/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
         {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "http://ig.v8-lust.net"
+          "<a href="http://hl7.org/fhir/R4B/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
+          "<a href="http://hl7.org/fhir/R4B/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "http://ig.opennz.org"
         }
       ]
     }
   ],
-  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.description">description</a>" : "Search for Prescribed Patient",
-  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.kind">kind</a>" : "instance",
-  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.implementation">implementation</a>" : {
-    "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.implementation.description">description</a>" : "Canonical Based Examples",
-    "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.implementation.url">url</a>" : "https://hapi.fhir.org/baseR4"
+  "<a href="http://hl7.org/fhir/R4B/capabilitystatement.html#CapabilityStatement.description">description</a>" : "Search for Prescribed Patient",
+  "<a href="http://hl7.org/fhir/R4B/capabilitystatement.html#CapabilityStatement.kind">kind</a>" : "instance",
+  "<a href="http://hl7.org/fhir/R4B/capabilitystatement.html#CapabilityStatement.implementation">implementation</a>" : {
+    "<a href="http://hl7.org/fhir/R4B/capabilitystatement.html#CapabilityStatement.implementation.description">description</a>" : "Canonical Based Examples",
+    "<a href="http://hl7.org/fhir/R4B/capabilitystatement.html#CapabilityStatement.implementation.url">url</a>" : "https://hapi.fhir.org/baseR4"
   },
-  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.fhirVersion">fhirVersion</a>" : "4.0.1",
-  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.format">format</a>" : [
+  "<a href="http://hl7.org/fhir/R4B/capabilitystatement.html#CapabilityStatement.fhirVersion">fhirVersion</a>" : "4.3.0",
+  "<a href="http://hl7.org/fhir/R4B/capabilitystatement.html#CapabilityStatement.format">format</a>" : [
     "json"
   ],
-  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest">rest</a>" : [
+  "<a href="http://hl7.org/fhir/R4B/capabilitystatement.html#CapabilityStatement.rest">rest</a>" : [
     {
-      "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.mode">mode</a>" : "server",
-      "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.security">security</a>" : {
-        "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.security.extension">extension</a>" : [
+      "<a href="http://hl7.org/fhir/R4B/capabilitystatement.html#CapabilityStatement.rest.mode">mode</a>" : "server",
+      "<a href="http://hl7.org/fhir/R4B/capabilitystatement.html#CapabilityStatement.rest.security">security</a>" : {
+        "<a href="http://hl7.org/fhir/R4B/capabilitystatement.html#CapabilityStatement.rest.security.extension">extension</a>" : [
           {
-            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>" : [
+            "<a href="http://hl7.org/fhir/R4B/extensibility.html#Extension#Extension.extension">extension</a>" : [
               {
-                "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "token",
-                "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueUri</a>" : "https://auth.integration.covid19.health.nz/oauth2/token"
+                "<a href="http://hl7.org/fhir/R4B/extensibility.html#Extension#Extension.url">url</a>" : "token",
+                "<a href="http://hl7.org/fhir/R4B/extensibility.html#Extension#Extension.value[x]">valueUri</a>" : "https://auth.integration.covid19.health.nz/oauth2/token"
               },
               {
-                "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "authorize",
-                "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueUri</a>" : "https://auth.integration.covid19.health.nz/oauth2/authorize"
+                "<a href="http://hl7.org/fhir/R4B/extensibility.html#Extension#Extension.url">url</a>" : "authorize",
+                "<a href="http://hl7.org/fhir/R4B/extensibility.html#Extension#Extension.value[x]">valueUri</a>" : "https://auth.integration.covid19.health.nz/oauth2/authorize"
               }
             ],
-            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://fhir-registry.smarthealthit.org/StructureDefinition/oauth-uris"
+            "<a href="http://hl7.org/fhir/R4B/extensibility.html#Extension#Extension.url">url</a>" : "http://fhir-registry.smarthealthit.org/StructureDefinition/oauth-uris"
           }
         ],
-        "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.security.cors">cors</a>" : true,
-        "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.security.service">service</a>" : [
+        "<a href="http://hl7.org/fhir/R4B/capabilitystatement.html#CapabilityStatement.rest.security.cors">cors</a>" : true,
+        "<a href="http://hl7.org/fhir/R4B/capabilitystatement.html#CapabilityStatement.rest.security.service">service</a>" : [
           {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            "<a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
               {
-                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/restful-security-service",
-                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "OAuth"
+                "<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/restful-security-service",
+                "<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">code</a>" : "OAuth"
               }
             ]
           }
         ]
       },
-      "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource">resource</a>" : [
+      "<a href="http://hl7.org/fhir/R4B/capabilitystatement.html#CapabilityStatement.rest.resource">resource</a>" : [
         {
-          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.type">type</a>" : "Patient",
-          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.documentation">documentation</a>" : "\nThis server supports one profile in addition to the base FHIR Patient resource.\n",
-          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction">interaction</a>" : [
+          "<a href="http://hl7.org/fhir/R4B/capabilitystatement.html#CapabilityStatement.rest.resource.type">type</a>" : "Patient",
+          "<a href="http://hl7.org/fhir/R4B/capabilitystatement.html#CapabilityStatement.rest.resource.profile">profile</a>" : "http://hl7.org/fhir/StructureDefinition/Patient",
+          "<a href="http://hl7.org/fhir/R4B/capabilitystatement.html#CapabilityStatement.rest.resource.interaction">interaction</a>" : [
             {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a>" : "create"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a>" : "read"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a>" : "update"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a>" : "delete"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a>" : "vread"
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a>" : "search-type"
+              "<a href="http://hl7.org/fhir/R4B/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a>" : "search-type"
             }
           ],
-          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.versioning">versioning</a>" : "versioned",
-          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.readHistory">readHistory</a>" : false,
-          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.updateCreate">updateCreate</a>" : false,
-          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.conditionalCreate">conditionalCreate</a>" : false,
-          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.conditionalRead">conditionalRead</a>" : "not-supported",
-          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.conditionalUpdate">conditionalUpdate</a>" : false,
-          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.conditionalDelete">conditionalDelete</a>" : "not-supported",
-          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.searchInclude">searchInclude</a>" : [
-            "*"
+          "<a href="http://hl7.org/fhir/R4B/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4B/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "disability",
+              "<a href="http://hl7.org/fhir/R4B/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>" : "http://hl7.org/fhir/SearchParameter/Patient-disability",
+              "<a href="http://hl7.org/fhir/R4B/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "token",
+              "<a href="http://hl7.org/fhir/R4B/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "Search for patients with specific disabilities"
+            }
+          ]
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4B/capabilitystatement.html#CapabilityStatement.rest.resource.type">type</a>" : "Condition",
+          "<a href="http://hl7.org/fhir/R4B/capabilitystatement.html#CapabilityStatement.rest.resource.profile">profile</a>" : "http://hl7.org/fhir/StructureDefinition/Condition",
+          "<a href="http://hl7.org/fhir/R4B/capabilitystatement.html#CapabilityStatement.rest.resource.interaction">interaction</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4B/capabilitystatement.html#CapabilityStatement.rest.resource.interaction.code">code</a>" : "search-type"
+            }
+          ],
+          "<a href="http://hl7.org/fhir/R4B/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam">searchParam</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4B/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.name">name</a>" : "category",
+              "<a href="http://hl7.org/fhir/R4B/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.definition">definition</a>" : "http://hl7.org/fhir/SearchParameter/Condition-category",
+              "<a href="http://hl7.org/fhir/R4B/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.type">type</a>" : "token",
+              "<a href="http://hl7.org/fhir/R4B/capabilitystatement.html#CapabilityStatement.rest.resource.searchParam.documentation">documentation</a>" : "Search for conditions related to disabilities"
+            }
           ]
         }
       ],
-      "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.interaction">interaction</a>" : [
+      "<a href="http://hl7.org/fhir/R4B/capabilitystatement.html#CapabilityStatement.rest.interaction">interaction</a>" : [
         {
-          "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.interaction.code">code</a>" : "transaction"
+          "<a href="http://hl7.org/fhir/R4B/capabilitystatement.html#CapabilityStatement.rest.interaction.code">code</a>" : "transaction",
+          "<a href="http://hl7.org/fhir/R4B/capabilitystatement.html#CapabilityStatement.rest.interaction.documentation">documentation</a>" : "Transaction interaction is not supported"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4B/capabilitystatement.html#CapabilityStatement.rest.interaction.code">code</a>" : "batch",
+          "<a href="http://hl7.org/fhir/R4B/capabilitystatement.html#CapabilityStatement.rest.interaction.documentation">documentation</a>" : "Batch interaction is not supported"
         }
       ]
     }
@@ -314,7 +319,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://ig.v8-lust.net">FHIR New Republic</a>.  Package fsh.ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, May 31, 2024 11:28+1200">2024-05-31</span>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://ig.opennz.org">FHIR New Republic</a>.  Package fsh.ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4B/">FHIR 4.3.0</a>. Generated <span title="Fri, May 31, 2024 04:04+0000">2024-05-31</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

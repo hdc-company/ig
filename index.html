@@ -71,7 +71,7 @@
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
             </button>
-            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <a href="http://hl7.org/fhir/R4B/index.html" class="navbar-brand hidden">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
                 <!-- menu.xml -->
 
@@ -114,7 +114,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">New Republic FHIR Implementation Guide - Local Development build (v0.1.0) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="http://ig.v8-lust.net/fsh-ig/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">New Republic FHIR Implementation Guide - Local Development build (v0.1.0) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="http://ig.opennz.org/fsh-ig/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   <h2>Home</h2>
   
 
@@ -126,10 +126,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <table class="colsd">
 
     <tr>
-      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://ig.v8-lust.net/fsh-ig/ImplementationGuide/fsh.ig<button data-clipboard-text="http://ig.v8-lust.net/fsh-ig/ImplementationGuide/fsh.ig" title="Click to copy URL" class="btn-copy"></button></span>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://ig.opennz.org/fsh-ig/ImplementationGuide/fsh.ig<button data-clipboard-text="http://ig.opennz.org/fsh-ig/ImplementationGuide/fsh.ig" title="Click to copy URL" class="btn-copy"></button></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">0.1.0<button data-clipboard-text="http://ig.v8-lust.net/fsh-ig/ImplementationGuide/fsh.ig|0.1.0" title="Click to copy versioned URL" class="btn-copy"></button></span>
+      <span class="copy-text">0.1.0<button data-clipboard-text="http://ig.opennz.org/fsh-ig/ImplementationGuide/fsh.ig|0.1.0" title="Click to copy versioned URL" class="btn-copy"></button></span>
       </td>
     </tr>
 
@@ -180,14 +180,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h2 id="user-interface-mock">User Interface Mock</h2>
 
-<p><a href="https://lhncbc.github.io/questionnaire-viewer/?q=https://ig.mwnz.org/Questionnaire-MedicationRequestQuestionnaire.json">Questionnaire View</a></p>
+<ul>
+  <li><a href="https://lhncbc.github.io/questionnaire-viewer/?q=https://ig.opennz.org/Questionnaire-PatientSummaryQuestionnaire.json">Patient Summary</a></li>
+  <li><a href="https://lhncbc.github.io/questionnaire-viewer/?q=https://ig.opennz.org/Questionnaire-MedicationRequestQuestionnaire.json">Prescribed Medication (MedicationRequest)</a></li>
+</ul>
 
-<h2 id="what-have-i-authored">What Have I authored?</h2>
+<h2 id="openapi-specifications-in-yaml-format">OpenAPI Specifications in YAML format</h2>
 
 <ul>
-  <li>defined <code class="language-plaintext highlighter-rouge">capabilitystatement.fsh</code> in <code class="language-plaintext highlighter-rouge">input/fsh/capabilities</code> which produces the OpenAPI Spec (OAS), with a filename based on the <code class="language-plaintext highlighter-rouge">name</code> FSH attribute.</li>
-  <li>defined <code class="language-plaintext highlighter-rouge">MedicationRequestQuestionnaire.fsh</code> in <code class="language-plaintext highlighter-rouge">input/fsh/capabilities</code> which produces <a href="Questionnaire-MedicationRequestQuestionnaire.json">Questionnaire-MedicationRequestQuestionnaire.json</a>, this can been uploaded to https://lhcformbuilder.nlm.nih.gov/ to produce a wireframe UI mock, or directly linked as URL above</li>
-  <li><a name="l317">​</a>added a Javascript utility to provide the OAS in YAML format, see <code class="language-plaintext highlighter-rouge">bdd</code> directory. <a href="Questionnaire-MedicationRequestQuestionnaire.yaml">Questionnaire-MedicationRequestQuestionnaire.yaml</a></li>
+  <li><a name="l300">​</a><a href="/PatientSummary.openapi.yaml">Patient Summary</a></li>
+  <li><a name="l304">​</a><a href="/MedicationRequest.openapi.yaml">Prescribed Medication (MedicationRequest)</a></li>
 </ul>
 
 
@@ -209,7 +211,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://ig.v8-lust.net">FHIR New Republic</a>.  Package fsh.ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, May 31, 2024 11:28+1200">2024-05-31</span>
+          IG &copy; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://ig.opennz.org">FHIR New Republic</a>.  Package fsh.ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4B/">FHIR 4.3.0</a>. Generated <span title="Fri, May 31, 2024 04:04+0000">2024-05-31</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
