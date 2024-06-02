@@ -23,7 +23,7 @@
   "kind" : "instance",
   "implementation" : {
     "description" : "Canonical Based Examples",
-    "url" : "https://hapi.fhir.org/baseR4"
+    "url" : "https://hapi.fhir.org/baseR4B"
   },
   "fhirVersion" : "4.3.0",
   "format" : ["json"],

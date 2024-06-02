@@ -15,7 +15,7 @@
   },
   "servers": [
     {
-      "url": "https://hapi.fhir.org/baseR4",
+      "url": "https://hapi.fhir.org/baseR4B",
       "description": "Canonical Based Examples"
     }
   ],

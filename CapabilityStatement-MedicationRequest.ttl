@@ -30,7 +30,7 @@
   fhir:kind [ fhir:v "instance"] ; # 
   fhir:implementation [
      fhir:description [ fhir:v "Canonical Based Examples" ] ;
-     fhir:url [ fhir:v "https://hapi.fhir.org/baseR4"^^xsd:anyURI ]
+     fhir:url [ fhir:v "https://hapi.fhir.org/baseR4B"^^xsd:anyURI ]
   ] ; # 
   fhir:fhirVersion [ fhir:v "4.3.0"] ; # 
   fhir:format ( [ fhir:v "json"] ) ; # 

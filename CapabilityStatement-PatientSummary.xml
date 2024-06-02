@@ -27,7 +27,7 @@
   <kind value="instance"/>
   <implementation>
     <description value="Canonical Based Examples"/>
-    <url value="https://hapi.fhir.org/baseR4"/>
+    <url value="https://hapi.fhir.org/baseR4B"/>
   </implementation>
   <fhirVersion value="4.3.0"/>
   <format value="json"/>

@@ -10,7 +10,7 @@ info:
     name: FHIR New Republic
     url: http://ig.opennz.org
 servers:
-  - url: https://hapi.fhir.org/baseR4
+  - url: https://hapi.fhir.org/baseR4B
     description: Canonical Based Examples
 externalDocs:
   url: http://ig.opennz.org/fsh-ig/CapabilityStatement/PatientSummary

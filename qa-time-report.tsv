@@ -1,6 +1,6 @@
 Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	responsesForQuestionnaire	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
-/fsh-generated/resources/ImplementationGuide-fsh.ig.json	2258	-	0	0	0	0	0	0	11	61	0	0	0	0	0	0	0	0	0	0	440	86	0	0	0	1	13	0	1
-fsh-generated/resources/CapabilityStatement-MedicationRequest.json	2429	12	2	0	0	1	0	0	1	47	0	0	0	0	0	0	0	0	0	0	371	58	0	0	0	0	1	0	0
-fsh-generated/resources/CapabilityStatement-PatientSummary.json	2736	11	1	0	0	0	0	0	0	52	0	0	0	0	0	0	0	0	0	0	528	16	0	0	1	0	1	0	1
-fsh-generated/resources/Questionnaire-MedicationRequestQuestionnaire.json	752	13	1	0	0	0	0	0	0	45	0	0	0	0	0	0	0	0	0	0	625	16	0	0	0	0	2	0	0
-fsh-generated/resources/Questionnaire-PatientSummaryQuestionnaire.json	738	13	1	0	0	0	0	0	0	21	0	0	0	0	0	0	0	0	0	0	441	14	0	0	0	0	1	0	0
+/fsh-generated/resources/ImplementationGuide-fsh.ig.json	2258	-	0	0	0	0	0	0	4	66	0	0	0	0	0	0	0	6	0	0	641	134	0	0	0	1	11	0	2
+fsh-generated/resources/CapabilityStatement-MedicationRequest.json	2430	26	0	0	0	0	0	0	0	80	0	0	0	0	0	0	0	0	0	0	431	85	0	0	0	0	1	0	0
+fsh-generated/resources/CapabilityStatement-PatientSummary.json	2737	29	0	0	0	0	0	0	0	52	0	0	0	0	0	0	0	0	0	0	402	35	0	0	1	0	2	0	0
+fsh-generated/resources/Questionnaire-MedicationRequestQuestionnaire.json	752	20	0	0	0	0	0	0	0	65	0	0	0	0	0	0	0	0	0	0	431	46	0	0	0	0	0	0	0
+fsh-generated/resources/Questionnaire-PatientSummaryQuestionnaire.json	738	20	1	0	0	0	0	0	1	19	0	0	0	0	0	0	0	0	0	0	411	43	0	0	0	0	10	0	0
