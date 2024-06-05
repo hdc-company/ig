@@ -3,10 +3,32 @@
   "version": "0.1.0",
   "fhirVersion": "4.3.0",
   "extensions": [],
-  "profiles": {},
+  "profiles": {
+    "Condition": [
+      {
+        "url": "http://ig.opennz.org/fsh-ig/StructureDefinition/patient-condition-summary",
+        "title": "PatientConditionSummary"
+      }
+    ]
+  },
   "usage": {
     "http://fhir-registry.smarthealthit.org/StructureDefinition/oauth-uris": [
       "CapabilityStatement.rest.security"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
       "ImplementationGuide.definition"

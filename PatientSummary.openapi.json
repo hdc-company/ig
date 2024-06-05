@@ -68,58 +68,6 @@
         ]
       }
     },
-    "/Patient": {
-      "summary": "manage the collection of resources of type Patient",
-      "description": "Access to services to manage the collection of all resources of type Patient",
-      "get": {
-        "summary": "Search all resources of type Patient based on a set of criteria",
-        "operationId": "searchPatient",
-        "responses": {
-          "default": {
-            "description": "Error, with details",
-            "content": {
-              "application/fhir+json": {
-                "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome"
-                }
-              }
-            }
-          },
-          "200": {
-            "description": "the resource being returned",
-            "content": {
-              "application/fhir+json": {
-                "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/Bundle"
-                }
-              }
-            }
-          }
-        },
-        "parameters": [
-          {
-            "$ref": "#/components/parameters/format"
-          },
-          {
-            "$ref": "#/components/parameters/pretty"
-          },
-          {
-            "$ref": "#/components/parameters/summary"
-          },
-          {
-            "$ref": "#/components/parameters/elements"
-          },
-          {
-            "name": "disability",
-            "in": "query",
-            "description": "Search for patients with specific disabilities",
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
-      }
-    },
     "/Condition": {
       "summary": "manage the collection of resources of type Condition",
       "description": "Access to services to manage the collection of all resources of type Condition",
@@ -162,9 +110,42 @@
             "$ref": "#/components/parameters/elements"
           },
           {
+            "name": "_profile",
+            "in": "query",
+            "description": "Filter Condition instances tagged with the **Disabled Patient Summary** profile eg. ?_profile\u003dhttps://build.fhir.org/ig/tewhatuora/fhir-patient-questionnaires.fhir.ig/StructureDefinition/patient-condition-summary",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
             "name": "category",
             "in": "query",
-            "description": "The category of the condition",
+            "description": "\tThe category of the condition",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "recorded-date",
+            "in": "query",
+            "description": "Date Condition was first recorded",
+            "schema": {
+              "type": "string",
+              "pattern": "([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]+)?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?"
+            }
+          },
+          {
+            "name": "patient",
+            "in": "query",
+            "description": "NHI of the patient who has disbilities requiring assistance",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "subject",
+            "in": "query",
+            "description": "NHI of the patient who has disbilities requiring assistance",
             "schema": {
               "type": "string"
             }
@@ -172,23 +153,12 @@
         ]
       }
     },
-    "/": {
-      "summary": "System level operations",
-      "description": "System level operations",
-      "put": {
-        "summary": "Batch or Transaction",
-        "operationId": "transaction",
-        "requestBody": {
-          "description": "The batch or transaction",
-          "required": true,
-          "content": {
-            "application/fhir+json": {
-              "schema": {
-                "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/Bundle"
-              }
-            }
-          }
-        },
+    "/Condition/{rid}": {
+      "summary": "Read/Write/etc resource instance of type Condition",
+      "description": "Access to services to manage the state of a single resource of type Condition",
+      "get": {
+        "summary": "Read the current state of the resource",
+        "operationId": "readCondition",
         "responses": {
           "default": {
             "description": "Error, with details",
@@ -201,11 +171,19 @@
             }
           },
           "200": {
-            "description": "Batch or Transaction response",
+            "description": "the resource being returned",
+            "headers": {
+              "ETag": {
+                "description": "Version from Resource.meta.version as a weak ETag",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/Bundle"
+                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/Condition"
                 }
               }
             }
@@ -213,10 +191,77 @@
         },
         "parameters": [
           {
+            "$ref": "#/components/parameters/rid"
+          },
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
             "$ref": "#/components/parameters/format"
           },
           {
             "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          }
+        ]
+      }
+    },
+    "/Condition/{rid}/_history/{hid}": {
+      "summary": "Read a past version of resource instance of type Condition",
+      "description": "Access a to specified previous version of a single resource of type Condition",
+      "get": {
+        "summary": "Read a past state of the resource",
+        "operationId": "vreadCondition",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "headers": {
+              "ETag": {
+                "description": "Version from Resource.meta.version as a weak ETag for that version",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/Condition"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/rid"
+          },
+          {
+            "$ref": "#/components/parameters/hid"
+          },
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
           }
         ]
       }

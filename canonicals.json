@@ -21,6 +21,13 @@
     "name" : "NewRepublicFHIRIG"
   },
   {
+    "id" : "patient-condition-summary",
+    "type" : "StructureDefinition",
+    "url" : "http://ig.opennz.org/fsh-ig/StructureDefinition/patient-condition-summary",
+    "version" : "0.1.0",
+    "name" : "PatientConditionSummary"
+  },
+  {
     "id" : "MedicationRequestQuestionnaire",
     "type" : "Questionnaire",
     "url" : "https://ig.opennz.org/Questionnaire-MedicationRequestQuestionnaire.html",
