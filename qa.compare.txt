@@ -1,28 +1,28 @@
 NewRepublicFHIRIG : Validation Results
 =========================================
 
-err = 5, warn = 5, info = 0
+err = 5, warn = 4, info = 0
 $--
 Generated $--. FHIR version $-- for fsh.ig#$-- (canonical = http://ig.opennz.org/fsh-ig)
- Build Errors : 2 / 4 / 0
+ Build Errors : 0 / 4 / 0
  /solution/workspace/fsh-generated/resources/CapabilityStatement-MedicationRequest : 0 / 0 / 1
  /solution/workspace/fsh-generated/resources/CapabilityStatement-PatientSummary : 0 / 0 / 1
- /solution/workspace/fsh-generated/resources/ImplementationGuide-fsh.ig : 1 / 0 / 1
+ /solution/workspace/fsh-generated/resources/Condition-DisabilityConditionSummary : 1 / 0 / 1
+ /solution/workspace/fsh-generated/resources/ImplementationGuide-fsh.ig : 0 / 0 / 1
  /solution/workspace/fsh-generated/resources/Questionnaire-MedicationRequestQuestionnaire : 2 / 0 / 1
  /solution/workspace/fsh-generated/resources/Questionnaire-PatientSummaryQuestionnaire : 2 / 0 / 1
- /solution/workspace/fsh-generated/resources/StructureDefinition-patient-condition-summary : 0 / 1 / 1
+ /solution/workspace/fsh-generated/resources/StructureDefinition-patient-condition-summary : 0 / 0 / 1
 </table>
 == n/a ==
-ERROR: /solution/workspace/output/MedicationRequest.html#/html/body/div/div/div/div/div/ul/li/a at Line 152, column 8: The link '/MedicationRequest.openapi.yaml' for "Prescribed Medication (MedicationRequest)" cannot be resolved
-ERROR: /solution/workspace/output/PatientSummary.html#/html/body/div/div/div/div/div/ul/li/a at Line 152, column 8: The link '/PatientSummary.openapi.yaml' for "Patient Summary" cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated/resources/CapabilityStatement-MedicationRequest.json ==
 == fsh-generated/resources/CapabilityStatement-PatientSummary.json ==
+== fsh-generated/resources/Condition-DisabilityConditionSummary.json ==
+ERROR: Condition/DisabilityConditionSummary: Condition.subject: Unable to resolve resource with reference 'Patient/2965'
 == fsh-generated/resources/ImplementationGuide-fsh.ig.json ==
-ERROR: ImplementationGuide/fsh.ig: ImplementationGuide.dependsOn[2].uri: Canonical URL 'http://hl7.org/fhir/ca/baseline/ImplementationGuide/hl7.fhir.ca.baseline' does not resolve
 == fsh-generated/resources/Questionnaire-MedicationRequestQuestionnaire.json ==
 ERROR: Questionnaire.where(url = 'https://ig.opennz.org/Questionnaire-MedicationRequestQuestionnaire.html'): Conformance resource /solution/workspace/fsh-generated/resources/Questionnaire-MedicationRequestQuestionnaire.json - the canonical URL (http://ig.opennz.org/fsh-ig/Questionnaire/MedicationRequestQuestionnaire) does not match the URL (https://ig.opennz.org/Questionnaire-MedicationRequestQuestionnaire.html)
 ERROR: /solution/workspace/fsh-generated/resources/Questionnaire-MedicationRequestQuestionnaire: URL Mismatch http://ig.opennz.org/fsh-ig/Questionnaire/MedicationRequestQuestionnaire vs https://ig.opennz.org/Questionnaire-MedicationRequestQuestionnaire.html
@@ -30,4 +30,3 @@ ERROR: /solution/workspace/fsh-generated/resources/Questionnaire-MedicationReque
 ERROR: Questionnaire.where(url = 'https://ig.opennz.org/Questionnaire-PatientSummaryQuestionnaire.html'): Conformance resource /solution/workspace/fsh-generated/resources/Questionnaire-PatientSummaryQuestionnaire.json - the canonical URL (http://ig.opennz.org/fsh-ig/Questionnaire/PatientSummaryQuestionnaire) does not match the URL (https://ig.opennz.org/Questionnaire-PatientSummaryQuestionnaire.html)
 ERROR: /solution/workspace/fsh-generated/resources/Questionnaire-PatientSummaryQuestionnaire: URL Mismatch http://ig.opennz.org/fsh-ig/Questionnaire/PatientSummaryQuestionnaire vs https://ig.opennz.org/Questionnaire-PatientSummaryQuestionnaire.html
 == fsh-generated/resources/StructureDefinition-patient-condition-summary.json ==
-WARNING: StructureDefinition.where(url = 'http://ig.opennz.org/fsh-ig/StructureDefinition/patient-condition-summary'): The Implementation Guide contains no examples for this profile

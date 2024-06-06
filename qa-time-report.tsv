@@ -1,7 +1,8 @@
 Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	responsesForQuestionnaire	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
-/fsh-generated/resources/ImplementationGuide-fsh.ig.json	2824	-	0	0	0	0	0	0	9	106	0	0	0	0	0	0	0	0	0	0	471	104	0	0	0	0	7	0	2
-fsh-generated/resources/CapabilityStatement-MedicationRequest.json	2430	23	1	0	0	0	0	0	0	66	0	0	0	0	0	0	0	0	0	0	402	52	0	0	0	0	2	0	0
-fsh-generated/resources/CapabilityStatement-PatientSummary.json	3777	19	0	0	0	0	0	0	6	38	0	0	0	0	0	0	0	0	0	0	402	36	0	0	1	0	1	0	0
-fsh-generated/resources/Questionnaire-MedicationRequestQuestionnaire.json	752	20	0	0	0	0	0	0	0	43	0	0	0	0	0	0	0	0	0	0	472	36	0	0	0	0	1	0	0
-fsh-generated/resources/Questionnaire-PatientSummaryQuestionnaire.json	738	19	0	0	0	0	0	0	0	22	0	0	0	0	0	0	0	0	0	0	452	17	0	0	0	0	1	0	0
-fsh-generated/resources/StructureDefinition-patient-condition-summary.json	642	20	0	0	0	0	0	87	0	90	0	0	0	0	0	1	0	1	0	0	660	3811	0	0	0	0	21	0	2
+/fsh-generated/resources/ImplementationGuide-fsh.ig.json	3210	-	0	0	0	0	0	0	5	65	0	0	0	0	0	0	0	0	0	0	439	113	0	0	0	0	3	0	2
+fsh-generated/resources/CapabilityStatement-MedicationRequest.json	2430	22	1	0	1	0	0	0	0	61	0	0	0	0	0	0	0	1	0	0	572	76	0	0	0	0	1	0	0
+fsh-generated/resources/CapabilityStatement-PatientSummary.json	3777	20	0	0	0	0	0	0	1	56	0	0	0	0	0	0	0	0	0	0	472	40	0	0	0	0	2	0	0
+fsh-generated/resources/Condition-DisabilityConditionSummary.json	295	21	1	0	0	0	0	0	0	74	0	0	0	0	0	0	0	0	0	0	190	39	0	0	0	0	0	0	0
+fsh-generated/resources/Questionnaire-MedicationRequestQuestionnaire.json	752	21	0	0	0	0	0	0	0	54	0	0	0	0	0	0	0	0	0	0	349	37	0	0	0	0	1	0	0
+fsh-generated/resources/Questionnaire-PatientSummaryQuestionnaire.json	738	21	1	0	0	0	0	0	0	18	0	0	0	0	0	0	0	0	0	0	406	39	0	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-patient-condition-summary.json	642	21	1	0	0	0	0	93	1	52	0	0	1	0	0	0	0	1	0	0	442	2394	0	0	0	0	17	0	2
