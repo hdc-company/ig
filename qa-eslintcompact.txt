@@ -8,4 +8,4 @@ Generic: line 0, col 0, Warning - The HTML fragment 'globals-table.xhtml' is not
 /solution/workspace/fsh-generated/resources/CapabilityStatement-MedicationRequestCapabilityStatement.json: line 1, col 6721, Error - Type mismatch - SearchParameter 'http://hl7.org/fhir/SearchParameter/MedicationRequest-authoredon|4.3.0' type is date, but type here is reference (INVALID)
 
 err = 1, warn = 4, info = 0
-IG Publisher Version: 1.6.10
+IG Publisher Version: 1.6.11
