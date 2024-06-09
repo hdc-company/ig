@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 0, errors = 5, warn = 4, info = 0-->
+<!-- broken links = 0, errors = 1, warn = 4, info = 0-->
 <head>
   <title>NewRepublicFHIRIG : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -36,7 +36,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for NewRepublicFHIRIG</h1>
- <p>Generated Thu Jun 06 02:02:53 UTC 2024, FHIR version 4.3.0 for fsh.ig#0.1.0 (canonical = <a href="http://ig.opennz.org/fsh-ig">http://ig.opennz.org/fsh-ig</a> (<a href="http://ig.opennz.org/fsh-ig/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
+ <p>Generated Fri Jun 07 05:53:26 UTC 2024, FHIR version 4.3.0 for fsh.ig#0.1.0 (canonical = <a href="http://ig.opennz.org/fsh-ig">http://ig.opennz.org/fsh-ig</a> (<a href="http://ig.opennz.org/fsh-ig/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.6.10</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = fsh.ig, Canonical = http://ig.opennz.org/fsh-ig</td></tr>
@@ -61,7 +61,9 @@
  <tr><td>Draft Dependencies:</td><td><ul>
   <li>
 hl7.fhir.r4b.core#4.3.0:     <a href="http://hl7.org/fhir/R4B/codesystem-guide-parameter-code.html">GuideParameterCode</a>
- (15 uses),     <a href="http://hl7.org/fhir/R4B/condition.html">Condition</a>
+ (15 uses),     <code>patient</code>
+ (1 uses),     <code>authoredon</code>
+ (1 uses),     <a href="http://hl7.org/fhir/R4B/condition.html">Condition</a>
  (7 uses),     <a href="http://hl7.org/fhir/R4B/valueset-languages.html">CommonLanguages</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4B/valueset-condition-clinical.html">ConditionClinicalStatusCodes</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4B/valueset-condition-ver-status.html">ConditionVerificationStatus</a>
@@ -83,7 +85,7 @@ hl7.fhir.r4b.core#4.3.0:     <a href="http://hl7.org/fhir/R4B/codesystem-guide-p
   </li>
   <li>
 hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureDefinition-resource-sort.html">ResourceSortExt</a>
- (6 uses)
+ (7 uses)
   </li>
 </ul>
 </td></tr>
@@ -91,7 +93,7 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
  <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://ig.opennz.org/fsh-ig (Problem #1 with package-list.json at http://ig.opennz.org/fsh-ig: Not Found)</td></tr>
  <tr><td>IPA Comparison:</td><td> n/a</td></tr>
  <tr><td>IPS Comparison:</td><td> n/a</td></tr>
- <tr><td>Summary:</td><td> errors = 5, warn = 4, info = 0, broken links = 0</td></tr>
+ <tr><td>Summary:</td><td> errors = 1, warn = 4, info = 0, broken links = 0</td></tr>
 </table>
  <table class="grid">
    <tr>
@@ -101,22 +103,25 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
      <td><a href="#internal"><b>Build Errors</b></a></td><td><b>0</b></td><td><b>4</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_solution_workspace_fsh-generated_resources_CapabilityStatement-MedicationRequest"><b>/solution/workspace/fsh-generated/resources/CapabilityStatement-MedicationRequest</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_solution_workspace_fsh-generated_resources_CapabilityStatement-PatientSummary"><b>/solution/workspace/fsh-generated/resources/CapabilityStatement-PatientSummary</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+     <td><a href="#_solution_workspace_fsh-generated_resources_CapabilityStatement-DisabilityAssistanceCapabilityStatement"><b>/solution/workspace/fsh-generated/resources/CapabilityStatement-DisabilityAssistanceCapabilityStatement</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#_solution_workspace_fsh-generated_resources_Condition-DisabilityConditionSummary"><b>/solution/workspace/fsh-generated/resources/Condition-DisabilityConditionSummary</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
+     <td><a href="#_solution_workspace_fsh-generated_resources_CapabilityStatement-MedicationRequestCapabilityStatement"><b>/solution/workspace/fsh-generated/resources/CapabilityStatement-MedicationRequestCapabilityStatement</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_solution_workspace_fsh-generated_resources_Condition-DisabilityAssistanceExample"><b>/solution/workspace/fsh-generated/resources/Condition-DisabilityAssistanceExample</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_solution_workspace_fsh-generated_resources_ImplementationGuide-fsh.ig"><b>/solution/workspace/fsh-generated/resources/ImplementationGuide-fsh.ig</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><a href="#_solution_workspace_fsh-generated_resources_Questionnaire-MedicationRequestQuestionnaire"><b>/solution/workspace/fsh-generated/resources/Questionnaire-MedicationRequestQuestionnaire</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>0</b></td>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_solution_workspace_fsh-generated_resources_Patient-1198"><b>/solution/workspace/fsh-generated/resources/Patient-1198</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><a href="#_solution_workspace_fsh-generated_resources_Questionnaire-PatientSummaryQuestionnaire"><b>/solution/workspace/fsh-generated/resources/Questionnaire-PatientSummaryQuestionnaire</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>0</b></td>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_solution_workspace_fsh-generated_resources_Questionnaire-DisabilityAssistanceQuestionnaire"><b>/solution/workspace/fsh-generated/resources/Questionnaire-DisabilityAssistanceQuestionnaire</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_solution_workspace_fsh-generated_resources_Questionnaire-MedicationRequestQuestionnaire"><b>/solution/workspace/fsh-generated/resources/Questionnaire-MedicationRequestQuestionnaire</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_solution_workspace_fsh-generated_resources_StructureDefinition-patient-condition-summary"><b>/solution/workspace/fsh-generated/resources/StructureDefinition-patient-condition-summary</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
@@ -141,8 +146,8 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
    </tr>
 </table>
 <hr/>
-<a name="_solution_workspace_fsh-generated_resources_CapabilityStatement-MedicationRequest"> </a>
-<h2><a href="CapabilityStatement-MedicationRequest.html">fsh-generated/resources/CapabilityStatement-MedicationRequest.json</a> <span id="svi1" class="toggle" onclick="toggle('vi1')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi1')">(1)</span></h2>
+<a name="_solution_workspace_fsh-generated_resources_CapabilityStatement-DisabilityAssistanceCapabilityStatement"> </a>
+<h2><a href="CapabilityStatement-DisabilityAssistanceCapabilityStatement.html">fsh-generated/resources/CapabilityStatement-DisabilityAssistanceCapabilityStatement.json</a> <span id="svi1" class="toggle" onclick="toggle('vi1')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi1')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi1"><ul style="font-size: 7px"><li>CapabilityStatement: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4B/capabilitystatement.html">CapabilityStatement</a></li></ul>
 </div>
  <table class="grid">
@@ -151,26 +156,26 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
    </tr>
 </table>
 <hr/>
-<a name="_solution_workspace_fsh-generated_resources_CapabilityStatement-PatientSummary"> </a>
-<h2><a href="CapabilityStatement-PatientSummary.html">fsh-generated/resources/CapabilityStatement-PatientSummary.json</a> <span id="svi2" class="toggle" onclick="toggle('vi2')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi2')">(1)</span></h2>
+<a name="_solution_workspace_fsh-generated_resources_CapabilityStatement-MedicationRequestCapabilityStatement"> </a>
+<h2><a href="CapabilityStatement-MedicationRequestCapabilityStatement.html">fsh-generated/resources/CapabilityStatement-MedicationRequestCapabilityStatement.json</a> <span id="svi2" class="toggle" onclick="toggle('vi2')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi2')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi2"><ul style="font-size: 7px"><li>CapabilityStatement: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4B/capabilitystatement.html">CapabilityStatement</a></li></ul>
-</div>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_solution_workspace_fsh-generated_resources_Condition-DisabilityConditionSummary"> </a>
-<h2><a href="Condition-DisabilityConditionSummary.html">fsh-generated/resources/Condition-DisabilityConditionSummary.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>Condition: Validated against <i>this.</i><a href="StructureDefinition-patient-condition-summary.html">PatientConditionSummary</a></li></ul>
 </div>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Condition.subject (l10/c4)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource with reference 'Patient/2965'</b></td>
+     <td><b>CapabilityStatement&#8203;.rest[0]&#8203;.resource[0]&#8203;.searchParam[0] (l1&#8203;/c6721)</b></td><td><b>error</b></td><td title="CapabalityStatement_CS_SP_WrongType"><b>Type mismatch - SearchParameter 'http://hl7.org/fhir/SearchParameter/MedicationRequest-authoredon|4.3.0' type is date, but type here is reference</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_solution_workspace_fsh-generated_resources_Condition-DisabilityAssistanceExample"> </a>
+<h2><a href="Condition-DisabilityAssistanceExample.html">fsh-generated/resources/Condition-DisabilityAssistanceExample.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>Condition: Validated against <i>this.</i><a href="StructureDefinition-patient-condition-summary.html">PatientConditionSummary</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
    </tr>
 </table>
 <hr/>
@@ -184,41 +189,39 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
    </tr>
 </table>
 <hr/>
-<a name="_solution_workspace_fsh-generated_resources_Questionnaire-MedicationRequestQuestionnaire"> </a>
-<h2><a href="Questionnaire-MedicationRequestQuestionnaire.html">fsh-generated/resources/Questionnaire-MedicationRequestQuestionnaire.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>Questionnaire: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4B/questionnaire.html">Questionnaire</a></li></ul>
+<a name="_solution_workspace_fsh-generated_resources_Patient-1198"> </a>
+<h2><a href="Patient-1198.html">fsh-generated/resources/Patient-1198.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>Patient: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4B/patient.html">Patient</a></li></ul>
 </div>
  <table class="grid">
    <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Questionnaire&#8203;.where(url = 'https:&#8203;/&#8203;/ig&#8203;.opennz&#8203;.org&#8203;/Questionnaire-MedicationRequestQuestionnaire&#8203;.html')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /solution/workspace/fsh-generated/resources/Questionnaire-MedicationRequestQuestionnaire.json - the canonical URL (http://ig.opennz.org/fsh-ig/Questionnaire/MedicationRequestQuestionnaire) does not match the URL (https://ig.opennz.org/Questionnaire-MedicationRequestQuestionnaire.html)</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>fsh-generated&#8203;/resources&#8203;/Questionnaire-MedicationRequestQuestionnaire</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://ig.opennz.org/fsh-ig/Questionnaire/MedicationRequestQuestionnaire vs https://ig.opennz.org/Questionnaire-MedicationRequestQuestionnaire.html</b></td>
+     <td>&check;</td>
    </tr>
 </table>
 <hr/>
-<a name="_solution_workspace_fsh-generated_resources_Questionnaire-PatientSummaryQuestionnaire"> </a>
-<h2><a href="Questionnaire-PatientSummaryQuestionnaire.html">fsh-generated/resources/Questionnaire-PatientSummaryQuestionnaire.json</a> <span id="svi6" class="toggle" onclick="toggle('vi6')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi6')">(1)</span></h2>
+<a name="_solution_workspace_fsh-generated_resources_Questionnaire-DisabilityAssistanceQuestionnaire"> </a>
+<h2><a href="Questionnaire-DisabilityAssistanceQuestionnaire.html">fsh-generated/resources/Questionnaire-DisabilityAssistanceQuestionnaire.json</a> <span id="svi6" class="toggle" onclick="toggle('vi6')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi6')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi6"><ul style="font-size: 7px"><li>Questionnaire: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4B/questionnaire.html">Questionnaire</a></li></ul>
 </div>
  <table class="grid">
    <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+     <td>&check;</td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Questionnaire&#8203;.where(url = 'https:&#8203;/&#8203;/ig&#8203;.opennz&#8203;.org&#8203;/Questionnaire-PatientSummaryQuestionnaire&#8203;.html')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /solution/workspace/fsh-generated/resources/Questionnaire-PatientSummaryQuestionnaire.json - the canonical URL (http://ig.opennz.org/fsh-ig/Questionnaire/PatientSummaryQuestionnaire) does not match the URL (https://ig.opennz.org/Questionnaire-PatientSummaryQuestionnaire.html)</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>fsh-generated&#8203;/resources&#8203;/Questionnaire-PatientSummaryQuestionnaire</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://ig.opennz.org/fsh-ig/Questionnaire/PatientSummaryQuestionnaire vs https://ig.opennz.org/Questionnaire-PatientSummaryQuestionnaire.html</b></td>
+</table>
+<hr/>
+<a name="_solution_workspace_fsh-generated_resources_Questionnaire-MedicationRequestQuestionnaire"> </a>
+<h2><a href="Questionnaire-MedicationRequestQuestionnaire.html">fsh-generated/resources/Questionnaire-MedicationRequestQuestionnaire.json</a> <span id="svi7" class="toggle" onclick="toggle('vi7')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi7')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi7"><ul style="font-size: 7px"><li>Questionnaire: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4B/questionnaire.html">Questionnaire</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
    </tr>
 </table>
 <hr/>
 <a name="_solution_workspace_fsh-generated_resources_StructureDefinition-patient-condition-summary"> </a>
-<h2><a href="StructureDefinition-patient-condition-summary.html">fsh-generated/resources/StructureDefinition-patient-condition-summary.json</a> <span id="svi7" class="toggle" onclick="toggle('vi7')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi7')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi7"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4B/structuredefinition.html">StructureDefinition</a></li></ul>
+<h2><a href="StructureDefinition-patient-condition-summary.html">fsh-generated/resources/StructureDefinition-patient-condition-summary.json</a> <span id="svi8" class="toggle" onclick="toggle('vi8')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi8')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi8"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4B/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -230,22 +233,11 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
 <p>No suppressed messsages</p><a name="sorted"> </a>
 <p><b>Errors sorted by type</b></p>
 <hr/>
-<a name="RESOURCE_CANONICAL_MISMATCH"> </a>
-<h2>RESOURCE_CANONICAL_MISMATCH</h2>
+<a name="CapabalityStatement_CS_SP_WrongType"> </a>
+<h2>CapabalityStatement_CS_SP_WrongType</h2>
  <table class="grid">
    <tr style="background-color: #ffeeee">
-     <td><a href="Questionnaire-MedicationRequestQuestionnaire.html">fsh-generated/resources/Questionnaire-MedicationRequestQuestionnaire.json</a></td><td><b>Conformance resource /solution/workspace/fsh-generated/resources/Questionnaire-MedicationRequestQuestionnaire.json - the canonical URL (http://ig.opennz.org/fsh-ig/Questionnaire/MedicationRequestQuestionnaire) does not match the URL (https://ig.opennz.org/Questionnaire-MedicationRequestQuestionnaire.html)</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="Questionnaire-PatientSummaryQuestionnaire.html">fsh-generated/resources/Questionnaire-PatientSummaryQuestionnaire.json</a></td><td><b>Conformance resource /solution/workspace/fsh-generated/resources/Questionnaire-PatientSummaryQuestionnaire.json - the canonical URL (http://ig.opennz.org/fsh-ig/Questionnaire/PatientSummaryQuestionnaire) does not match the URL (https://ig.opennz.org/Questionnaire-PatientSummaryQuestionnaire.html)</b></td>
-   </tr>
-</table>
-<hr/>
-<a name="Reference_REF_CantResolve"> </a>
-<h2>Reference_REF_CantResolve</h2>
- <table class="grid">
-   <tr style="background-color: #ffeeee">
-     <td><a href="Condition-DisabilityConditionSummary.html">fsh-generated/resources/Condition-DisabilityConditionSummary.json</a></td><td><b>Unable to resolve resource with reference 'Patient/2965'</b></td>
+     <td><a href="CapabilityStatement-MedicationRequestCapabilityStatement.html">fsh-generated/resources/CapabilityStatement-MedicationRequestCapabilityStatement.json</a></td><td><b>Type mismatch - SearchParameter 'http://hl7.org/fhir/SearchParameter/MedicationRequest-authoredon|4.3.0' type is date, but type here is reference</b></td>
    </tr>
 </table>
 </body>

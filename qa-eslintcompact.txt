@@ -5,11 +5,7 @@ Generic: line 0, col 0, Warning - The HTML fragment 'ip-statements.xhtml' is not
 Generic: line 0, col 0, Warning - An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide (NOTFOUND)
 Generic: line 0, col 0, Warning - An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide (NOTFOUND)
 Generic: line 0, col 0, Warning - The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide (NOTFOUND)
-/solution/workspace/fsh-generated/resources/Condition-DisabilityConditionSummary.json: line 10, col 4, Error - Unable to resolve resource with reference 'Patient/2965' (STRUCTURE)
-/solution/workspace/fsh-generated/resources/Questionnaire-MedicationRequestQuestionnaire.json: line 0, col 0, Error - Conformance resource /solution/workspace/fsh-generated/resources/Questionnaire-MedicationRequestQuestionnaire.json - the canonical URL (http://ig.opennz.org/fsh-ig/Questionnaire/MedicationRequestQuestionnaire) does not match the URL (https://ig.opennz.org/Questionnaire-MedicationRequestQuestionnaire.html) (INVALID)
-/solution/workspace/fsh-generated/resources/Questionnaire-MedicationRequestQuestionnaire.json: line 0, col 0, Error - URL Mismatch http://ig.opennz.org/fsh-ig/Questionnaire/MedicationRequestQuestionnaire vs https://ig.opennz.org/Questionnaire-MedicationRequestQuestionnaire.html (BUSINESSRULE)
-/solution/workspace/fsh-generated/resources/Questionnaire-PatientSummaryQuestionnaire.json: line 0, col 0, Error - Conformance resource /solution/workspace/fsh-generated/resources/Questionnaire-PatientSummaryQuestionnaire.json - the canonical URL (http://ig.opennz.org/fsh-ig/Questionnaire/PatientSummaryQuestionnaire) does not match the URL (https://ig.opennz.org/Questionnaire-PatientSummaryQuestionnaire.html) (INVALID)
-/solution/workspace/fsh-generated/resources/Questionnaire-PatientSummaryQuestionnaire.json: line 0, col 0, Error - URL Mismatch http://ig.opennz.org/fsh-ig/Questionnaire/PatientSummaryQuestionnaire vs https://ig.opennz.org/Questionnaire-PatientSummaryQuestionnaire.html (BUSINESSRULE)
+/solution/workspace/fsh-generated/resources/CapabilityStatement-MedicationRequestCapabilityStatement.json: line 1, col 6721, Error - Type mismatch - SearchParameter 'http://hl7.org/fhir/SearchParameter/MedicationRequest-authoredon|4.3.0' type is date, but type here is reference (INVALID)
 
-err = 5, warn = 4, info = 0
+err = 1, warn = 4, info = 0
 IG Publisher Version: 1.6.10

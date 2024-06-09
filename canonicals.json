@@ -1,17 +1,17 @@
 [
   {
-    "id" : "MedicationRequest",
+    "id" : "DisabilityAssistanceCapabilityStatement",
     "type" : "CapabilityStatement",
-    "url" : "http://ig.opennz.org/fsh-ig/CapabilityStatement/MedicationRequest",
+    "url" : "http://ig.opennz.org/fsh-ig/CapabilityStatement/DisabilityAssistanceCapabilityStatement",
     "version" : "0.1.0",
-    "name" : "MedicationRequest"
+    "name" : "DisabilityAssistanceCapabilityStatement"
   },
   {
-    "id" : "PatientSummary",
+    "id" : "MedicationRequestCapabilityStatement",
     "type" : "CapabilityStatement",
-    "url" : "http://ig.opennz.org/fsh-ig/CapabilityStatement/PatientSummary",
+    "url" : "http://ig.opennz.org/fsh-ig/CapabilityStatement/MedicationRequestCapabilityStatement",
     "version" : "0.1.0",
-    "name" : "PatientSummary"
+    "name" : "MedicationRequestCapabilityStatement"
   },
   {
     "id" : "fsh.ig",
@@ -21,22 +21,23 @@
     "name" : "NewRepublicFHIRIG"
   },
   {
+    "id" : "DisabilityAssistanceQuestionnaire",
+    "type" : "Questionnaire",
+    "url" : "http://ig.opennz.org/fsh-ig/Questionnaire/DisabilityAssistanceQuestionnaire",
+    "version" : "0.1.0",
+    "name" : "DisabilityAssistanceQuestionnaire"
+  },
+  {
+    "id" : "MedicationRequestQuestionnaire",
+    "type" : "Questionnaire",
+    "url" : "http://ig.opennz.org/fsh-ig/Questionnaire/MedicationRequestQuestionnaire",
+    "version" : "0.1.0"
+  },
+  {
     "id" : "patient-condition-summary",
     "type" : "StructureDefinition",
     "url" : "http://ig.opennz.org/fsh-ig/StructureDefinition/patient-condition-summary",
     "version" : "0.1.0",
     "name" : "PatientConditionSummary"
-  },
-  {
-    "id" : "MedicationRequestQuestionnaire",
-    "type" : "Questionnaire",
-    "url" : "https://ig.opennz.org/Questionnaire-MedicationRequestQuestionnaire.html",
-    "version" : "0.1.0"
-  },
-  {
-    "id" : "PatientSummaryQuestionnaire",
-    "type" : "Questionnaire",
-    "url" : "https://ig.opennz.org/Questionnaire-PatientSummaryQuestionnaire.html",
-    "version" : "0.1.0"
   }
 ]

@@ -10,7 +10,7 @@
   "name" : "NewRepublicFHIRIG",
   "title" : "New Republic FHIR Implementation Guide",
   "status" : "draft",
-  "date" : "2024-06-06T01:43:40+00:00",
+  "date" : "2024-06-07T05:32:15+00:00",
   "publisher" : "FHIR New Republic",
   "contact" : [{
     "name" : "FHIR New Republic",
@@ -606,14 +606,14 @@
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Condition"
+        "valueString" : "Patient"
       }],
       "reference" : {
-        "reference" : "Condition/DisabilityConditionSummary"
+        "reference" : "Patient/1198"
       },
-      "name" : "DisabilityConditionSummary",
-      "description" : "Example of an Disability assistance summary as a FHIR DocumentReference with HTML narrative content only",
-      "exampleCanonical" : "http://ig.opennz.org/fsh-ig/StructureDefinition/patient-condition-summary"
+      "name" : "1198",
+      "description" : "Example Patient with Disability Assistance Needs",
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
@@ -621,35 +621,35 @@
         "valueString" : "CapabilityStatement"
       }],
       "reference" : {
-        "reference" : "CapabilityStatement/MedicationRequest"
+        "reference" : "CapabilityStatement/DisabilityAssistanceCapabilityStatement"
       },
-      "name" : "FHIR Server Medication Summary",
+      "name" : "API for Disability Assisance",
+      "description" : "Disability Assistance Requirements and Summary",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CapabilityStatement"
+      }],
+      "reference" : {
+        "reference" : "CapabilityStatement/MedicationRequestCapabilityStatement"
+      },
+      "name" : "API for Medication Summary",
       "description" : "Search for Prescribed Medication",
       "exampleBoolean" : false
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CapabilityStatement"
+        "valueString" : "Condition"
       }],
       "reference" : {
-        "reference" : "CapabilityStatement/PatientSummary"
+        "reference" : "Condition/DisabilityAssistanceExample"
       },
-      "name" : "FHIR Server Patient Summary",
-      "description" : "Search for Prescribed Patient",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Questionnaire"
-      }],
-      "reference" : {
-        "reference" : "Questionnaire/PatientSummaryQuestionnaire"
-      },
-      "name" : "Patient Summary Search",
-      "description" : "Submit a search for Patient Summary",
-      "exampleBoolean" : false
+      "name" : "DisabilityAssistanceExample",
+      "description" : "Required Assistance: A New Zealand Sign Language interpreter",
+      "exampleCanonical" : "http://ig.opennz.org/fsh-ig/StructureDefinition/patient-condition-summary"
     },
     {
       "extension" : [{
@@ -660,7 +660,19 @@
         "reference" : "StructureDefinition/patient-condition-summary"
       },
       "name" : "PatientConditionSummary",
-      "description" : "A FHIR Condition representation of a PatientConditionSummary",
+      "description" : "Summary of Patient Conditions",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/DisabilityAssistanceQuestionnaire"
+      },
+      "name" : "Questionnaire Disability Assistance",
+      "description" : "Disability Assistance Requirements",
       "exampleBoolean" : false
     },
     {
@@ -671,7 +683,7 @@
       "reference" : {
         "reference" : "Questionnaire/MedicationRequestQuestionnaire"
       },
-      "name" : "Prescribed Medication",
+      "name" : "Questionnaire Prescribed Medication Search",
       "description" : "Prescribed Medication (MedicationRequest)",
       "exampleBoolean" : false
     }],
