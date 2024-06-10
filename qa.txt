@@ -3,7 +3,7 @@ NewRepublicFHIRIG : Validation Results
 
 err = 1, warn = 4, info = 0
 IG Publisher Version: 1.6.11
-Generated Mon Jun 10 03:03:52 UTC 2024. FHIR version 4.3.0 for fsh.ig#0.1.0 (canonical = http://ig.opennz.org/fsh-ig)
+Generated Mon Jun 10 05:56:05 UTC 2024. FHIR version 4.3.0 for fsh.ig#0.1.0 (canonical = http://ig.opennz.org/fsh-ig)
  Build Errors : 0 / 4 / 0
  /solution/workspace/fsh-generated/resources/CapabilityStatement-DisabilityAssistanceCapabilityStatement : 0 / 0 / 1
  /solution/workspace/fsh-generated/resources/CapabilityStatement-MedicationRequestCapabilityStatement : 1 / 0 / 1
@@ -21,7 +21,7 @@ WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-ta
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated/resources/CapabilityStatement-DisabilityAssistanceCapabilityStatement.json ==
 == fsh-generated/resources/CapabilityStatement-MedicationRequestCapabilityStatement.json ==
-ERROR: CapabilityStatement/MedicationRequestCapabilityStatement: CapabilityStatement.rest[0].resource[0].searchParam[0]: Type mismatch - SearchParameter 'http://hl7.org/fhir/SearchParameter/MedicationRequest-authoredon|4.3.0' type is date, but type here is reference
+ERROR: CapabilityStatement/MedicationRequestCapabilityStatement: CapabilityStatement.rest[0].resource[0].searchParam[1]: Type mismatch - SearchParameter 'http://hl7.org/fhir/SearchParameter/MedicationRequest-authoredon|4.3.0' type is date, but type here is reference
 == fsh-generated/resources/Condition-DisabilityAssistanceExample.json ==
 == fsh-generated/resources/ImplementationGuide-fsh.ig.json ==
 == fsh-generated/resources/Patient-1198.json ==

@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "NewRepublicFHIRIG"] ; # 
   fhir:title [ fhir:v "New Republic FHIR Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-06-10T02:42:44+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-06-10T05:34:33+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "FHIR New Republic"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "FHIR New Republic" ] ;
@@ -616,6 +616,14 @@
        ] [
          fhir:name [ fhir:v "MedicationRequest.html"^^xsd:anyURI ] ;
          fhir:title [ fhir:v "Medication Request" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:name [ fhir:v "PatientCondition.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Patient Condition" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:name [ fhir:v "PatientMedicationRequest.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Patient Medication Request" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:name [ fhir:v "PatientSummary.html"^^xsd:anyURI ] ;

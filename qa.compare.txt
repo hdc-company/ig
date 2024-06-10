@@ -21,7 +21,7 @@ WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-ta
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated/resources/CapabilityStatement-DisabilityAssistanceCapabilityStatement.json ==
 == fsh-generated/resources/CapabilityStatement-MedicationRequestCapabilityStatement.json ==
-ERROR: CapabilityStatement/MedicationRequestCapabilityStatement: CapabilityStatement.rest[0].resource[0].searchParam[0]: Type mismatch - SearchParameter 'http://hl7.org/fhir/SearchParameter/MedicationRequest-authoredon|4.3.0' type is date, but type here is reference
+ERROR: CapabilityStatement/MedicationRequestCapabilityStatement: CapabilityStatement.rest[0].resource[0].searchParam[1]: Type mismatch - SearchParameter 'http://hl7.org/fhir/SearchParameter/MedicationRequest-authoredon|4.3.0' type is date, but type here is reference
 == fsh-generated/resources/Condition-DisabilityAssistanceExample.json ==
 == fsh-generated/resources/ImplementationGuide-fsh.ig.json ==
 == fsh-generated/resources/Patient-1198.json ==
