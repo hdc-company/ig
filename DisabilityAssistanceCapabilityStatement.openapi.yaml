@@ -31,18 +31,93 @@ paths:
           content:
             application/fhir+json:
               schema:
-                $ref: https://raw.githubusercontent.com/cdaf/fhir/main/string.json
+                description: >-
+                  A Capability Statement documents a set of capabilities
+                  (behaviors) of a FHIR Server or Client for a particular
+                  version of FHIR that may be used as a statement of actual
+                  server functionality or a statement of required or desired
+                  server implementation.
+                properties:
+                  resourceType:
+                    description: This is a CapabilityStatement resource
+                    const: CapabilityStatement
+                  id:
+                    description: >-
+                      The logical id of the resource, as used in the URL for the
+                      resource. Once assigned, this value never changes.
+                    pattern: ^[A-Za-z0-9\-\.]{1,64}$
+                    type: string
+                type: object
+                additionalProperties: false
+                required:
+                  - resourceType
         default:
           description: Error, with details
           content:
             application/fhir+json:
               schema:
-                $ref: https://raw.githubusercontent.com/cdaf/fhir/main/string.json
+                description: >-
+                  A collection of error, warning, or information messages that
+                  result from a system action.
+                properties:
+                  resourceType:
+                    description: This is a OperationOutcome resource
+                    const: OperationOutcome
+                  id:
+                    description: >-
+                      The logical id of the resource, as used in the URL for the
+                      resource. Once assigned, this value never changes.
+                    pattern: ^[A-Za-z0-9\-\.]{1,64}$
+                    type: string
+                type: object
+                additionalProperties: false
+                required:
+                  - issue
+                  - resourceType
       parameters:
-        - $ref: '#/components/parameters/format'
-        - $ref: '#/components/parameters/pretty'
-        - $ref: '#/components/parameters/summary'
-        - $ref: '#/components/parameters/elements'
+        - name: _format
+          in: query
+          description: >-
+            Specify alternative response formats by their MIME-types (when a
+            client is unable acccess accept: header)
+          allowEmptyValue: true
+          style: form
+          schema:
+            type: string
+            format: mime-type
+        - name: _pretty
+          in: query
+          description: Ask for a pretty printed response for human convenience
+          allowEmptyValue: true
+          style: form
+          schema:
+            type: boolean
+        - name: _summary
+          in: query
+          description: Requests the server to return a designated subset of the resource
+          allowEmptyValue: true
+          style: form
+          schema:
+            type: string
+            enum:
+              - 'true'
+              - text
+              - data
+              - count
+              - 'false'
+        - name: _elements
+          in: query
+          description: >-
+            Requests the server to return a collection of elements from the
+            resource
+          allowEmptyValue: true
+          style: form
+          explode: false
+          schema:
+            type: array
+            format: string
+            items:
+              format: string
   /Condition:
     summary: Manager for resources of type Condition
     description: >-
@@ -57,18 +132,88 @@ paths:
           content:
             application/fhir+json:
               schema:
-                $ref: https://raw.githubusercontent.com/cdaf/fhir/main/string.json
+                description: A container for a collection of resources.
+                properties:
+                  resourceType:
+                    description: This is a Bundle resource
+                    const: Bundle
+                  id:
+                    description: >-
+                      The logical id of the resource, as used in the URL for the
+                      resource. Once assigned, this value never changes.
+                    pattern: ^[A-Za-z0-9\-\.]{1,64}$
+                    type: string
+                type: object
+                additionalProperties: false
+                required:
+                  - resourceType
         default:
           description: Error, with details
           content:
             application/fhir+json:
               schema:
-                $ref: https://raw.githubusercontent.com/cdaf/fhir/main/string.json
+                description: >-
+                  A collection of error, warning, or information messages that
+                  result from a system action.
+                properties:
+                  resourceType:
+                    description: This is a OperationOutcome resource
+                    const: OperationOutcome
+                  id:
+                    description: >-
+                      The logical id of the resource, as used in the URL for the
+                      resource. Once assigned, this value never changes.
+                    pattern: ^[A-Za-z0-9\-\.]{1,64}$
+                    type: string
+                type: object
+                additionalProperties: false
+                required:
+                  - issue
+                  - resourceType
       parameters:
-        - $ref: '#/components/parameters/format'
-        - $ref: '#/components/parameters/pretty'
-        - $ref: '#/components/parameters/summary'
-        - $ref: '#/components/parameters/elements'
+        - name: _format
+          in: query
+          description: >-
+            Specify alternative response formats by their MIME-types (when a
+            client is unable acccess accept: header)
+          allowEmptyValue: true
+          style: form
+          schema:
+            type: string
+            format: mime-type
+        - name: _pretty
+          in: query
+          description: Ask for a pretty printed response for human convenience
+          allowEmptyValue: true
+          style: form
+          schema:
+            type: boolean
+        - name: _summary
+          in: query
+          description: Requests the server to return a designated subset of the resource
+          allowEmptyValue: true
+          style: form
+          schema:
+            type: string
+            enum:
+              - 'true'
+              - text
+              - data
+              - count
+              - 'false'
+        - name: _elements
+          in: query
+          description: >-
+            Requests the server to return a collection of elements from the
+            resource
+          allowEmptyValue: true
+          style: form
+          explode: false
+          schema:
+            type: array
+            format: string
+            items:
+              format: string
         - name: patient
           in: query
           description: "Multiple Resources: \r\n\r\n* [AllergyIntolerance](allergyintolerance.html): Who the sensitivity is for\r\n* [CarePlan](careplan.html): Who the care plan is for\r\n* [CareTeam](careteam.html): Who care team is for\r\n* [ClinicalImpression](clinicalimpression.html): Patient or group assessed\r\n* [Composition](composition.html): Who and/or what the composition is about\r\n* [Condition](condition.html): Who has the condition?\r\n* [Consent](consent.html): Who the consent applies to\r\n* [DetectedIssue](detectedissue.html): Associated patient\r\n* [DeviceRequest](devicerequest.html): Individual the service is ordered for\r\n* [DeviceUseStatement](deviceusestatement.html): Search by subject - a patient\r\n* [DiagnosticReport](diagnosticreport.html): The subject of the report if a patient\r\n* [DocumentManifest](documentmanifest.html): The subject of the set of documents\r\n* [DocumentReference](documentreference.html): Who/what is the subject of the document\r\n* [Encounter](encounter.html): The patient or group present at the encounter\r\n* [EpisodeOfCare](episodeofcare.html): The patient who is the focus of this episode of care\r\n* [FamilyMemberHistory](familymemberhistory.html): The identity of a subject to list family member history items for\r\n* [Flag](flag.html): The identity of a subject to list flags for\r\n* [Goal](goal.html): Who this goal is intended for\r\n* [ImagingStudy](imagingstudy.html): Who the study is about\r\n* [Immunization](immunization.html): The patient for the vaccination record\r\n* [List](list.html): If all resources have the same subject\r\n* [MedicationAdministration](medicationadministration.html): The identity of a patient to list administrations  for\r\n* [MedicationDispense](medicationdispense.html): The identity of a patient to list dispenses  for\r\n* [MedicationRequest](medicationrequest.html): Returns prescriptions for a specific patient\r\n* [MedicationStatement](medicationstatement.html): Returns statements for a specific patient.\r\n* [NutritionOrder](nutritionorder.html): The identity of the person who requires the diet, formula or nutritional supplement\r\n* [Observation](observation.html): The subject that the observation is about (if patient)\r\n* [Procedure](procedure.html): Search by subject - a patient\r\n* [RiskAssessment](riskassessment.html): Who/what does assessment apply to?\r\n* [ServiceRequest](servicerequest.html): Search by subject - a patient\r\n* [SupplyDelivery](supplydelivery.html): Patient for whom the item is supplied\r\n* [VisionPrescription](visionprescription.html): The identity of a patient to list dispenses for\r\n"
@@ -83,7 +228,26 @@ paths:
         content:
           application/fhir+json:
             schema:
-              $ref: https://raw.githubusercontent.com/cdaf/fhir/main/string.json
+              description: >-
+                A clinical condition, problem, diagnosis, or other event,
+                situation, issue, or clinical concept that has risen to a level
+                of concern.
+              properties:
+                resourceType:
+                  description: This is a Condition resource
+                  const: Condition
+                id:
+                  description: >-
+                    The logical id of the resource, as used in the URL for the
+                    resource. Once assigned, this value never changes.
+                  pattern: ^[A-Za-z0-9\-\.]{1,64}$
+                  type: string
+              type: object
+              additionalProperties: false
+              required:
+                - subject
+                - clinicalStatus
+                - resourceType
       responses:
         '200':
           description: the resource being returned after being updated
@@ -95,18 +259,93 @@ paths:
           content:
             application/fhir+json:
               schema:
-                $ref: https://raw.githubusercontent.com/cdaf/fhir/main/string.json
+                description: >-
+                  A clinical condition, problem, diagnosis, or other event,
+                  situation, issue, or clinical concept that has risen to a
+                  level of concern.
+                properties:
+                  resourceType:
+                    description: This is a Condition resource
+                    const: Condition
+                  id:
+                    description: >-
+                      The logical id of the resource, as used in the URL for the
+                      resource. Once assigned, this value never changes.
+                    pattern: ^[A-Za-z0-9\-\.]{1,64}$
+                    type: string
+                type: object
+                additionalProperties: false
+                required:
+                  - subject
+                  - clinicalStatus
+                  - resourceType
         default:
           description: Error, with details
           content:
             application/fhir+json:
               schema:
-                $ref: https://raw.githubusercontent.com/cdaf/fhir/main/string.json
+                description: >-
+                  A collection of error, warning, or information messages that
+                  result from a system action.
+                properties:
+                  resourceType:
+                    description: This is a OperationOutcome resource
+                    const: OperationOutcome
+                  id:
+                    description: >-
+                      The logical id of the resource, as used in the URL for the
+                      resource. Once assigned, this value never changes.
+                    pattern: ^[A-Za-z0-9\-\.]{1,64}$
+                    type: string
+                type: object
+                additionalProperties: false
+                required:
+                  - issue
+                  - resourceType
       parameters:
-        - $ref: '#/components/parameters/summary'
-        - $ref: '#/components/parameters/format'
-        - $ref: '#/components/parameters/pretty'
-        - $ref: '#/components/parameters/elements'
+        - name: _summary
+          in: query
+          description: Requests the server to return a designated subset of the resource
+          allowEmptyValue: true
+          style: form
+          schema:
+            type: string
+            enum:
+              - 'true'
+              - text
+              - data
+              - count
+              - 'false'
+        - name: _format
+          in: query
+          description: >-
+            Specify alternative response formats by their MIME-types (when a
+            client is unable acccess accept: header)
+          allowEmptyValue: true
+          style: form
+          schema:
+            type: string
+            format: mime-type
+        - name: _pretty
+          in: query
+          description: Ask for a pretty printed response for human convenience
+          allowEmptyValue: true
+          style: form
+          schema:
+            type: boolean
+        - name: _elements
+          in: query
+          description: >-
+            Requests the server to return a collection of elements from the
+            resource
+          allowEmptyValue: true
+          style: form
+          explode: false
+          schema:
+            type: array
+            format: string
+            items:
+              format: string
   /Condition/{rid}:
     summary: Read/Write/etc resource instance of type Condition
     description: >-
@@ -126,19 +365,101 @@ paths:
           content:
             application/fhir+json:
               schema:
-                $ref: https://raw.githubusercontent.com/cdaf/fhir/main/string.json
+                description: >-
+                  A clinical condition, problem, diagnosis, or other event,
+                  situation, issue, or clinical concept that has risen to a
+                  level of concern.
+                properties:
+                  resourceType:
+                    description: This is a Condition resource
+                    const: Condition
+                  id:
+                    description: >-
+                      The logical id of the resource, as used in the URL for the
+                      resource. Once assigned, this value never changes.
+                    pattern: ^[A-Za-z0-9\-\.]{1,64}$
+                    type: string
+                type: object
+                additionalProperties: false
+                required:
+                  - subject
+                  - clinicalStatus
+                  - resourceType
         default:
           description: Error, with details
           content:
             application/fhir+json:
               schema:
-                $ref: https://raw.githubusercontent.com/cdaf/fhir/main/string.json
+                description: >-
+                  A collection of error, warning, or information messages that
+                  result from a system action.
+                properties:
+                  resourceType:
+                    description: This is a OperationOutcome resource
+                    const: OperationOutcome
+                  id:
+                    description: >-
+                      The logical id of the resource, as used in the URL for the
+                      resource. Once assigned, this value never changes.
+                    pattern: ^[A-Za-z0-9\-\.]{1,64}$
+                    type: string
+                type: object
+                additionalProperties: false
+                required:
+                  - issue
+                  - resourceType
       parameters:
-        - $ref: '#/components/parameters/rid'
-        - $ref: '#/components/parameters/summary'
-        - $ref: '#/components/parameters/format'
-        - $ref: '#/components/parameters/pretty'
-        - $ref: '#/components/parameters/elements'
+        - name: rid
+          in: path
+          description: id of the resource (=Resource.id)
+          required: true
+          allowEmptyValue: false
+          style: simple
+          schema:
+            type: string
+        - name: _summary
+          in: query
+          description: Requests the server to return a designated subset of the resource
+          allowEmptyValue: true
+          style: form
+          schema:
+            type: string
+            enum:
+              - 'true'
+              - text
+              - data
+              - count
+              - 'false'
+        - name: _format
+          in: query
+          description: >-
+            Specify alternative response formats by their MIME-types (when a
+            client is unable acccess accept: header)
+          allowEmptyValue: true
+          style: form
+          schema:
+            type: string
+            format: mime-type
+        - name: _pretty
+          in: query
+          description: Ask for a pretty printed response for human convenience
+          allowEmptyValue: true
+          style: form
+          schema:
+            type: boolean
+        - name: _elements
+          in: query
+          description: >-
+            Requests the server to return a collection of elements from the
+            resource
+          allowEmptyValue: true
+          style: form
+          explode: false
+          schema:
+            type: array
+            format: string
+            items:
+              format: string
     put:
       summary: Update the current state of the resource
       operationId: updateCondition
@@ -148,7 +469,26 @@ paths:
         content:
           application/fhir+json:
             schema:
-              $ref: https://raw.githubusercontent.com/cdaf/fhir/main/string.json
+              description: >-
+                A clinical condition, problem, diagnosis, or other event,
+                situation, issue, or clinical concept that has risen to a level
+                of concern.
+              properties:
+                resourceType:
+                  description: This is a Condition resource
+                  const: Condition
+                id:
+                  description: >-
+                    The logical id of the resource, as used in the URL for the
+                    resource. Once assigned, this value never changes.
+                  pattern: ^[A-Za-z0-9\-\.]{1,64}$
+                  type: string
+              type: object
+              additionalProperties: false
+              required:
+                - subject
+                - clinicalStatus
+                - resourceType
       responses:
         '200':
           description: the resource being returned after being updated
@@ -160,19 +500,101 @@ paths:
           content:
             application/fhir+json:
               schema:
-                $ref: https://raw.githubusercontent.com/cdaf/fhir/main/string.json
+                description: >-
+                  A clinical condition, problem, diagnosis, or other event,
+                  situation, issue, or clinical concept that has risen to a
+                  level of concern.
+                properties:
+                  resourceType:
+                    description: This is a Condition resource
+                    const: Condition
+                  id:
+                    description: >-
+                      The logical id of the resource, as used in the URL for the
+                      resource. Once assigned, this value never changes.
+                    pattern: ^[A-Za-z0-9\-\.]{1,64}$
+                    type: string
+                type: object
+                additionalProperties: false
+                required:
+                  - subject
+                  - clinicalStatus
+                  - resourceType
         default:
           description: Error, with details
           content:
             application/fhir+json:
               schema:
-                $ref: https://raw.githubusercontent.com/cdaf/fhir/main/string.json
+                description: >-
+                  A collection of error, warning, or information messages that
+                  result from a system action.
+                properties:
+                  resourceType:
+                    description: This is a OperationOutcome resource
+                    const: OperationOutcome
+                  id:
+                    description: >-
+                      The logical id of the resource, as used in the URL for the
+                      resource. Once assigned, this value never changes.
+                    pattern: ^[A-Za-z0-9\-\.]{1,64}$
+                    type: string
+                type: object
+                additionalProperties: false
+                required:
+                  - issue
+                  - resourceType
       parameters:
-        - $ref: '#/components/parameters/rid'
-        - $ref: '#/components/parameters/summary'
-        - $ref: '#/components/parameters/format'
-        - $ref: '#/components/parameters/pretty'
-        - $ref: '#/components/parameters/elements'
+        - name: rid
+          in: path
+          description: id of the resource (=Resource.id)
+          required: true
+          allowEmptyValue: false
+          style: simple
+          schema:
+            type: string
+        - name: _summary
+          in: query
+          description: Requests the server to return a designated subset of the resource
+          allowEmptyValue: true
+          style: form
+          schema:
+            type: string
+            enum:
+              - 'true'
+              - text
+              - data
+              - count
+              - 'false'
+        - name: _format
+          in: query
+          description: >-
+            Specify alternative response formats by their MIME-types (when a
+            client is unable acccess accept: header)
+          allowEmptyValue: true
+          style: form
+          schema:
+            type: string
+            format: mime-type
+        - name: _pretty
+          in: query
+          description: Ask for a pretty printed response for human convenience
+          allowEmptyValue: true
+          style: form
+          schema:
+            type: boolean
+        - name: _elements
+          in: query
+          description: >-
+            Requests the server to return a collection of elements from the
+            resource
+          allowEmptyValue: true
+          style: form
+          explode: false
+          schema:
+            type: array
+            format: string
+            items:
+              format: string
     delete:
       summary: Delete the resource so that it no exists (no read, search etc)
       operationId: deleteCondition
@@ -189,9 +611,33 @@ paths:
           content:
             application/fhir+json:
               schema:
-                $ref: https://raw.githubusercontent.com/cdaf/fhir/main/string.json
+                description: >-
+                  A collection of error, warning, or information messages that
+                  result from a system action.
+                properties:
+                  resourceType:
+                    description: This is a OperationOutcome resource
+                    const: OperationOutcome
+                  id:
+                    description: >-
+                      The logical id of the resource, as used in the URL for the
+                      resource. Once assigned, this value never changes.
+                    pattern: ^[A-Za-z0-9\-\.]{1,64}$
+                    type: string
+                type: object
+                additionalProperties: false
+                required:
+                  - issue
+                  - resourceType
       parameters:
-        - $ref: '#/components/parameters/rid'
+        - name: rid
+          in: path
+          description: id of the resource (=Resource.id)
+          required: true
+          allowEmptyValue: false
+          style: simple
+          schema:
+            type: string
   /Condition/{rid}/_history/{hid}:
     summary: Read a past version of resource instance of type Condition
     description: >-
@@ -213,20 +659,109 @@ paths:
           content:
             application/fhir+json:
               schema:
-                $ref: https://raw.githubusercontent.com/cdaf/fhir/main/string.json
+                description: >-
+                  A clinical condition, problem, diagnosis, or other event,
+                  situation, issue, or clinical concept that has risen to a
+                  level of concern.
+                properties:
+                  resourceType:
+                    description: This is a Condition resource
+                    const: Condition
+                  id:
+                    description: >-
+                      The logical id of the resource, as used in the URL for the
+                      resource. Once assigned, this value never changes.
+                    pattern: ^[A-Za-z0-9\-\.]{1,64}$
+                    type: string
+                type: object
+                additionalProperties: false
+                required:
+                  - subject
+                  - clinicalStatus
+                  - resourceType
         default:
           description: Error, with details
           content:
             application/fhir+json:
               schema:
-                $ref: https://raw.githubusercontent.com/cdaf/fhir/main/string.json
+                description: >-
+                  A collection of error, warning, or information messages that
+                  result from a system action.
+                properties:
+                  resourceType:
+                    description: This is a OperationOutcome resource
+                    const: OperationOutcome
+                  id:
+                    description: >-
+                      The logical id of the resource, as used in the URL for the
+                      resource. Once assigned, this value never changes.
+                    pattern: ^[A-Za-z0-9\-\.]{1,64}$
+                    type: string
+                type: object
+                additionalProperties: false
+                required:
+                  - issue
+                  - resourceType
       parameters:
-        - $ref: '#/components/parameters/rid'
-        - $ref: '#/components/parameters/hid'
-        - $ref: '#/components/parameters/summary'
-        - $ref: '#/components/parameters/format'
-        - $ref: '#/components/parameters/pretty'
-        - $ref: '#/components/parameters/elements'
+        - name: rid
+          in: path
+          description: id of the resource (=Resource.id)
+          required: true
+          allowEmptyValue: false
+          style: simple
+          schema:
+            type: string
+        - name: hid
+          in: path
+          description: id of the history entry (=Resource.meta.versionId)
+          required: true
+          allowEmptyValue: false
+          style: simple
+          schema:
+            type: string
+        - name: _summary
+          in: query
+          description: Requests the server to return a designated subset of the resource
+          allowEmptyValue: true
+          style: form
+          schema:
+            type: string
+            enum:
+              - 'true'
+              - text
+              - data
+              - count
+              - 'false'
+        - name: _format
+          in: query
+          description: >-
+            Specify alternative response formats by their MIME-types (when a
+            client is unable acccess accept: header)
+          allowEmptyValue: true
+          style: form
+          schema:
+            type: string
+            format: mime-type
+        - name: _pretty
+          in: query
+          description: Ask for a pretty printed response for human convenience
+          allowEmptyValue: true
+          style: form
+          schema:
+            type: boolean
+        - name: _elements
+          in: query
+          description: >-
+            Requests the server to return a collection of elements from the
+            resource
+          allowEmptyValue: true
+          style: form
+          explode: false
+          schema:
+            type: array
+            format: string
+            items:
+              format: string
   /:
     summary: System level operations
     description: System level operations
@@ -239,23 +774,83 @@ paths:
         content:
           application/fhir+json:
             schema:
-              $ref: https://raw.githubusercontent.com/cdaf/fhir/main/string.json
+              description: A container for a collection of resources.
+              properties:
+                resourceType:
+                  description: This is a Bundle resource
+                  const: Bundle
+                id:
+                  description: >-
+                    The logical id of the resource, as used in the URL for the
+                    resource. Once assigned, this value never changes.
+                  pattern: ^[A-Za-z0-9\-\.]{1,64}$
+                  type: string
+              type: object
+              additionalProperties: false
+              required:
+                - resourceType
       responses:
         '200':
           description: Batch or Transaction response
           content:
             application/fhir+json:
               schema:
-                $ref: https://raw.githubusercontent.com/cdaf/fhir/main/string.json
+                description: A container for a collection of resources.
+                properties:
+                  resourceType:
+                    description: This is a Bundle resource
+                    const: Bundle
+                  id:
+                    description: >-
+                      The logical id of the resource, as used in the URL for the
+                      resource. Once assigned, this value never changes.
+                    pattern: ^[A-Za-z0-9\-\.]{1,64}$
+                    type: string
+                type: object
+                additionalProperties: false
+                required:
+                  - resourceType
         default:
           description: Error, with details
           content:
             application/fhir+json:
               schema:
-                $ref: https://raw.githubusercontent.com/cdaf/fhir/main/string.json
+                description: >-
+                  A collection of error, warning, or information messages that
+                  result from a system action.
+                properties:
+                  resourceType:
+                    description: This is a OperationOutcome resource
+                    const: OperationOutcome
+                  id:
+                    description: >-
+                      The logical id of the resource, as used in the URL for the
+                      resource. Once assigned, this value never changes.
+                    pattern: ^[A-Za-z0-9\-\.]{1,64}$
+                    type: string
+                type: object
+                additionalProperties: false
+                required:
+                  - issue
+                  - resourceType
       parameters:
-        - $ref: '#/components/parameters/format'
-        - $ref: '#/components/parameters/pretty'
+        - name: _format
+          in: query
+          description: >-
+            Specify alternative response formats by their MIME-types (when a
+            client is unable acccess accept: header)
+          allowEmptyValue: true
+          style: form
+          schema:
+            type: string
+            format: mime-type
+        - name: _pretty
+          in: query
+          description: Ask for a pretty printed response for human convenience
+          allowEmptyValue: true
+          style: form
+          schema:
+            type: boolean
 components:
   parameters:
     rid:

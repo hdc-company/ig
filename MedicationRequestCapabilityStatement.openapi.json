@@ -1,4 +1,4 @@
-﻿{
+{
   "openapi": "3.0.2",
   "info": {
     "title": "API for Medication Summary",
@@ -25,28 +25,61 @@
   },
   "paths": {
     "/metadata": {
-      "summary": "Access to the Server\u0027s Capability Statement",
+      "summary": "Access to the Server's Capability Statement",
       "description": "All FHIR Servers return a CapabilityStatement that describes what services they perform",
       "get": {
-        "summary": "Return the server\u0027s capability statement",
+        "summary": "Return the server's capability statement",
         "operationId": "metadata",
         "responses": {
-          "default": {
-            "description": "Error, with details",
-            "content": {
-              "application/fhir+json": {
-                "schema": {
-                  "$ref": "https://raw.githubusercontent.com/cdaf/fhir/main/string.json"
-                }
-              }
-            }
-          },
           "200": {
             "description": "the capbility statement",
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "https://raw.githubusercontent.com/cdaf/fhir/main/string.json"
+                  "description": "A Capability Statement documents a set of capabilities (behaviors) of a FHIR Server or Client for a particular version of FHIR that may be used as a statement of actual server functionality or a statement of required or desired server implementation.",
+                  "properties": {
+                    "resourceType": {
+                      "description": "This is a CapabilityStatement resource",
+                      "const": "CapabilityStatement"
+                    },
+                    "id": {
+                      "description": "The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.",
+                      "pattern": "^[A-Za-z0-9\\-\\.]{1,64}$",
+                      "type": "string"
+                    }
+                  },
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "resourceType"
+                  ]
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "description": "A collection of error, warning, or information messages that result from a system action.",
+                  "properties": {
+                    "resourceType": {
+                      "description": "This is a OperationOutcome resource",
+                      "const": "OperationOutcome"
+                    },
+                    "id": {
+                      "description": "The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.",
+                      "pattern": "^[A-Za-z0-9\\-\\.]{1,64}$",
+                      "type": "string"
+                    }
+                  },
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "issue",
+                    "resourceType"
+                  ]
                 }
               }
             }
@@ -54,16 +87,57 @@
         },
         "parameters": [
           {
-            "$ref": "#/components/parameters/format"
+            "name": "_format",
+            "in": "query",
+            "description": "Specify alternative response formats by their MIME-types (when a client is unable acccess accept: header)",
+            "allowEmptyValue": true,
+            "style": "form",
+            "schema": {
+              "type": "string",
+              "format": "mime-type"
+            }
           },
           {
-            "$ref": "#/components/parameters/pretty"
+            "name": "_pretty",
+            "in": "query",
+            "description": "Ask for a pretty printed response for human convenience",
+            "allowEmptyValue": true,
+            "style": "form",
+            "schema": {
+              "type": "boolean"
+            }
           },
           {
-            "$ref": "#/components/parameters/summary"
+            "name": "_summary",
+            "in": "query",
+            "description": "Requests the server to return a designated subset of the resource",
+            "allowEmptyValue": true,
+            "style": "form",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "true",
+                "text",
+                "data",
+                "count",
+                "false"
+              ]
+            }
           },
           {
-            "$ref": "#/components/parameters/elements"
+            "name": "_elements",
+            "in": "query",
+            "description": "Requests the server to return a collection of elements from the resource",
+            "allowEmptyValue": true,
+            "style": "form",
+            "explode": false,
+            "schema": {
+              "type": "array",
+              "format": "string",
+              "items": {
+                "format": "string"
+              }
+            }
           }
         ]
       }
@@ -75,22 +149,55 @@
         "summary": "Search all resources of type MedicationRequest based on a set of criteria",
         "operationId": "searchMedicationRequest",
         "responses": {
-          "default": {
-            "description": "Error, with details",
-            "content": {
-              "application/fhir+json": {
-                "schema": {
-                  "$ref": "https://raw.githubusercontent.com/cdaf/fhir/main/string.json"
-                }
-              }
-            }
-          },
           "200": {
             "description": "the resource being returned",
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "https://raw.githubusercontent.com/cdaf/fhir/main/string.json"
+                  "description": "A container for a collection of resources.",
+                  "properties": {
+                    "resourceType": {
+                      "description": "This is a Bundle resource",
+                      "const": "Bundle"
+                    },
+                    "id": {
+                      "description": "The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.",
+                      "pattern": "^[A-Za-z0-9\\-\\.]{1,64}$",
+                      "type": "string"
+                    }
+                  },
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "resourceType"
+                  ]
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "description": "A collection of error, warning, or information messages that result from a system action.",
+                  "properties": {
+                    "resourceType": {
+                      "description": "This is a OperationOutcome resource",
+                      "const": "OperationOutcome"
+                    },
+                    "id": {
+                      "description": "The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.",
+                      "pattern": "^[A-Za-z0-9\\-\\.]{1,64}$",
+                      "type": "string"
+                    }
+                  },
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "issue",
+                    "resourceType"
+                  ]
                 }
               }
             }
@@ -98,16 +205,57 @@
         },
         "parameters": [
           {
-            "$ref": "#/components/parameters/format"
+            "name": "_format",
+            "in": "query",
+            "description": "Specify alternative response formats by their MIME-types (when a client is unable acccess accept: header)",
+            "allowEmptyValue": true,
+            "style": "form",
+            "schema": {
+              "type": "string",
+              "format": "mime-type"
+            }
           },
           {
-            "$ref": "#/components/parameters/pretty"
+            "name": "_pretty",
+            "in": "query",
+            "description": "Ask for a pretty printed response for human convenience",
+            "allowEmptyValue": true,
+            "style": "form",
+            "schema": {
+              "type": "boolean"
+            }
           },
           {
-            "$ref": "#/components/parameters/summary"
+            "name": "_summary",
+            "in": "query",
+            "description": "Requests the server to return a designated subset of the resource",
+            "allowEmptyValue": true,
+            "style": "form",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "true",
+                "text",
+                "data",
+                "count",
+                "false"
+              ]
+            }
           },
           {
-            "$ref": "#/components/parameters/elements"
+            "name": "_elements",
+            "in": "query",
+            "description": "Requests the server to return a collection of elements from the resource",
+            "allowEmptyValue": true,
+            "style": "form",
+            "explode": false,
+            "schema": {
+              "type": "array",
+              "format": "string",
+              "items": {
+                "format": "string"
+              }
+            }
           },
           {
             "name": "patient",
@@ -135,16 +283,6 @@
         "summary": "Read the current state of the resource",
         "operationId": "readMedicationRequest",
         "responses": {
-          "default": {
-            "description": "Error, with details",
-            "content": {
-              "application/fhir+json": {
-                "schema": {
-                  "$ref": "https://raw.githubusercontent.com/cdaf/fhir/main/string.json"
-                }
-              }
-            }
-          },
           "200": {
             "description": "the resource being returned",
             "headers": {
@@ -158,7 +296,52 @@
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "https://raw.githubusercontent.com/cdaf/fhir/main/string.json"
+                  "description": "An order or request for both supply of the medication and the instructions for administration of the medication to a patient. The resource is called \"MedicationRequest\" rather than \"MedicationPrescription\" or \"MedicationOrder\" to generalize the use across inpatient and outpatient settings, including care plans, etc., and to harmonize with workflow patterns.",
+                  "properties": {
+                    "resourceType": {
+                      "description": "This is a MedicationRequest resource",
+                      "const": "MedicationRequest"
+                    },
+                    "id": {
+                      "description": "The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.",
+                      "pattern": "^[A-Za-z0-9\\-\\.]{1,64}$",
+                      "type": "string"
+                    }
+                  },
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "subject",
+                    "medication",
+                    "resourceType"
+                  ]
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "description": "A collection of error, warning, or information messages that result from a system action.",
+                  "properties": {
+                    "resourceType": {
+                      "description": "This is a OperationOutcome resource",
+                      "const": "OperationOutcome"
+                    },
+                    "id": {
+                      "description": "The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.",
+                      "pattern": "^[A-Za-z0-9\\-\\.]{1,64}$",
+                      "type": "string"
+                    }
+                  },
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "issue",
+                    "resourceType"
+                  ]
                 }
               }
             }
@@ -166,19 +349,68 @@
         },
         "parameters": [
           {
-            "$ref": "#/components/parameters/rid"
+            "name": "rid",
+            "in": "path",
+            "description": "id of the resource (=Resource.id)",
+            "required": true,
+            "allowEmptyValue": false,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
           },
           {
-            "$ref": "#/components/parameters/summary"
+            "name": "_summary",
+            "in": "query",
+            "description": "Requests the server to return a designated subset of the resource",
+            "allowEmptyValue": true,
+            "style": "form",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "true",
+                "text",
+                "data",
+                "count",
+                "false"
+              ]
+            }
           },
           {
-            "$ref": "#/components/parameters/format"
+            "name": "_format",
+            "in": "query",
+            "description": "Specify alternative response formats by their MIME-types (when a client is unable acccess accept: header)",
+            "allowEmptyValue": true,
+            "style": "form",
+            "schema": {
+              "type": "string",
+              "format": "mime-type"
+            }
           },
           {
-            "$ref": "#/components/parameters/pretty"
+            "name": "_pretty",
+            "in": "query",
+            "description": "Ask for a pretty printed response for human convenience",
+            "allowEmptyValue": true,
+            "style": "form",
+            "schema": {
+              "type": "boolean"
+            }
           },
           {
-            "$ref": "#/components/parameters/elements"
+            "name": "_elements",
+            "in": "query",
+            "description": "Requests the server to return a collection of elements from the resource",
+            "allowEmptyValue": true,
+            "style": "form",
+            "explode": false,
+            "schema": {
+              "type": "array",
+              "format": "string",
+              "items": {
+                "format": "string"
+              }
+            }
           }
         ]
       }
@@ -190,16 +422,6 @@
         "summary": "Read a past state of the resource",
         "operationId": "vreadMedicationRequest",
         "responses": {
-          "default": {
-            "description": "Error, with details",
-            "content": {
-              "application/fhir+json": {
-                "schema": {
-                  "$ref": "https://raw.githubusercontent.com/cdaf/fhir/main/string.json"
-                }
-              }
-            }
-          },
           "200": {
             "description": "the resource being returned",
             "headers": {
@@ -213,7 +435,52 @@
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "https://raw.githubusercontent.com/cdaf/fhir/main/string.json"
+                  "description": "An order or request for both supply of the medication and the instructions for administration of the medication to a patient. The resource is called \"MedicationRequest\" rather than \"MedicationPrescription\" or \"MedicationOrder\" to generalize the use across inpatient and outpatient settings, including care plans, etc., and to harmonize with workflow patterns.",
+                  "properties": {
+                    "resourceType": {
+                      "description": "This is a MedicationRequest resource",
+                      "const": "MedicationRequest"
+                    },
+                    "id": {
+                      "description": "The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.",
+                      "pattern": "^[A-Za-z0-9\\-\\.]{1,64}$",
+                      "type": "string"
+                    }
+                  },
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "subject",
+                    "medication",
+                    "resourceType"
+                  ]
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "description": "A collection of error, warning, or information messages that result from a system action.",
+                  "properties": {
+                    "resourceType": {
+                      "description": "This is a OperationOutcome resource",
+                      "const": "OperationOutcome"
+                    },
+                    "id": {
+                      "description": "The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.",
+                      "pattern": "^[A-Za-z0-9\\-\\.]{1,64}$",
+                      "type": "string"
+                    }
+                  },
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "issue",
+                    "resourceType"
+                  ]
                 }
               }
             }
@@ -221,22 +488,79 @@
         },
         "parameters": [
           {
-            "$ref": "#/components/parameters/rid"
+            "name": "rid",
+            "in": "path",
+            "description": "id of the resource (=Resource.id)",
+            "required": true,
+            "allowEmptyValue": false,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
           },
           {
-            "$ref": "#/components/parameters/hid"
+            "name": "hid",
+            "in": "path",
+            "description": "id of the history entry (=Resource.meta.versionId)",
+            "required": true,
+            "allowEmptyValue": false,
+            "style": "simple",
+            "schema": {
+              "type": "string"
+            }
           },
           {
-            "$ref": "#/components/parameters/summary"
+            "name": "_summary",
+            "in": "query",
+            "description": "Requests the server to return a designated subset of the resource",
+            "allowEmptyValue": true,
+            "style": "form",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "true",
+                "text",
+                "data",
+                "count",
+                "false"
+              ]
+            }
           },
           {
-            "$ref": "#/components/parameters/format"
+            "name": "_format",
+            "in": "query",
+            "description": "Specify alternative response formats by their MIME-types (when a client is unable acccess accept: header)",
+            "allowEmptyValue": true,
+            "style": "form",
+            "schema": {
+              "type": "string",
+              "format": "mime-type"
+            }
           },
           {
-            "$ref": "#/components/parameters/pretty"
+            "name": "_pretty",
+            "in": "query",
+            "description": "Ask for a pretty printed response for human convenience",
+            "allowEmptyValue": true,
+            "style": "form",
+            "schema": {
+              "type": "boolean"
+            }
           },
           {
-            "$ref": "#/components/parameters/elements"
+            "name": "_elements",
+            "in": "query",
+            "description": "Requests the server to return a collection of elements from the resource",
+            "allowEmptyValue": true,
+            "style": "form",
+            "explode": false,
+            "schema": {
+              "type": "array",
+              "format": "string",
+              "items": {
+                "format": "string"
+              }
+            }
           }
         ]
       }
@@ -253,28 +577,77 @@
           "content": {
             "application/fhir+json": {
               "schema": {
-                "$ref": "https://raw.githubusercontent.com/cdaf/fhir/main/string.json"
+                "description": "A container for a collection of resources.",
+                "properties": {
+                  "resourceType": {
+                    "description": "This is a Bundle resource",
+                    "const": "Bundle"
+                  },
+                  "id": {
+                    "description": "The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.",
+                    "pattern": "^[A-Za-z0-9\\-\\.]{1,64}$",
+                    "type": "string"
+                  }
+                },
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "resourceType"
+                ]
               }
             }
           }
         },
         "responses": {
-          "default": {
-            "description": "Error, with details",
-            "content": {
-              "application/fhir+json": {
-                "schema": {
-                  "$ref": "https://raw.githubusercontent.com/cdaf/fhir/main/string.json"
-                }
-              }
-            }
-          },
           "200": {
             "description": "Batch or Transaction response",
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "https://raw.githubusercontent.com/cdaf/fhir/main/string.json"
+                  "description": "A container for a collection of resources.",
+                  "properties": {
+                    "resourceType": {
+                      "description": "This is a Bundle resource",
+                      "const": "Bundle"
+                    },
+                    "id": {
+                      "description": "The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.",
+                      "pattern": "^[A-Za-z0-9\\-\\.]{1,64}$",
+                      "type": "string"
+                    }
+                  },
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "resourceType"
+                  ]
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "description": "A collection of error, warning, or information messages that result from a system action.",
+                  "properties": {
+                    "resourceType": {
+                      "description": "This is a OperationOutcome resource",
+                      "const": "OperationOutcome"
+                    },
+                    "id": {
+                      "description": "The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.",
+                      "pattern": "^[A-Za-z0-9\\-\\.]{1,64}$",
+                      "type": "string"
+                    }
+                  },
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "issue",
+                    "resourceType"
+                  ]
                 }
               }
             }
@@ -282,10 +655,25 @@
         },
         "parameters": [
           {
-            "$ref": "#/components/parameters/format"
+            "name": "_format",
+            "in": "query",
+            "description": "Specify alternative response formats by their MIME-types (when a client is unable acccess accept: header)",
+            "allowEmptyValue": true,
+            "style": "form",
+            "schema": {
+              "type": "string",
+              "format": "mime-type"
+            }
           },
           {
-            "$ref": "#/components/parameters/pretty"
+            "name": "_pretty",
+            "in": "query",
+            "description": "Ask for a pretty printed response for human convenience",
+            "allowEmptyValue": true,
+            "style": "form",
+            "schema": {
+              "type": "boolean"
+            }
           }
         ]
       }
@@ -296,7 +684,7 @@
       "rid": {
         "name": "rid",
         "in": "path",
-        "description": "id of the resource (\u003dResource.id)",
+        "description": "id of the resource (=Resource.id)",
         "required": true,
         "allowEmptyValue": false,
         "style": "simple",
@@ -307,7 +695,7 @@
       "hid": {
         "name": "hid",
         "in": "path",
-        "description": "id of the history entry (\u003dResource.meta.versionId)",
+        "description": "id of the history entry (=Resource.meta.versionId)",
         "required": true,
         "allowEmptyValue": false,
         "style": "simple",
