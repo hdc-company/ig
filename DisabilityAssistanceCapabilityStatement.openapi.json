@@ -36,7 +36,7 @@
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome"
+                  "$ref": "https://raw.githubusercontent.com/cdaf/fhir/main/string.json"
                 }
               }
             }
@@ -46,7 +46,7 @@
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/CapabilityStatement"
+                  "$ref": "https://raw.githubusercontent.com/cdaf/fhir/main/string.json"
                 }
               }
             }
@@ -80,7 +80,7 @@
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome"
+                  "$ref": "https://raw.githubusercontent.com/cdaf/fhir/main/string.json"
                 }
               }
             }
@@ -90,7 +90,7 @@
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/Bundle"
+                  "$ref": "https://raw.githubusercontent.com/cdaf/fhir/main/string.json"
                 }
               }
             }
@@ -128,7 +128,7 @@
           "content": {
             "application/fhir+json": {
               "schema": {
-                "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/Condition"
+                "$ref": "https://raw.githubusercontent.com/cdaf/fhir/main/string.json"
               }
             }
           }
@@ -139,7 +139,7 @@
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome"
+                  "$ref": "https://raw.githubusercontent.com/cdaf/fhir/main/string.json"
                 }
               }
             }
@@ -157,7 +157,7 @@
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/Condition"
+                  "$ref": "https://raw.githubusercontent.com/cdaf/fhir/main/string.json"
                 }
               }
             }
@@ -191,7 +191,7 @@
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome"
+                  "$ref": "https://raw.githubusercontent.com/cdaf/fhir/main/string.json"
                 }
               }
             }
@@ -209,7 +209,7 @@
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/Condition"
+                  "$ref": "https://raw.githubusercontent.com/cdaf/fhir/main/string.json"
                 }
               }
             }
@@ -242,7 +242,7 @@
           "content": {
             "application/fhir+json": {
               "schema": {
-                "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/Condition"
+                "$ref": "https://raw.githubusercontent.com/cdaf/fhir/main/string.json"
               }
             }
           }
@@ -253,7 +253,7 @@
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome"
+                  "$ref": "https://raw.githubusercontent.com/cdaf/fhir/main/string.json"
                 }
               }
             }
@@ -271,7 +271,7 @@
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/Condition"
+                  "$ref": "https://raw.githubusercontent.com/cdaf/fhir/main/string.json"
                 }
               }
             }
@@ -304,7 +304,7 @@
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome"
+                  "$ref": "https://raw.githubusercontent.com/cdaf/fhir/main/string.json"
                 }
               }
             }
@@ -340,7 +340,7 @@
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome"
+                  "$ref": "https://raw.githubusercontent.com/cdaf/fhir/main/string.json"
                 }
               }
             }
@@ -358,7 +358,7 @@
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/Condition"
+                  "$ref": "https://raw.githubusercontent.com/cdaf/fhir/main/string.json"
                 }
               }
             }
@@ -398,7 +398,7 @@
           "content": {
             "application/fhir+json": {
               "schema": {
-                "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/Bundle"
+                "$ref": "https://raw.githubusercontent.com/cdaf/fhir/main/string.json"
               }
             }
           }
@@ -409,7 +409,7 @@
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome"
+                  "$ref": "https://raw.githubusercontent.com/cdaf/fhir/main/string.json"
                 }
               }
             }
@@ -419,7 +419,7 @@
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "https://build.fhir.org/fhir.schema.json#/definitions/Bundle"
+                  "$ref": "https://raw.githubusercontent.com/cdaf/fhir/main/string.json"
                 }
               }
             }

@@ -31,15 +31,13 @@ paths:
           content:
             application/fhir+json:
               schema:
-                $ref: >-
-                  https://build.fhir.org/fhir.schema.json#/definitions/CapabilityStatement
+                $ref: https://raw.githubusercontent.com/cdaf/fhir/main/string.json
         default:
           description: Error, with details
           content:
             application/fhir+json:
               schema:
-                $ref: >-
-                  https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome
+                $ref: https://raw.githubusercontent.com/cdaf/fhir/main/string.json
       parameters:
         - $ref: '#/components/parameters/format'
         - $ref: '#/components/parameters/pretty'
@@ -59,14 +57,13 @@ paths:
           content:
             application/fhir+json:
               schema:
-                $ref: https://build.fhir.org/fhir.schema.json#/definitions/Bundle
+                $ref: https://raw.githubusercontent.com/cdaf/fhir/main/string.json
         default:
           description: Error, with details
           content:
             application/fhir+json:
               schema:
-                $ref: >-
-                  https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome
+                $ref: https://raw.githubusercontent.com/cdaf/fhir/main/string.json
       parameters:
         - $ref: '#/components/parameters/format'
         - $ref: '#/components/parameters/pretty'
@@ -86,7 +83,7 @@ paths:
         content:
           application/fhir+json:
             schema:
-              $ref: https://build.fhir.org/fhir.schema.json#/definitions/Condition
+              $ref: https://raw.githubusercontent.com/cdaf/fhir/main/string.json
       responses:
         '200':
           description: the resource being returned after being updated
@@ -98,14 +95,13 @@ paths:
           content:
             application/fhir+json:
               schema:
-                $ref: https://build.fhir.org/fhir.schema.json#/definitions/Condition
+                $ref: https://raw.githubusercontent.com/cdaf/fhir/main/string.json
         default:
           description: Error, with details
           content:
             application/fhir+json:
               schema:
-                $ref: >-
-                  https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome
+                $ref: https://raw.githubusercontent.com/cdaf/fhir/main/string.json
       parameters:
         - $ref: '#/components/parameters/summary'
         - $ref: '#/components/parameters/format'
@@ -130,14 +126,13 @@ paths:
           content:
             application/fhir+json:
               schema:
-                $ref: https://build.fhir.org/fhir.schema.json#/definitions/Condition
+                $ref: https://raw.githubusercontent.com/cdaf/fhir/main/string.json
         default:
           description: Error, with details
           content:
             application/fhir+json:
               schema:
-                $ref: >-
-                  https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome
+                $ref: https://raw.githubusercontent.com/cdaf/fhir/main/string.json
       parameters:
         - $ref: '#/components/parameters/rid'
         - $ref: '#/components/parameters/summary'
@@ -153,7 +148,7 @@ paths:
         content:
           application/fhir+json:
             schema:
-              $ref: https://build.fhir.org/fhir.schema.json#/definitions/Condition
+              $ref: https://raw.githubusercontent.com/cdaf/fhir/main/string.json
       responses:
         '200':
           description: the resource being returned after being updated
@@ -165,14 +160,13 @@ paths:
           content:
             application/fhir+json:
               schema:
-                $ref: https://build.fhir.org/fhir.schema.json#/definitions/Condition
+                $ref: https://raw.githubusercontent.com/cdaf/fhir/main/string.json
         default:
           description: Error, with details
           content:
             application/fhir+json:
               schema:
-                $ref: >-
-                  https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome
+                $ref: https://raw.githubusercontent.com/cdaf/fhir/main/string.json
       parameters:
         - $ref: '#/components/parameters/rid'
         - $ref: '#/components/parameters/summary'
@@ -195,8 +189,7 @@ paths:
           content:
             application/fhir+json:
               schema:
-                $ref: >-
-                  https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome
+                $ref: https://raw.githubusercontent.com/cdaf/fhir/main/string.json
       parameters:
         - $ref: '#/components/parameters/rid'
   /Condition/{rid}/_history/{hid}:
@@ -220,14 +213,13 @@ paths:
           content:
             application/fhir+json:
               schema:
-                $ref: https://build.fhir.org/fhir.schema.json#/definitions/Condition
+                $ref: https://raw.githubusercontent.com/cdaf/fhir/main/string.json
         default:
           description: Error, with details
           content:
             application/fhir+json:
               schema:
-                $ref: >-
-                  https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome
+                $ref: https://raw.githubusercontent.com/cdaf/fhir/main/string.json
       parameters:
         - $ref: '#/components/parameters/rid'
         - $ref: '#/components/parameters/hid'
@@ -247,21 +239,20 @@ paths:
         content:
           application/fhir+json:
             schema:
-              $ref: https://build.fhir.org/fhir.schema.json#/definitions/Bundle
+              $ref: https://raw.githubusercontent.com/cdaf/fhir/main/string.json
       responses:
         '200':
           description: Batch or Transaction response
           content:
             application/fhir+json:
               schema:
-                $ref: https://build.fhir.org/fhir.schema.json#/definitions/Bundle
+                $ref: https://raw.githubusercontent.com/cdaf/fhir/main/string.json
         default:
           description: Error, with details
           content:
             application/fhir+json:
               schema:
-                $ref: >-
-                  https://build.fhir.org/fhir.schema.json#/definitions/OperationOutcome
+                $ref: https://raw.githubusercontent.com/cdaf/fhir/main/string.json
       parameters:
         - $ref: '#/components/parameters/format'
         - $ref: '#/components/parameters/pretty'
