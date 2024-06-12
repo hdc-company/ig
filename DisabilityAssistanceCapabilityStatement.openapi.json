@@ -20,7 +20,7 @@
     }
   ],
   "externalDocs": {
-    "url": "http://ig.opennz.org/fsh-ig/CapabilityStatement/DisabilityAssistanceCapabilityStatement",
+    "url": "http://ig.opennz.org/CapabilityStatement/DisabilityAssistanceCapabilityStatement",
     "description": "FHIR CapabilityStatement"
   },
   "paths": {

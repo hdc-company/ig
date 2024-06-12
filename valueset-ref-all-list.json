@@ -12,7 +12,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.141"],
       "uses" : {
       },
-      "StructureDefinition-patient-condition-summary.html" : "PatientConditionSummary"
+      "StructureDefinition-patient-condition-summary.html" : "AssistanceNeedsProfile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/condition-category",
@@ -26,7 +26,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.162"],
       "uses" : {
       },
-      "StructureDefinition-patient-condition-summary.html" : "PatientConditionSummary"
+      "StructureDefinition-patient-condition-summary.html" : "AssistanceNeedsProfile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/condition-clinical",
@@ -40,7 +40,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.164"],
       "uses" : {
       },
-      "StructureDefinition-patient-condition-summary.html" : "PatientConditionSummary"
+      "StructureDefinition-patient-condition-summary.html" : "AssistanceNeedsProfile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/condition-code",
@@ -54,7 +54,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.161"],
       "uses" : {
       },
-      "StructureDefinition-patient-condition-summary.html" : "PatientConditionSummary"
+      "StructureDefinition-patient-condition-summary.html" : "AssistanceNeedsProfile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/condition-severity",
@@ -68,7 +68,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.168"],
       "uses" : {
       },
-      "StructureDefinition-patient-condition-summary.html" : "PatientConditionSummary"
+      "StructureDefinition-patient-condition-summary.html" : "AssistanceNeedsProfile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/condition-stage",
@@ -82,7 +82,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.170"],
       "uses" : {
       },
-      "StructureDefinition-patient-condition-summary.html" : "PatientConditionSummary"
+      "StructureDefinition-patient-condition-summary.html" : "AssistanceNeedsProfile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/condition-stage-type",
@@ -96,7 +96,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.171"],
       "uses" : {
       },
-      "StructureDefinition-patient-condition-summary.html" : "PatientConditionSummary"
+      "StructureDefinition-patient-condition-summary.html" : "AssistanceNeedsProfile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/condition-ver-status",
@@ -110,7 +110,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.166"],
       "uses" : {
       },
-      "StructureDefinition-patient-condition-summary.html" : "PatientConditionSummary"
+      "StructureDefinition-patient-condition-summary.html" : "AssistanceNeedsProfile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/languages",
@@ -124,7 +124,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-patient-condition-summary.html" : "PatientConditionSummary"
+      "StructureDefinition-patient-condition-summary.html" : "AssistanceNeedsProfile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/manifestation-or-symptom",
@@ -138,7 +138,20 @@
       "sources" : ["2.16.840.1.113883.4.642.3.169"],
       "uses" : {
       },
-      "StructureDefinition-patient-condition-summary.html" : "PatientConditionSummary"
+      "StructureDefinition-patient-condition-summary.html" : "AssistanceNeedsProfile"
+    },
+    {
+      "url" : "http://ig.opennz.org/ValueSet/assistance-needs-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "AssistanceNeedsValueSet",
+      "title" : "Assistance Needs ValueSet",
+      "description" : "A ValueSet including all codes from the Assistance Needs CodeSystem.",
+      "systems" : ["http://ig.opennz.org/CodeSystem/assistance-needs-cs"],
+      "uses" : {
+      },
+      "StructureDefinition-assistance-needs-ext.html" : "Assistance Needs",
+      "Questionnaire-DisabilityAssistanceQuestionnaire.html" : "Questionnaire Disability Assistance"
     }
   ]
 }

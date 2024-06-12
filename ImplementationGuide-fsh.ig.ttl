@@ -5,19 +5,19 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://ig.opennz.org/fsh-ig/ImplementationGuide/fsh.ig> a fhir:ImplementationGuide ;
+<http://ig.opennz.org/ImplementationGuide/fsh.ig> a fhir:ImplementationGuide ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "fsh.ig"] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>NewRepublicFHIRIG</h2><p>The official URL for this implementation guide is: </p><pre>http://ig.opennz.org/fsh-ig/ImplementationGuide/fsh.ig</pre></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>NewRepublicFHIRIG</h2><p>The official URL for this implementation guide is: </p><pre>http://ig.opennz.org/ImplementationGuide/fsh.ig</pre></div>"
   ] ; # 
-  fhir:url [ fhir:v "http://ig.opennz.org/fsh-ig/ImplementationGuide/fsh.ig"^^xsd:anyURI] ; # 
+  fhir:url [ fhir:v "http://ig.opennz.org/ImplementationGuide/fsh.ig"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "NewRepublicFHIRIG"] ; # 
   fhir:title [ fhir:v "New Republic FHIR Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-06-11T06:20:54+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-06-12T09:45:49+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "FHIR New Republic"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "FHIR New Republic" ] ;
@@ -78,7 +78,7 @@
          fhir:value [ fhir:v "releaselabel" ]
        ] [
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ci-build" ]
+         fhir:value [ fhir:v "release" ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
      ] [
@@ -150,7 +150,7 @@
          fhir:value [ fhir:v "path-history" ]
        ] [
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "http://ig.opennz.org/fsh-ig/history.html" ]
+         fhir:value [ fhir:v "http://ig.opennz.org/history.html" ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
      ] [
@@ -306,7 +306,7 @@
          fhir:value [ fhir:v "releaselabel" ]
        ] [
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ci-build" ]
+         fhir:value [ fhir:v "release" ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
      ] [
@@ -378,7 +378,7 @@
          fhir:value [ fhir:v "path-history" ]
        ] [
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "http://ig.opennz.org/fsh-ig/history.html" ]
+         fhir:value [ fhir:v "http://ig.opennz.org/history.html" ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
      ] [
@@ -523,11 +523,11 @@
          fhir:value [ fhir:v "Patient" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://ig.opennz.org/fsh-ig/Patient/1198> ;
+         fhir:link <http://ig.opennz.org/Patient/1198> ;
          fhir:reference [ fhir:v "Patient/1198" ]
        ] ;
        fhir:name [ fhir:v "1198" ] ;
-       fhir:description [ fhir:v "Example Patient with Disability Assistance Needs" ] ;
+       fhir:description [ fhir:v "Example Patient Sign Language interpreter needs" ] ;
        fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -535,7 +535,7 @@
          fhir:value [ fhir:v "CapabilityStatement" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://ig.opennz.org/fsh-ig/CapabilityStatement/DisabilityAssistanceCapabilityStatement> ;
+         fhir:link <http://ig.opennz.org/CapabilityStatement/DisabilityAssistanceCapabilityStatement> ;
          fhir:reference [ fhir:v "CapabilityStatement/DisabilityAssistanceCapabilityStatement" ]
        ] ;
        fhir:name [ fhir:v "API for Disability Assisance" ] ;
@@ -547,7 +547,7 @@
          fhir:value [ fhir:v "CapabilityStatement" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://ig.opennz.org/fsh-ig/CapabilityStatement/MedicationRequestCapabilityStatement> ;
+         fhir:link <http://ig.opennz.org/CapabilityStatement/MedicationRequestCapabilityStatement> ;
          fhir:reference [ fhir:v "CapabilityStatement/MedicationRequestCapabilityStatement" ]
        ] ;
        fhir:name [ fhir:v "API for Medication Summary" ] ;
@@ -556,37 +556,73 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Condition" ]
+         fhir:value [ fhir:v "CodeSystem" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://ig.opennz.org/fsh-ig/Condition/DisabilityAssistanceExample> ;
-         fhir:reference [ fhir:v "Condition/DisabilityAssistanceExample" ]
+         fhir:link <http://ig.opennz.org/CodeSystem/assistance-needs-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/assistance-needs-cs" ]
        ] ;
-       fhir:name [ fhir:v "DisabilityAssistanceExample" ] ;
-       fhir:description [ fhir:v "Required Assistance: A New Zealand Sign Language interpreter" ] ;
-       fhir:example [
-         fhir:v "http://ig.opennz.org/fsh-ig/StructureDefinition/patient-condition-summary"^^xsd:anyURI ;
-         fhir:link <http://ig.opennz.org/fsh-ig/StructureDefinition/patient-condition-summary>
-       ]
+       fhir:name [ fhir:v "Assistance Code System" ] ;
+       fhir:description [ fhir:v "Appointment Assistance Needs." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ig.opennz.org/StructureDefinition/assistance-needs-ext> ;
+         fhir:reference [ fhir:v "StructureDefinition/assistance-needs-ext" ]
+       ] ;
+       fhir:name [ fhir:v "Assistance Needs" ] ;
+       fhir:description [ fhir:v "An extension to capture a set of assistance needs." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ig.opennz.org/ValueSet/assistance-needs-vs> ;
+         fhir:reference [ fhir:v "ValueSet/assistance-needs-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Assistance Needs ValueSet" ] ;
+       fhir:description [ fhir:v "A ValueSet including all codes from the Assistance Needs CodeSystem." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://ig.opennz.org/fsh-ig/StructureDefinition/patient-condition-summary> ;
+         fhir:link <http://ig.opennz.org/StructureDefinition/patient-condition-summary> ;
          fhir:reference [ fhir:v "StructureDefinition/patient-condition-summary" ]
        ] ;
-       fhir:name [ fhir:v "PatientConditionSummary" ] ;
+       fhir:name [ fhir:v "AssistanceNeedsProfile" ] ;
        fhir:description [ fhir:v "Summary of Patient Conditions" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Condition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ig.opennz.org/Condition/DisabilityAssistanceExample> ;
+         fhir:reference [ fhir:v "Condition/DisabilityAssistanceExample" ]
+       ] ;
+       fhir:name [ fhir:v "DisabilityAssistanceExample" ] ;
+       fhir:description [ fhir:v "Required Assistance: A New Zealand Sign Language interpreter" ] ;
+       fhir:example [
+         fhir:v "http://ig.opennz.org/StructureDefinition/patient-condition-summary"^^xsd:anyURI ;
+         fhir:link <http://ig.opennz.org/StructureDefinition/patient-condition-summary>
+       ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Questionnaire" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://ig.opennz.org/fsh-ig/Questionnaire/DisabilityAssistanceQuestionnaire> ;
+         fhir:link <http://ig.opennz.org/Questionnaire/DisabilityAssistanceQuestionnaire> ;
          fhir:reference [ fhir:v "Questionnaire/DisabilityAssistanceQuestionnaire" ]
        ] ;
        fhir:name [ fhir:v "Questionnaire Disability Assistance" ] ;
@@ -598,7 +634,7 @@
          fhir:value [ fhir:v "Questionnaire" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://ig.opennz.org/fsh-ig/Questionnaire/MedicationRequestQuestionnaire> ;
+         fhir:link <http://ig.opennz.org/Questionnaire/MedicationRequestQuestionnaire> ;
          fhir:reference [ fhir:v "Questionnaire/MedicationRequestQuestionnaire" ]
        ] ;
        fhir:name [ fhir:v "Questionnaire Prescribed Medication Search" ] ;

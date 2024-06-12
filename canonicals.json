@@ -2,42 +2,63 @@
   {
     "id" : "DisabilityAssistanceCapabilityStatement",
     "type" : "CapabilityStatement",
-    "url" : "http://ig.opennz.org/fsh-ig/CapabilityStatement/DisabilityAssistanceCapabilityStatement",
+    "url" : "http://ig.opennz.org/CapabilityStatement/DisabilityAssistanceCapabilityStatement",
     "version" : "0.1.0",
     "name" : "DisabilityAssistanceCapabilityStatement"
   },
   {
     "id" : "MedicationRequestCapabilityStatement",
     "type" : "CapabilityStatement",
-    "url" : "http://ig.opennz.org/fsh-ig/CapabilityStatement/MedicationRequestCapabilityStatement",
+    "url" : "http://ig.opennz.org/CapabilityStatement/MedicationRequestCapabilityStatement",
     "version" : "0.1.0",
     "name" : "MedicationRequestCapabilityStatement"
   },
   {
+    "id" : "assistance-needs-cs",
+    "type" : "CodeSystem",
+    "url" : "http://ig.opennz.org/CodeSystem/assistance-needs-cs",
+    "version" : "0.1.0",
+    "name" : "AssistanceNeedsCodeSet"
+  },
+  {
     "id" : "fsh.ig",
     "type" : "ImplementationGuide",
-    "url" : "http://ig.opennz.org/fsh-ig/ImplementationGuide/fsh.ig",
+    "url" : "http://ig.opennz.org/ImplementationGuide/fsh.ig",
     "version" : "0.1.0",
     "name" : "NewRepublicFHIRIG"
   },
   {
     "id" : "DisabilityAssistanceQuestionnaire",
     "type" : "Questionnaire",
-    "url" : "http://ig.opennz.org/fsh-ig/Questionnaire/DisabilityAssistanceQuestionnaire",
+    "url" : "http://ig.opennz.org/Questionnaire/DisabilityAssistanceQuestionnaire",
     "version" : "0.1.0",
     "name" : "DisabilityAssistanceQuestionnaire"
   },
   {
     "id" : "MedicationRequestQuestionnaire",
     "type" : "Questionnaire",
-    "url" : "http://ig.opennz.org/fsh-ig/Questionnaire/MedicationRequestQuestionnaire",
+    "url" : "http://ig.opennz.org/Questionnaire/MedicationRequestQuestionnaire",
     "version" : "0.1.0"
+  },
+  {
+    "id" : "assistance-needs-ext",
+    "type" : "StructureDefinition",
+    "url" : "http://ig.opennz.org/StructureDefinition/assistance-needs-ext",
+    "version" : "0.1.0",
+    "name" : "AssistanceNeedsExtension"
   },
   {
     "id" : "patient-condition-summary",
     "type" : "StructureDefinition",
-    "url" : "http://ig.opennz.org/fsh-ig/StructureDefinition/patient-condition-summary",
+    "url" : "http://ig.opennz.org/StructureDefinition/patient-condition-summary",
     "version" : "0.1.0",
-    "name" : "PatientConditionSummary"
+    "name" : "AssistanceNeedsProfile"
+  },
+  {
+    "id" : "assistance-needs-vs",
+    "type" : "ValueSet",
+    "url" : "http://ig.opennz.org/ValueSet/assistance-needs-vs",
+    "version" : "0.1.0",
+    "name" : "AssistanceNeedsValueSet"
   }
 ]

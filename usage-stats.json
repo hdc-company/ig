@@ -2,12 +2,20 @@
   "package": "fsh.ig",
   "version": "0.1.0",
   "fhirVersion": "4.3.0",
-  "extensions": [],
+  "extensions": [
+    {
+      "url": "http://ig.opennz.org/StructureDefinition/assistance-needs-ext",
+      "title": "Assistance Needs",
+      "types": [
+        "CodeableConcept"
+      ]
+    }
+  ],
   "profiles": {
     "Condition": [
       {
-        "url": "http://ig.opennz.org/fsh-ig/StructureDefinition/patient-condition-summary",
-        "title": "PatientConditionSummary"
+        "url": "http://ig.opennz.org/StructureDefinition/patient-condition-summary",
+        "title": "AssistanceNeedsProfile"
       }
     ]
   },
@@ -44,6 +52,9 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
+    ],
+    "http://ig.opennz.org/StructureDefinition/assistance-needs-ext": [
+      "Condition"
     ]
   }
 }

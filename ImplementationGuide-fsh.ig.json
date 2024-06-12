@@ -3,14 +3,14 @@
   "id" : "fsh.ig",
   "text" : {
     "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>NewRepublicFHIRIG</h2><p>The official URL for this implementation guide is: </p><pre>http://ig.opennz.org/fsh-ig/ImplementationGuide/fsh.ig</pre></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>NewRepublicFHIRIG</h2><p>The official URL for this implementation guide is: </p><pre>http://ig.opennz.org/ImplementationGuide/fsh.ig</pre></div>"
   },
-  "url" : "http://ig.opennz.org/fsh-ig/ImplementationGuide/fsh.ig",
+  "url" : "http://ig.opennz.org/ImplementationGuide/fsh.ig",
   "version" : "0.1.0",
   "name" : "NewRepublicFHIRIG",
   "title" : "New Republic FHIR Implementation Guide",
   "status" : "draft",
-  "date" : "2024-06-11T06:20:54+00:00",
+  "date" : "2024-06-12T09:45:49+00:00",
   "publisher" : "FHIR New Republic",
   "contact" : [{
     "name" : "FHIR New Republic",
@@ -67,7 +67,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "ci-build"
+        "valueString" : "release"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -155,7 +155,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "http://ig.opennz.org/fsh-ig/history.html"
+        "valueString" : "http://ig.opennz.org/history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -346,7 +346,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "ci-build"
+        "valueString" : "release"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -434,7 +434,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "http://ig.opennz.org/fsh-ig/history.html"
+        "valueString" : "http://ig.opennz.org/history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -612,7 +612,7 @@
         "reference" : "Patient/1198"
       },
       "name" : "1198",
-      "description" : "Example Patient with Disability Assistance Needs",
+      "description" : "Example Patient Sign Language interpreter needs",
       "exampleBoolean" : true
     },
     {
@@ -642,14 +642,38 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Condition"
+        "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "Condition/DisabilityAssistanceExample"
+        "reference" : "CodeSystem/assistance-needs-cs"
       },
-      "name" : "DisabilityAssistanceExample",
-      "description" : "Required Assistance: A New Zealand Sign Language interpreter",
-      "exampleCanonical" : "http://ig.opennz.org/fsh-ig/StructureDefinition/patient-condition-summary"
+      "name" : "Assistance Code System",
+      "description" : "Appointment Assistance Needs.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/assistance-needs-ext"
+      },
+      "name" : "Assistance Needs",
+      "description" : "An extension to capture a set of assistance needs.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/assistance-needs-vs"
+      },
+      "name" : "Assistance Needs ValueSet",
+      "description" : "A ValueSet including all codes from the Assistance Needs CodeSystem.",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -659,9 +683,21 @@
       "reference" : {
         "reference" : "StructureDefinition/patient-condition-summary"
       },
-      "name" : "PatientConditionSummary",
+      "name" : "AssistanceNeedsProfile",
       "description" : "Summary of Patient Conditions",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Condition"
+      }],
+      "reference" : {
+        "reference" : "Condition/DisabilityAssistanceExample"
+      },
+      "name" : "DisabilityAssistanceExample",
+      "description" : "Required Assistance: A New Zealand Sign Language interpreter",
+      "exampleCanonical" : "http://ig.opennz.org/StructureDefinition/patient-condition-summary"
     },
     {
       "extension" : [{

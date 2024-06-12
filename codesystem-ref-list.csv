@@ -1,1 +1,2 @@
 URL,Version,Status,OIDs,Name,Title,Descriptino,Used
+http://ig.opennz.org/CodeSystem/assistance-needs-cs,0.1.0,draft,,AssistanceNeedsCodeSet,Assistance Code System,"Appointment Assistance Needs.","ValueSet/assistance-needs-vs"
