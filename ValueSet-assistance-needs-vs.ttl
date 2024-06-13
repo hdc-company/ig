@@ -5,32 +5,32 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://ig.opennz.org/ValueSet/assistance-needs-vs> a fhir:ValueSet ;
+<https://ig.opennz.org/ValueSet/assistance-needs-vs> a fhir:ValueSet ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "assistance-needs-vs"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-assistance-needs-cs.html\"><code>http://ig.opennz.org/CodeSystem/assistance-needs-cs</code></a></li></ul></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-assistance-needs-cs.html\"><code>https://ig.opennz.org/CodeSystem/assistance-needs-cs</code></a></li></ul></div>"
   ] ; # 
-  fhir:url [ fhir:v "http://ig.opennz.org/ValueSet/assistance-needs-vs"^^xsd:anyURI] ; # 
+  fhir:url [ fhir:v "https://ig.opennz.org/ValueSet/assistance-needs-vs"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "AssistanceNeedsValueSet"] ; # 
   fhir:title [ fhir:v "Assistance Needs ValueSet"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2024-06-12T09:45:49+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-06-13T01:01:15+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "FHIR New Republic"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "FHIR New Republic" ] ;
      fhir:telecom ( [
        fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "http://ig.opennz.org" ]
+       fhir:value [ fhir:v "https://ig.opennz.org" ]
      ] )
   ] ) ; # 
   fhir:description [ fhir:v "A ValueSet including all codes from the Assistance Needs CodeSystem."] ; # 
   fhir:compose [
      fhir:include ( [
-       fhir:system [ fhir:v "http://ig.opennz.org/CodeSystem/assistance-needs-cs"^^xsd:anyURI ]
+       fhir:system [ fhir:v "https://ig.opennz.org/CodeSystem/assistance-needs-cs"^^xsd:anyURI ]
      ] )
   ] . # 
 

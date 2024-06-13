@@ -4,7 +4,7 @@
   "fhirVersion": "4.3.0",
   "extensions": [
     {
-      "url": "http://ig.opennz.org/StructureDefinition/assistance-needs-ext",
+      "url": "https://ig.opennz.org/StructureDefinition/assistance-needs-ext",
       "title": "Assistance Needs",
       "types": [
         "CodeableConcept"
@@ -14,7 +14,7 @@
   "profiles": {
     "Condition": [
       {
-        "url": "http://ig.opennz.org/StructureDefinition/patient-condition-summary",
+        "url": "https://ig.opennz.org/StructureDefinition/patient-condition-summary",
         "title": "AssistanceNeedsProfile"
       }
     ]
@@ -53,7 +53,7 @@
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
     ],
-    "http://ig.opennz.org/StructureDefinition/assistance-needs-ext": [
+    "https://ig.opennz.org/StructureDefinition/assistance-needs-ext": [
       "Condition"
     ]
   }

@@ -3,20 +3,20 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="fsh.ig"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>NewRepublicFHIRIG</h2><p>The official URL for this implementation guide is: </p><pre>http://ig.opennz.org/ImplementationGuide/fsh.ig</pre></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>NewRepublicFHIRIG</h2><p>The official URL for this implementation guide is: </p><pre>https://ig.opennz.org/ImplementationGuide/fsh.ig</pre></div>
   </text>
-  <url value="http://ig.opennz.org/ImplementationGuide/fsh.ig"/>
+  <url value="https://ig.opennz.org/ImplementationGuide/fsh.ig"/>
   <version value="0.1.0"/>
   <name value="NewRepublicFHIRIG"/>
   <title value="New Republic FHIR Implementation Guide"/>
   <status value="draft"/>
-  <date value="2024-06-12T09:45:49+00:00"/>
+  <date value="2024-06-13T01:01:15+00:00"/>
   <publisher value="FHIR New Republic"/>
   <contact>
     <name value="FHIR New Republic"/>
     <telecom>
       <system value="url"/>
-      <value value="http://ig.opennz.org"/>
+      <value value="https://ig.opennz.org"/>
     </telecom>
   </contact>
   <packageId value="fsh.ig"/>
@@ -37,11 +37,6 @@
     <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
     <packageId value="hl7.fhir.uv.extensions.r4"/>
     <version value="5.1.0"/>
-  </dependsOn>
-  <dependsOn id="fhir_org_nz_ig_base">
-    <uri value="http://fhir.org.nz/ig/base/ImplementationGuide/fhir.org.nz.ig.base"/>
-    <packageId value="fhir.org.nz.ig.base"/>
-    <version value="3.0.0"/>
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -121,7 +116,7 @@
         <valueString value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="http://ig.opennz.org/history.html"/>
+        <valueString value="https://ig.opennz.org/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -324,7 +319,7 @@
         <valueCode value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="http://ig.opennz.org/history.html"/>
+        <valueString value="https://ig.opennz.org/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -533,7 +528,7 @@
       </reference>
       <name value="DisabilityAssistanceExample"/>
       <description value="Required Assistance: A New Zealand Sign Language interpreter"/>
-      <exampleCanonical value="http://ig.opennz.org/StructureDefinition/patient-condition-summary"/>
+      <exampleCanonical value="https://ig.opennz.org/StructureDefinition/patient-condition-summary"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

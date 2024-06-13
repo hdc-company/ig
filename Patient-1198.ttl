@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://ig.opennz.org/Patient/1198> a fhir:Patient ;
+<https://ig.opennz.org/Patient/1198> a fhir:Patient ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "1198"] ; # 
   fhir:meta [

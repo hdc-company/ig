@@ -4,15 +4,15 @@
   <id value="DisabilityAssistanceExample"/>
   <meta>
     <versionId value="0.0.1"/>
-    <profile value="http://ig.opennz.org/StructureDefinition/patient-condition-summary"/>
+    <profile value="https://ig.opennz.org/StructureDefinition/patient-condition-summary"/>
   </meta>
   <text>
     <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Condition </b><a name="DisabilityAssistanceExample"> </a><a name="hcDisabilityAssistanceExample"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">ResourceCondition &quot;DisabilityAssistanceExample&quot; Version&quot;0.0.1&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-patient-condition-summary.html">AssistanceNeedsProfile</a></p></div><p><b>Assistance Needs</b>: A New Zealand Sign Language interpreter <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-assistance-needs-cs.html">Assistance Code System</a>#nzsli)</span></p><p><b>clinicalStatus</b>: Active <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.5.0/CodeSystem-condition-clinical.html">Condition Clinical Status Codes</a>#active)</span></p><p><b>subject</b>: <a href="Patient-1198.html">Patient/1198</a> &quot; GILBERT&quot;</p></div>
   </text>
-  <extension url="http://ig.opennz.org/StructureDefinition/assistance-needs-ext">
+  <extension url="https://ig.opennz.org/StructureDefinition/assistance-needs-ext">
     <valueCodeableConcept>
       <coding>
-        <system value="http://ig.opennz.org/CodeSystem/assistance-needs-cs"/>
+        <system value="https://ig.opennz.org/CodeSystem/assistance-needs-cs"/>
         <code value="nzsli"/>
         <display value="A New Zealand Sign Language interpreter"/>
       </coding>

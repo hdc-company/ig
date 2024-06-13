@@ -8,7 +8,7 @@
 </div></td></tr><tr><td><b>SHALL</b></td><td><a href="http://hl7.org/fhir/R4B/medicationrequest.html#search">authoredon</a></td><td><code>date</code></td><td><div><p>When Medication Prescribed</p>
 </div></td></tr></tbody></table></div><div class="col-lg-5"> </div></div></div></div></div></div>
   </text>
-  <url value="http://ig.opennz.org/CapabilityStatement/MedicationRequestCapabilityStatement"/>
+  <url value="https://ig.opennz.org/CapabilityStatement/MedicationRequestCapabilityStatement"/>
   <version value="0.1.0"/>
   <name value="MedicationRequestCapabilityStatement"/>
   <title value="API for Medication Summary"/>
@@ -19,7 +19,7 @@
     <name value="FHIR New Republic"/>
     <telecom>
       <system value="url"/>
-      <value value="http://ig.opennz.org"/>
+      <value value="https://ig.opennz.org"/>
     </telecom>
   </contact>
   <description value="Search for Prescribed Medication"/>

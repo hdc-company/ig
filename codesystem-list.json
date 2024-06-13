@@ -1,7 +1,7 @@
 {
   "codeSystems" : [
     {
-      "url" : "http://ig.opennz.org/CodeSystem/assistance-needs-cs",
+      "url" : "https://ig.opennz.org/CodeSystem/assistance-needs-cs",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "AssistanceNeedsCodeSet",

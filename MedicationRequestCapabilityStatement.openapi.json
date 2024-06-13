@@ -10,7 +10,7 @@
     "version": "0.1.0",
     "contact": {
       "name": "FHIR New Republic",
-      "url": "http://ig.opennz.org"
+      "url": "https://ig.opennz.org"
     }
   },
   "servers": [
@@ -20,7 +20,7 @@
     }
   ],
   "externalDocs": {
-    "url": "http://ig.opennz.org/CapabilityStatement/MedicationRequestCapabilityStatement",
+    "url": "https://ig.opennz.org/CapabilityStatement/MedicationRequestCapabilityStatement",
     "description": "FHIR CapabilityStatement"
   },
   "paths": {
@@ -39,8 +39,7 @@
                   "description": "A Capability Statement documents a set of capabilities (behaviors) of a FHIR Server or Client for a particular version of FHIR that may be used as a statement of actual server functionality or a statement of required or desired server implementation.",
                   "properties": {
                     "resourceType": {
-                      "description": "This is a CapabilityStatement resource",
-                      "const": "CapabilityStatement"
+                      "description": "This is a CapabilityStatement resource"
                     },
                     "id": {
                       "description": "The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.",
@@ -65,8 +64,7 @@
                   "description": "A collection of error, warning, or information messages that result from a system action.",
                   "properties": {
                     "resourceType": {
-                      "description": "This is a OperationOutcome resource",
-                      "const": "OperationOutcome"
+                      "description": "This is a OperationOutcome resource"
                     },
                     "id": {
                       "description": "The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.",
@@ -157,8 +155,7 @@
                   "description": "A container for a collection of resources.",
                   "properties": {
                     "resourceType": {
-                      "description": "This is a Bundle resource",
-                      "const": "Bundle"
+                      "description": "This is a Bundle resource"
                     },
                     "id": {
                       "description": "The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.",
@@ -183,8 +180,7 @@
                   "description": "A collection of error, warning, or information messages that result from a system action.",
                   "properties": {
                     "resourceType": {
-                      "description": "This is a OperationOutcome resource",
-                      "const": "OperationOutcome"
+                      "description": "This is a OperationOutcome resource"
                     },
                     "id": {
                       "description": "The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.",
@@ -300,8 +296,7 @@
                   "description": "An order or request for both supply of the medication and the instructions for administration of the medication to a patient. The resource is called \"MedicationRequest\" rather than \"MedicationPrescription\" or \"MedicationOrder\" to generalize the use across inpatient and outpatient settings, including care plans, etc., and to harmonize with workflow patterns.",
                   "properties": {
                     "resourceType": {
-                      "description": "This is a MedicationRequest resource",
-                      "const": "MedicationRequest"
+                      "description": "This is a MedicationRequest resource"
                     },
                     "id": {
                       "description": "The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.",
@@ -328,8 +323,7 @@
                   "description": "A collection of error, warning, or information messages that result from a system action.",
                   "properties": {
                     "resourceType": {
-                      "description": "This is a OperationOutcome resource",
-                      "const": "OperationOutcome"
+                      "description": "This is a OperationOutcome resource"
                     },
                     "id": {
                       "description": "The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.",
@@ -439,8 +433,7 @@
                   "description": "An order or request for both supply of the medication and the instructions for administration of the medication to a patient. The resource is called \"MedicationRequest\" rather than \"MedicationPrescription\" or \"MedicationOrder\" to generalize the use across inpatient and outpatient settings, including care plans, etc., and to harmonize with workflow patterns.",
                   "properties": {
                     "resourceType": {
-                      "description": "This is a MedicationRequest resource",
-                      "const": "MedicationRequest"
+                      "description": "This is a MedicationRequest resource"
                     },
                     "id": {
                       "description": "The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.",
@@ -467,8 +460,7 @@
                   "description": "A collection of error, warning, or information messages that result from a system action.",
                   "properties": {
                     "resourceType": {
-                      "description": "This is a OperationOutcome resource",
-                      "const": "OperationOutcome"
+                      "description": "This is a OperationOutcome resource"
                     },
                     "id": {
                       "description": "The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.",
@@ -581,8 +573,7 @@
                 "description": "A container for a collection of resources.",
                 "properties": {
                   "resourceType": {
-                    "description": "This is a Bundle resource",
-                    "const": "Bundle"
+                    "description": "This is a Bundle resource"
                   },
                   "id": {
                     "description": "The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.",
@@ -608,8 +599,7 @@
                   "description": "A container for a collection of resources.",
                   "properties": {
                     "resourceType": {
-                      "description": "This is a Bundle resource",
-                      "const": "Bundle"
+                      "description": "This is a Bundle resource"
                     },
                     "id": {
                       "description": "The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.",
@@ -634,8 +624,7 @@
                   "description": "A collection of error, warning, or information messages that result from a system action.",
                   "properties": {
                     "resourceType": {
-                      "description": "This is a OperationOutcome resource",
-                      "const": "OperationOutcome"
+                      "description": "This is a OperationOutcome resource"
                     },
                     "id": {
                       "description": "The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.",

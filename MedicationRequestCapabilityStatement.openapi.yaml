@@ -8,13 +8,13 @@ info:
   version: 0.1.0
   contact:
     name: FHIR New Republic
-    url: http://ig.opennz.org
+    url: https://ig.opennz.org
 servers:
   - url: https://hapi.fhir.org/baseR4B
     description: Canonical Based Examples
 externalDocs:
   url: >-
-    http://ig.opennz.org/CapabilityStatement/MedicationRequestCapabilityStatement
+    https://ig.opennz.org/CapabilityStatement/MedicationRequestCapabilityStatement
   description: FHIR CapabilityStatement
 paths:
   /metadata:
@@ -40,7 +40,6 @@ paths:
                 properties:
                   resourceType:
                     description: This is a CapabilityStatement resource
-                    const: CapabilityStatement
                   id:
                     description: >-
                       The logical id of the resource, as used in the URL for the
@@ -62,7 +61,6 @@ paths:
                 properties:
                   resourceType:
                     description: This is a OperationOutcome resource
-                    const: OperationOutcome
                   id:
                     description: >-
                       The logical id of the resource, as used in the URL for the
@@ -138,7 +136,6 @@ paths:
                 properties:
                   resourceType:
                     description: This is a Bundle resource
-                    const: Bundle
                   id:
                     description: >-
                       The logical id of the resource, as used in the URL for the
@@ -160,7 +157,6 @@ paths:
                 properties:
                   resourceType:
                     description: This is a OperationOutcome resource
-                    const: OperationOutcome
                   id:
                     description: >-
                       The logical id of the resource, as used in the URL for the
@@ -258,7 +254,6 @@ paths:
                 properties:
                   resourceType:
                     description: This is a MedicationRequest resource
-                    const: MedicationRequest
                   id:
                     description: >-
                       The logical id of the resource, as used in the URL for the
@@ -282,7 +277,6 @@ paths:
                 properties:
                   resourceType:
                     description: This is a OperationOutcome resource
-                    const: OperationOutcome
                   id:
                     description: >-
                       The logical id of the resource, as used in the URL for the
@@ -378,7 +372,6 @@ paths:
                 properties:
                   resourceType:
                     description: This is a MedicationRequest resource
-                    const: MedicationRequest
                   id:
                     description: >-
                       The logical id of the resource, as used in the URL for the
@@ -402,7 +395,6 @@ paths:
                 properties:
                   resourceType:
                     description: This is a OperationOutcome resource
-                    const: OperationOutcome
                   id:
                     description: >-
                       The logical id of the resource, as used in the URL for the
@@ -490,7 +482,6 @@ paths:
               properties:
                 resourceType:
                   description: This is a Bundle resource
-                  const: Bundle
                 id:
                   description: >-
                     The logical id of the resource, as used in the URL for the
@@ -511,7 +502,6 @@ paths:
                 properties:
                   resourceType:
                     description: This is a Bundle resource
-                    const: Bundle
                   id:
                     description: >-
                       The logical id of the resource, as used in the URL for the
@@ -533,7 +523,6 @@ paths:
                 properties:
                   resourceType:
                     description: This is a OperationOutcome resource
-                    const: OperationOutcome
                   id:
                     description: >-
                       The logical id of the resource, as used in the URL for the

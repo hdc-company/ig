@@ -5,14 +5,14 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://ig.opennz.org/Condition/DisabilityAssistanceExample> a fhir:Condition ;
+<https://ig.opennz.org/Condition/DisabilityAssistanceExample> a fhir:Condition ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "DisabilityAssistanceExample"] ; # 
   fhir:meta [
      fhir:versionId [ fhir:v "0.0.1" ] ;
      fhir:profile ( [
-       fhir:v "http://ig.opennz.org/StructureDefinition/patient-condition-summary"^^xsd:anyURI ;
-       fhir:link <http://ig.opennz.org/StructureDefinition/patient-condition-summary>
+       fhir:v "https://ig.opennz.org/StructureDefinition/patient-condition-summary"^^xsd:anyURI ;
+       fhir:link <https://ig.opennz.org/StructureDefinition/patient-condition-summary>
      ] )
   ] ; # 
   fhir:text [
@@ -20,11 +20,11 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition </b><a name=\"DisabilityAssistanceExample\"> </a><a name=\"hcDisabilityAssistanceExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceCondition &quot;DisabilityAssistanceExample&quot; Version&quot;0.0.1&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-patient-condition-summary.html\">AssistanceNeedsProfile</a></p></div><p><b>Assistance Needs</b>: A New Zealand Sign Language interpreter <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-assistance-needs-cs.html\">Assistance Code System</a>#nzsli)</span></p><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>subject</b>: <a href=\"Patient-1198.html\">Patient/1198</a> &quot; GILBERT&quot;</p></div>"
   ] ; # 
   fhir:extension ( [
-     fhir:url [ fhir:v "http://ig.opennz.org/StructureDefinition/assistance-needs-ext"^^xsd:anyURI ] ;
+     fhir:url [ fhir:v "https://ig.opennz.org/StructureDefinition/assistance-needs-ext"^^xsd:anyURI ] ;
      fhir:value [
        a fhir:CodeableConcept ;
        fhir:coding ( [
-         fhir:system [ fhir:v "http://ig.opennz.org/CodeSystem/assistance-needs-cs"^^xsd:anyURI ] ;
+         fhir:system [ fhir:v "https://ig.opennz.org/CodeSystem/assistance-needs-cs"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "nzsli" ] ;
          fhir:display [ fhir:v "A New Zealand Sign Language interpreter" ]
        ] )
@@ -37,7 +37,7 @@
      ] )
   ] ; # 
   fhir:subject [
-     fhir:link <http://ig.opennz.org/Patient/1198> ;
+     fhir:link <https://ig.opennz.org/Patient/1198> ;
      fhir:reference [ fhir:v "Patient/1198" ]
   ] . # 
 

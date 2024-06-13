@@ -3,20 +3,20 @@
   "id" : "fsh.ig",
   "text" : {
     "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>NewRepublicFHIRIG</h2><p>The official URL for this implementation guide is: </p><pre>http://ig.opennz.org/ImplementationGuide/fsh.ig</pre></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>NewRepublicFHIRIG</h2><p>The official URL for this implementation guide is: </p><pre>https://ig.opennz.org/ImplementationGuide/fsh.ig</pre></div>"
   },
-  "url" : "http://ig.opennz.org/ImplementationGuide/fsh.ig",
+  "url" : "https://ig.opennz.org/ImplementationGuide/fsh.ig",
   "version" : "0.1.0",
   "name" : "NewRepublicFHIRIG",
   "title" : "New Republic FHIR Implementation Guide",
   "status" : "draft",
-  "date" : "2024-06-12T09:45:49+00:00",
+  "date" : "2024-06-13T01:01:15+00:00",
   "publisher" : "FHIR New Republic",
   "contact" : [{
     "name" : "FHIR New Republic",
     "telecom" : [{
       "system" : "url",
-      "value" : "http://ig.opennz.org"
+      "value" : "https://ig.opennz.org"
     }]
   }],
   "packageId" : "fsh.ig",
@@ -41,12 +41,6 @@
     "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
     "packageId" : "hl7.fhir.uv.extensions.r4",
     "version" : "5.1.0"
-  },
-  {
-    "id" : "fhir_org_nz_ig_base",
-    "uri" : "http://fhir.org.nz/ig/base/ImplementationGuide/fhir.org.nz.ig.base",
-    "packageId" : "fhir.org.nz.ig.base",
-    "version" : "3.0.0"
   }],
   "definition" : {
     "extension" : [{
@@ -155,7 +149,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "http://ig.opennz.org/history.html"
+        "valueString" : "https://ig.opennz.org/history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -434,7 +428,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "http://ig.opennz.org/history.html"
+        "valueString" : "https://ig.opennz.org/history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -697,7 +691,7 @@
       },
       "name" : "DisabilityAssistanceExample",
       "description" : "Required Assistance: A New Zealand Sign Language interpreter",
-      "exampleCanonical" : "http://ig.opennz.org/StructureDefinition/patient-condition-summary"
+      "exampleCanonical" : "https://ig.opennz.org/StructureDefinition/patient-condition-summary"
     },
     {
       "extension" : [{
