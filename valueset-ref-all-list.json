@@ -150,8 +150,8 @@
       "systems" : ["https://ig.opennz.org/CodeSystem/assistance-needs-cs"],
       "uses" : {
       },
-      "Questionnaire-DisabilityAssistanceQuestionnaire.html" : "Questionnaire Disability Assistance",
-      "StructureDefinition-assistance-needs-ext.html" : "Assistance Needs"
+      "StructureDefinition-assistance-needs-ext.html" : "Assistance Needs",
+      "Questionnaire-DisabilityAssistanceQuestionnaire.html" : "Questionnaire Disability Assistance"
     }
   ]
 }

@@ -4,7 +4,7 @@ NewRepublicFHIRIG : Validation Results
 err = 0, warn = 4, info = 1
 $--
 Generated $--. FHIR version $-- for fsh.ig#$-- (canonical = https://ig.opennz.org)
- Build Errors : 70 / 4 / 0
+ Build Errors : 71 / 4 / 0
  /solution/workspace/fsh-generated/resources/CapabilityStatement-DisabilityAssistanceCapabilityStatement : 0 / 0 / 1
  /solution/workspace/fsh-generated/resources/CapabilityStatement-MedicationRequestCapabilityStatement : 0 / 0 / 1
  /solution/workspace/fsh-generated/resources/CodeSystem-assistance-needs-cs : 0 / 0 / 1
@@ -49,6 +49,7 @@ ERROR: /solution/workspace/output/Patient-1198.ttl.html#/html/body/div/div/div/p
 ERROR: /solution/workspace/output/Patient-1198.xml.html#/html/body/div/div/div/p/a at Line 233, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
 ERROR: /solution/workspace/output/PatientCondition.html#/html/body/div/div/div/p/a at Line 179, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
 ERROR: /solution/workspace/output/PatientMedicationRequest.html#/html/body/div/div/div/p/a at Line 179, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
+ERROR: /solution/workspace/output/PatientSummary.html#/html/body/div/div/div/div/div/p/a at Line 176, column 47: The link '/ModifiedQuestionnaire.json' for "ModifiedQuestionnaire.json" cannot be resolved
 ERROR: /solution/workspace/output/PatientSummary.html#/html/body/div/div/div/p/a at Line 199, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
 ERROR: /solution/workspace/output/Questionnaire-DisabilityAssistanceQuestionnaire-testing.html#/html/body/div/div/div/p/a at Line 233, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
 ERROR: /solution/workspace/output/Questionnaire-DisabilityAssistanceQuestionnaire.change.history.html#/html/body/div/div/div/p/a at Line 202, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
