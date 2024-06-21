@@ -3,15 +3,15 @@
   "id" : "assistance-needs-cs",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>https://ig.opennz.org/CodeSystem/assistance-needs-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">nzsli<a name=\"assistance-needs-cs-nzsli\"> </a></td><td>A New Zealand Sign Language interpreter</td></tr><tr><td style=\"white-space:nowrap\">smd<a name=\"assistance-needs-cs-smd\"> </a></td><td>Support to make decisions</td></tr><tr><td style=\"white-space:nowrap\">amr<a name=\"assistance-needs-cs-amr\"> </a></td><td>Assistance to move around</td></tr><tr><td style=\"white-space:nowrap\">lat<a name=\"assistance-needs-cs-lat\"> </a></td><td>A longer appointment time</td></tr><tr><td style=\"white-space:nowrap\">qse<a name=\"assistance-needs-cs-qse\"> </a></td><td>A quiet or low sensory environment</td></tr><tr><td style=\"white-space:nowrap\">msm<a name=\"assistance-needs-cs-msm\"> </a></td><td>More space to move around</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>https://ig.opennz.org/CodeSystem/assistance-needs-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">171671000210109<a name=\"assistance-needs-cs-171671000210109\"> </a></td><td>A New Zealand Sign Language interpreter</td></tr><tr><td style=\"white-space:nowrap\">133920001<a name=\"assistance-needs-cs-133920001\"> </a></td><td>Support to make decisions</td></tr><tr><td style=\"white-space:nowrap\">amr<a name=\"assistance-needs-cs-amr\"> </a></td><td>Assistance to move around</td></tr><tr><td style=\"white-space:nowrap\">lat<a name=\"assistance-needs-cs-lat\"> </a></td><td>A longer appointment time</td></tr><tr><td style=\"white-space:nowrap\">qse<a name=\"assistance-needs-cs-qse\"> </a></td><td>A quiet or low sensory environment</td></tr><tr><td style=\"white-space:nowrap\">msm<a name=\"assistance-needs-cs-msm\"> </a></td><td>More space to move around</td></tr></table></div>"
   },
   "url" : "https://ig.opennz.org/CodeSystem/assistance-needs-cs",
   "version" : "0.1.0",
-  "name" : "AssistanceNeedsCodeSet",
+  "name" : "AssistanceNeedsCodeSystem",
   "title" : "Assistance Code System",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2024-06-13T05:29:47+00:00",
+  "date" : "2024-06-21T01:45:26+00:00",
   "publisher" : "FHIR New Republic",
   "contact" : [{
     "name" : "FHIR New Republic",
@@ -26,11 +26,11 @@
   "content" : "complete",
   "count" : 6,
   "concept" : [{
-    "code" : "nzsli",
+    "code" : "171671000210109",
     "display" : "A New Zealand Sign Language interpreter"
   },
   {
-    "code" : "smd",
+    "code" : "133920001",
     "display" : "Support to make decisions"
   },
   {

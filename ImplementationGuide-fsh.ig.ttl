@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "NewRepublicFHIRIG"] ; # 
   fhir:title [ fhir:v "New Republic FHIR Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-06-13T05:29:47+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-06-21T01:45:26+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "FHIR New Republic"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "FHIR New Republic" ] ;
@@ -527,18 +527,6 @@
          fhir:value [ fhir:v "CapabilityStatement" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://ig.opennz.org/CapabilityStatement/DisabilityAssistanceCapabilityStatement> ;
-         fhir:reference [ fhir:v "CapabilityStatement/DisabilityAssistanceCapabilityStatement" ]
-       ] ;
-       fhir:name [ fhir:v "API for Disability Assisance" ] ;
-       fhir:description [ fhir:v "Disability Assistance Requirements and Summary" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "CapabilityStatement" ]
-       ] ) ;
-       fhir:reference [
          fhir:link <https://ig.opennz.org/CapabilityStatement/MedicationRequestCapabilityStatement> ;
          fhir:reference [ fhir:v "CapabilityStatement/MedicationRequestCapabilityStatement" ]
        ] ;
@@ -572,6 +560,30 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CapabilityStatement" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://ig.opennz.org/CapabilityStatement/AssistanceNeedsCapabilityStatement> ;
+         fhir:reference [ fhir:v "CapabilityStatement/AssistanceNeedsCapabilityStatement" ]
+       ] ;
+       fhir:name [ fhir:v "Assistance Needs API" ] ;
+       fhir:description [ fhir:v "Disability Assistance Requirements and Summary" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://ig.opennz.org/StructureDefinition/assistance-needs-profile> ;
+         fhir:reference [ fhir:v "StructureDefinition/assistance-needs-profile" ]
+       ] ;
+       fhir:name [ fhir:v "Assistance Needs Profle" ] ;
+       fhir:description [ fhir:v "Extension of Conditions for capturing Patient assistance needs" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
@@ -584,38 +596,38 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://ig.opennz.org/StructureDefinition/patient-condition-summary> ;
-         fhir:reference [ fhir:v "StructureDefinition/patient-condition-summary" ]
-       ] ;
-       fhir:name [ fhir:v "AssistanceNeedsProfile" ] ;
-       fhir:description [ fhir:v "Summary of Patient Conditions" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Condition" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://ig.opennz.org/Condition/DisabilityAssistanceExample> ;
-         fhir:reference [ fhir:v "Condition/DisabilityAssistanceExample" ]
+         fhir:link <https://ig.opennz.org/Condition/NeedsAssistanceExample> ;
+         fhir:reference [ fhir:v "Condition/NeedsAssistanceExample" ]
        ] ;
-       fhir:name [ fhir:v "DisabilityAssistanceExample" ] ;
+       fhir:name [ fhir:v "NeedsAssistanceExample" ] ;
        fhir:description [ fhir:v "Required Assistance: A New Zealand Sign Language interpreter" ] ;
        fhir:example [
-         fhir:v "https://ig.opennz.org/StructureDefinition/patient-condition-summary"^^xsd:anyURI ;
-         fhir:link <https://ig.opennz.org/StructureDefinition/patient-condition-summary>
+         fhir:v "https://ig.opennz.org/StructureDefinition/assistance-needs-profile"^^xsd:anyURI ;
+         fhir:link <https://ig.opennz.org/StructureDefinition/assistance-needs-profile>
        ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "QuestionnaireResponse" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://ig.opennz.org/QuestionnaireResponse/NeedsAssistanceResponse> ;
+         fhir:reference [ fhir:v "QuestionnaireResponse/NeedsAssistanceResponse" ]
+       ] ;
+       fhir:name [ fhir:v "NeedsAssistanceResponse" ] ;
+       fhir:description [ fhir:v "Example response for NZ Sign Language Assistance" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Questionnaire" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://ig.opennz.org/Questionnaire/DisabilityAssistanceQuestionnaire> ;
-         fhir:reference [ fhir:v "Questionnaire/DisabilityAssistanceQuestionnaire" ]
+         fhir:link <https://ig.opennz.org/Questionnaire/AssistanceNeedsQuestionnaire> ;
+         fhir:reference [ fhir:v "Questionnaire/AssistanceNeedsQuestionnaire" ]
        ] ;
        fhir:name [ fhir:v "Questionnaire Disability Assistance" ] ;
        fhir:description [ fhir:v "Disability Assistance Requirements" ] ;

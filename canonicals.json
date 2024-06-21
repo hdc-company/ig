@@ -1,10 +1,10 @@
 [
   {
-    "id" : "DisabilityAssistanceCapabilityStatement",
+    "id" : "AssistanceNeedsCapabilityStatement",
     "type" : "CapabilityStatement",
-    "url" : "https://ig.opennz.org/CapabilityStatement/DisabilityAssistanceCapabilityStatement",
+    "url" : "https://ig.opennz.org/CapabilityStatement/AssistanceNeedsCapabilityStatement",
     "version" : "0.1.0",
-    "name" : "DisabilityAssistanceCapabilityStatement"
+    "name" : "AssistanceNeedsCapabilityStatement"
   },
   {
     "id" : "MedicationRequestCapabilityStatement",
@@ -18,7 +18,7 @@
     "type" : "CodeSystem",
     "url" : "https://ig.opennz.org/CodeSystem/assistance-needs-cs",
     "version" : "0.1.0",
-    "name" : "AssistanceNeedsCodeSet"
+    "name" : "AssistanceNeedsCodeSystem"
   },
   {
     "id" : "fsh.ig",
@@ -28,9 +28,9 @@
     "name" : "NewRepublicFHIRIG"
   },
   {
-    "id" : "DisabilityAssistanceQuestionnaire",
+    "id" : "AssistanceNeedsQuestionnaire",
     "type" : "Questionnaire",
-    "url" : "https://ig.opennz.org/Questionnaire/DisabilityAssistanceQuestionnaire",
+    "url" : "https://ig.opennz.org/Questionnaire/AssistanceNeedsQuestionnaire",
     "version" : "0.1.0",
     "name" : "DisabilityAssistanceQuestionnaire"
   },
@@ -48,9 +48,9 @@
     "name" : "AssistanceNeedsExtension"
   },
   {
-    "id" : "patient-condition-summary",
+    "id" : "assistance-needs-profile",
     "type" : "StructureDefinition",
-    "url" : "https://ig.opennz.org/StructureDefinition/patient-condition-summary",
+    "url" : "https://ig.opennz.org/StructureDefinition/assistance-needs-profile",
     "version" : "0.1.0",
     "name" : "AssistanceNeedsProfile"
   },

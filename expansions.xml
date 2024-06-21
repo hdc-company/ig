@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="373b3408-2876-4d5c-9d25-08a57a36c1cb"/>
+  <id value="0cc85251-112d-4d63-a3bb-612168a18a37"/>
   <meta>
-    <lastUpdated value="2024-06-13T05:29:47.849+00:00"/>
+    <lastUpdated value="2024-06-21T01:45:26.063+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -31,16 +31,16 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="https---ig.opennz.org-CodeSystem-assistance-needs-cs-nzsli"> </a>  
-                  <a href="CodeSystem-assistance-needs-cs.html#assistance-needs-cs-nzsli">nzsli</a>
+                  <a name="https---ig.opennz.org-CodeSystem-assistance-needs-cs-171671000210109"> </a>  
+                  <a href="CodeSystem-assistance-needs-cs.html#assistance-needs-cs-171671000210109">171671000210109</a>
                 </td>
                 <td>https://ig.opennz.org/CodeSystem/assistance-needs-cs</td>
                 <td>A New Zealand Sign Language interpreter</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="https---ig.opennz.org-CodeSystem-assistance-needs-cs-smd"> </a>  
-                  <a href="CodeSystem-assistance-needs-cs.html#assistance-needs-cs-smd">smd</a>
+                  <a name="https---ig.opennz.org-CodeSystem-assistance-needs-cs-133920001"> </a>  
+                  <a href="CodeSystem-assistance-needs-cs.html#assistance-needs-cs-133920001">133920001</a>
                 </td>
                 <td>https://ig.opennz.org/CodeSystem/assistance-needs-cs</td>
                 <td>Support to make decisions</td>
@@ -86,10 +86,10 @@
         <title value="Assistance Needs ValueSet"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2024-06-13T05:29:47+00:00"/>
+        <date value="2024-06-21T01:45:26+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:1be1df98-4e0a-4842-b0cc-9e91206d963e"/>
-          <timestamp value="2024-06-13T05:30:27+00:00"/>
+          <identifier value="urn:uuid:d3d71b4a-c322-42ca-a046-548ceb7a1f03"/>
+          <timestamp value="2024-06-21T01:46:03+00:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>
@@ -110,12 +110,12 @@
           </parameter>
           <contains>
             <system value="https://ig.opennz.org/CodeSystem/assistance-needs-cs"/>
-            <code value="nzsli"/>
+            <code value="171671000210109"/>
             <display value="A New Zealand Sign Language interpreter"/>
           </contains>
           <contains>
             <system value="https://ig.opennz.org/CodeSystem/assistance-needs-cs"/>
-            <code value="smd"/>
+            <code value="133920001"/>
             <display value="Support to make decisions"/>
           </contains>
           <contains>

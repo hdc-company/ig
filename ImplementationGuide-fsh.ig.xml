@@ -10,7 +10,7 @@
   <name value="NewRepublicFHIRIG"/>
   <title value="New Republic FHIR Implementation Guide"/>
   <status value="draft"/>
-  <date value="2024-06-13T05:29:47+00:00"/>
+  <date value="2024-06-21T01:45:26+00:00"/>
   <publisher value="FHIR New Republic"/>
   <contact>
     <name value="FHIR New Republic"/>
@@ -458,17 +458,6 @@
         <valueString value="CapabilityStatement"/>
       </extension>
       <reference>
-        <reference value="CapabilityStatement/DisabilityAssistanceCapabilityStatement"/>
-      </reference>
-      <name value="API for Disability Assisance"/>
-      <description value="Disability Assistance Requirements and Summary"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CapabilityStatement"/>
-      </extension>
-      <reference>
         <reference value="CapabilityStatement/MedicationRequestCapabilityStatement"/>
       </reference>
       <name value="API for Medication Summary"/>
@@ -499,6 +488,28 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CapabilityStatement"/>
+      </extension>
+      <reference>
+        <reference value="CapabilityStatement/AssistanceNeedsCapabilityStatement"/>
+      </reference>
+      <name value="Assistance Needs API"/>
+      <description value="Disability Assistance Requirements and Summary"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/assistance-needs-profile"/>
+      </reference>
+      <name value="Assistance Needs Profle"/>
+      <description value="Extension of Conditions for capturing Patient assistance needs"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -510,32 +521,32 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/patient-condition-summary"/>
-      </reference>
-      <name value="AssistanceNeedsProfile"/>
-      <description value="Summary of Patient Conditions"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Condition"/>
       </extension>
       <reference>
-        <reference value="Condition/DisabilityAssistanceExample"/>
+        <reference value="Condition/NeedsAssistanceExample"/>
       </reference>
-      <name value="DisabilityAssistanceExample"/>
+      <name value="NeedsAssistanceExample"/>
       <description value="Required Assistance: A New Zealand Sign Language interpreter"/>
-      <exampleCanonical value="https://ig.opennz.org/StructureDefinition/patient-condition-summary"/>
+      <exampleCanonical value="https://ig.opennz.org/StructureDefinition/assistance-needs-profile"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/NeedsAssistanceResponse"/>
+      </reference>
+      <name value="NeedsAssistanceResponse"/>
+      <description value="Example response for NZ Sign Language Assistance"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Questionnaire"/>
       </extension>
       <reference>
-        <reference value="Questionnaire/DisabilityAssistanceQuestionnaire"/>
+        <reference value="Questionnaire/AssistanceNeedsQuestionnaire"/>
       </reference>
       <name value="Questionnaire Disability Assistance"/>
       <description value="Disability Assistance Requirements"/>

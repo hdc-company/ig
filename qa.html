@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 71, errors = 0, warn = 4, info = 1-->
+<!-- broken links = 76, errors = 4, warn = 17, info = 1-->
 <head>
   <title>NewRepublicFHIRIG : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -36,7 +36,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for NewRepublicFHIRIG</h1>
- <p>Generated Thu Jun 13 05:50:16 UTC 2024, FHIR version 4.3.0 for fsh.ig#0.1.0 (canonical = <a href="https://ig.opennz.org">https://ig.opennz.org</a> (<a href="https://ig.opennz.org/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
+ <p>Generated Fri Jun 21 02:06:46 UTC 2024, FHIR version 4.3.0 for fsh.ig#0.1.0 (canonical = <a href="https://ig.opennz.org">https://ig.opennz.org</a> (<a href="https://ig.opennz.org/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.6.11</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = fsh.ig, Canonical = https://ig.opennz.org</td></tr>
@@ -60,7 +60,9 @@
   <li>
 hl7.fhir.r4b.core#4.3.0:     <a href="http://hl7.org/fhir/R4B/codesystem-guide-parameter-code.html">GuideParameterCode</a>
  (15 uses),     <code>patient</code>
- (2 uses),     <code>authoredon</code>
+ (2 uses),     <code>category</code>
+ (1 uses),     <code>code</code>
+ (1 uses),     <code>authoredon</code>
  (1 uses),     <a href="http://hl7.org/fhir/R4B/condition.html">Condition</a>
  (7 uses),     <a href="http://hl7.org/fhir/R4B/valueset-languages.html">CommonLanguages</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4B/valueset-condition-clinical.html">ConditionClinicalStatusCodes</a>
@@ -83,7 +85,7 @@ hl7.fhir.r4b.core#4.3.0:     <a href="http://hl7.org/fhir/R4B/codesystem-guide-p
   </li>
   <li>
 hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureDefinition-resource-sort.html">ResourceSortExt</a>
- (10 uses)
+ (11 uses)
   </li>
 </ul>
 </td></tr>
@@ -91,17 +93,17 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
  <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at https://ig.opennz.org (Problem #1 with package-list.json at https://ig.opennz.org: Not Found)</td></tr>
  <tr><td>IPA Comparison:</td><td> n/a</td></tr>
  <tr><td>IPS Comparison:</td><td> n/a</td></tr>
- <tr><td>Summary:</td><td> errors = 0, warn = 4, info = 1, broken links = 71</td></tr>
+ <tr><td>Summary:</td><td> errors = 4, warn = 17, info = 1, broken links = 76</td></tr>
 </table>
  <table class="grid">
    <tr>
      <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>71</b></td><td><b>4</b></td><td><b>0</b></td>
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>76</b></td><td><b>4</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_solution_workspace_fsh-generated_resources_CapabilityStatement-DisabilityAssistanceCapabilityStatement"><b>/solution/workspace/fsh-generated/resources/CapabilityStatement-DisabilityAssistanceCapabilityStatement</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+     <td><a href="#_solution_workspace_fsh-generated_resources_CapabilityStatement-AssistanceNeedsCapabilityStatement"><b>/solution/workspace/fsh-generated/resources/CapabilityStatement-AssistanceNeedsCapabilityStatement</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_solution_workspace_fsh-generated_resources_CapabilityStatement-MedicationRequestCapabilityStatement"><b>/solution/workspace/fsh-generated/resources/CapabilityStatement-MedicationRequestCapabilityStatement</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
@@ -110,7 +112,7 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
      <td><a href="#_solution_workspace_fsh-generated_resources_CodeSystem-assistance-needs-cs"><b>/solution/workspace/fsh-generated/resources/CodeSystem-assistance-needs-cs</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_solution_workspace_fsh-generated_resources_Condition-DisabilityAssistanceExample"><b>/solution/workspace/fsh-generated/resources/Condition-DisabilityAssistanceExample</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+     <td><a href="#_solution_workspace_fsh-generated_resources_Condition-NeedsAssistanceExample"><b>/solution/workspace/fsh-generated/resources/Condition-NeedsAssistanceExample</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_solution_workspace_fsh-generated_resources_ImplementationGuide-fsh.ig"><b>/solution/workspace/fsh-generated/resources/ImplementationGuide-fsh.ig</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
@@ -118,17 +120,20 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
    <tr style="background-color: #EFFFEF">
      <td><a href="#_solution_workspace_fsh-generated_resources_Patient-1198"><b>/solution/workspace/fsh-generated/resources/Patient-1198</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_solution_workspace_fsh-generated_resources_Questionnaire-DisabilityAssistanceQuestionnaire"><b>/solution/workspace/fsh-generated/resources/Questionnaire-DisabilityAssistanceQuestionnaire</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_solution_workspace_fsh-generated_resources_Questionnaire-AssistanceNeedsQuestionnaire"><b>/solution/workspace/fsh-generated/resources/Questionnaire-AssistanceNeedsQuestionnaire</b></a></td><td><b>2</b></td><td><b>10</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_solution_workspace_fsh-generated_resources_Questionnaire-MedicationRequestQuestionnaire"><b>/solution/workspace/fsh-generated/resources/Questionnaire-MedicationRequestQuestionnaire</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_solution_workspace_fsh-generated_resources_QuestionnaireResponse-NeedsAssistanceResponse"><b>/solution/workspace/fsh-generated/resources/QuestionnaireResponse-NeedsAssistanceResponse</b></a></td><td><b>2</b></td><td><b>3</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_solution_workspace_fsh-generated_resources_StructureDefinition-assistance-needs-ext"><b>/solution/workspace/fsh-generated/resources/StructureDefinition-assistance-needs-ext</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_solution_workspace_fsh-generated_resources_StructureDefinition-patient-condition-summary"><b>/solution/workspace/fsh-generated/resources/StructureDefinition-patient-condition-summary</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+     <td><a href="#_solution_workspace_fsh-generated_resources_StructureDefinition-assistance-needs-profile"><b>/solution/workspace/fsh-generated/resources/StructureDefinition-assistance-needs-profile</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_solution_workspace_fsh-generated_resources_ValueSet-assistance-needs-vs"><b>/solution/workspace/fsh-generated/resources/ValueSet-assistance-needs-vs</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
@@ -140,22 +145,22 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
  <div style="border: 1px grey solid; display: none" id="v"></div>
  <table class="grid">
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CapabilityStatement-DisabilityAssistanceCapabilityStatement-testing.html#l348">output&#8203;/CapabilityStatement-DisabilityAssistanceCapabilityStatement-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 233, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
+     <td><b><a href="CapabilityStatement-AssistanceNeedsCapabilityStatement-testing.html#l348">output&#8203;/CapabilityStatement-AssistanceNeedsCapabilityStatement-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 233, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CapabilityStatement-DisabilityAssistanceCapabilityStatement.change.history.html#l317">output&#8203;/CapabilityStatement-DisabilityAssistanceCapabilityStatement&#8203;.change&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 202, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
+     <td><b><a href="CapabilityStatement-AssistanceNeedsCapabilityStatement.change.history.html#l317">output&#8203;/CapabilityStatement-AssistanceNeedsCapabilityStatement&#8203;.change&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 202, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CapabilityStatement-DisabilityAssistanceCapabilityStatement.html#l681">output&#8203;/CapabilityStatement-DisabilityAssistanceCapabilityStatement&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 273, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
+     <td><b><a href="CapabilityStatement-AssistanceNeedsCapabilityStatement.html#l711">output&#8203;/CapabilityStatement-AssistanceNeedsCapabilityStatement&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 275, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CapabilityStatement-DisabilityAssistanceCapabilityStatement.json.html#l560">output&#8203;/CapabilityStatement-DisabilityAssistanceCapabilityStatement&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 357, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
+     <td><b><a href="CapabilityStatement-AssistanceNeedsCapabilityStatement.json.html#l584">output&#8203;/CapabilityStatement-AssistanceNeedsCapabilityStatement&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 369, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CapabilityStatement-DisabilityAssistanceCapabilityStatement.ttl.html#l720">output&#8203;/CapabilityStatement-DisabilityAssistanceCapabilityStatement&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 317, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
+     <td><b><a href="CapabilityStatement-AssistanceNeedsCapabilityStatement.ttl.html#l774">output&#8203;/CapabilityStatement-AssistanceNeedsCapabilityStatement&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 329, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CapabilityStatement-DisabilityAssistanceCapabilityStatement.xml.html#l725">output&#8203;/CapabilityStatement-DisabilityAssistanceCapabilityStatement&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 332, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
+     <td><b><a href="CapabilityStatement-AssistanceNeedsCapabilityStatement.xml.html#l779">output&#8203;/CapabilityStatement-AssistanceNeedsCapabilityStatement&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 349, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b><a href="CapabilityStatement-MedicationRequestCapabilityStatement-testing.html#l348">output&#8203;/CapabilityStatement-MedicationRequestCapabilityStatement-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 233, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
@@ -194,19 +199,19 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
      <td><b><a href="CodeSystem-assistance-needs-cs.xml.html#l557">output&#8203;/CodeSystem-assistance-needs-cs&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 278, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Condition-DisabilityAssistanceExample.change.history.html#l317">output&#8203;/Condition-DisabilityAssistanceExample&#8203;.change&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 202, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
+     <td><b><a href="Condition-NeedsAssistanceExample.change.history.html#l317">output&#8203;/Condition-NeedsAssistanceExample&#8203;.change&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 202, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Condition-DisabilityAssistanceExample.html#l366">output&#8203;/Condition-DisabilityAssistanceExample&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 211, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
+     <td><b><a href="Condition-NeedsAssistanceExample.html#l384">output&#8203;/Condition-NeedsAssistanceExample&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 211, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Condition-DisabilityAssistanceExample.json.html#l407">output&#8203;/Condition-DisabilityAssistanceExample&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 250, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
+     <td><b><a href="Condition-NeedsAssistanceExample.json.html#l455">output&#8203;/Condition-NeedsAssistanceExample&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 277, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Condition-DisabilityAssistanceExample.ttl.html#l435">output&#8203;/Condition-DisabilityAssistanceExample&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 251, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
+     <td><b><a href="Condition-NeedsAssistanceExample.ttl.html#l516">output&#8203;/Condition-NeedsAssistanceExample&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 272, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Condition-DisabilityAssistanceExample.xml.html#l431">output&#8203;/Condition-DisabilityAssistanceExample&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 244, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
+     <td><b><a href="Condition-NeedsAssistanceExample.xml.html#l512">output&#8203;/Condition-NeedsAssistanceExample&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 265, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b><a href="MedicationRequest.html#l328">output&#8203;/MedicationRequest&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 191, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
@@ -239,22 +244,22 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
      <td><b><a href="PatientSummary.html#l406">output&#8203;/PatientSummary&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 199, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Questionnaire-DisabilityAssistanceQuestionnaire-testing.html#l348">output&#8203;/Questionnaire-DisabilityAssistanceQuestionnaire-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 233, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
+     <td><b><a href="Questionnaire-AssistanceNeedsQuestionnaire-testing.html#l348">output&#8203;/Questionnaire-AssistanceNeedsQuestionnaire-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 233, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Questionnaire-DisabilityAssistanceQuestionnaire.change.history.html#l317">output&#8203;/Questionnaire-DisabilityAssistanceQuestionnaire&#8203;.change&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 202, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
+     <td><b><a href="Questionnaire-AssistanceNeedsQuestionnaire.change.history.html#l317">output&#8203;/Questionnaire-AssistanceNeedsQuestionnaire&#8203;.change&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 202, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Questionnaire-DisabilityAssistanceQuestionnaire.html#l496">output&#8203;/Questionnaire-DisabilityAssistanceQuestionnaire&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 269, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
+     <td><b><a href="Questionnaire-AssistanceNeedsQuestionnaire.html#l577">output&#8203;/Questionnaire-AssistanceNeedsQuestionnaire&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 270, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Questionnaire-DisabilityAssistanceQuestionnaire.json.html#l524">output&#8203;/Questionnaire-DisabilityAssistanceQuestionnaire&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 323, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
+     <td><b><a href="Questionnaire-AssistanceNeedsQuestionnaire.json.html#l617">output&#8203;/Questionnaire-AssistanceNeedsQuestionnaire&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 394, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Questionnaire-DisabilityAssistanceQuestionnaire.ttl.html#l660">output&#8203;/Questionnaire-DisabilityAssistanceQuestionnaire&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 304, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
+     <td><b><a href="Questionnaire-AssistanceNeedsQuestionnaire.ttl.html#l824">output&#8203;/Questionnaire-AssistanceNeedsQuestionnaire&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 343, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Questionnaire-DisabilityAssistanceQuestionnaire.xml.html#l659">output&#8203;/Questionnaire-DisabilityAssistanceQuestionnaire&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 312, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
+     <td><b><a href="Questionnaire-AssistanceNeedsQuestionnaire.xml.html#l809">output&#8203;/Questionnaire-AssistanceNeedsQuestionnaire&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 369, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b><a href="Questionnaire-MedicationRequestQuestionnaire-testing.html#l348">output&#8203;/Questionnaire-MedicationRequestQuestionnaire-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 233, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
@@ -275,6 +280,21 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
      <td><b><a href="Questionnaire-MedicationRequestQuestionnaire.xml.html#l509">output&#8203;/Questionnaire-MedicationRequestQuestionnaire&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 271, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
+     <td><b><a href="QuestionnaireResponse-NeedsAssistanceResponse.change.history.html#l317">output&#8203;/QuestionnaireResponse-NeedsAssistanceResponse&#8203;.change&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 202, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="QuestionnaireResponse-NeedsAssistanceResponse.html#l428">output&#8203;/QuestionnaireResponse-NeedsAssistanceResponse&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 217, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="QuestionnaireResponse-NeedsAssistanceResponse.json.html#l428">output&#8203;/QuestionnaireResponse-NeedsAssistanceResponse&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 271, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="QuestionnaireResponse-NeedsAssistanceResponse.ttl.html#l489">output&#8203;/QuestionnaireResponse-NeedsAssistanceResponse&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 261, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="QuestionnaireResponse-NeedsAssistanceResponse.xml.html#l488">output&#8203;/QuestionnaireResponse-NeedsAssistanceResponse&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 267, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
      <td><b><a href="StructureDefinition-assistance-needs-ext-definitions.html#l1643">output&#8203;/StructureDefinition-assistance-needs-ext-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 315, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -284,7 +304,7 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
      <td><b><a href="StructureDefinition-assistance-needs-ext-testing.html#l364">output&#8203;/StructureDefinition-assistance-needs-ext-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 256, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-assistance-needs-ext.html#l1302">output&#8203;/StructureDefinition-assistance-needs-ext&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 597, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-assistance-needs-ext.html#l1307">output&#8203;/StructureDefinition-assistance-needs-ext&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 598, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b><a href="StructureDefinition-assistance-needs-ext.profile.history.html#l337">output&#8203;/StructureDefinition-assistance-needs-ext&#8203;.profile&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 238, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
@@ -299,31 +319,31 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
      <td><b><a href="StructureDefinition-assistance-needs-ext.profile.xml.html#l1344">output&#8203;/StructureDefinition-assistance-needs-ext&#8203;.profile&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 495, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-patient-condition-summary-definitions.html#l4349">output&#8203;/StructureDefinition-patient-condition-summary-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 469, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-assistance-needs-profile-definitions.html#l7003">output&#8203;/StructureDefinition-assistance-needs-profile-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 598, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-patient-condition-summary-examples.html#l374">output&#8203;/StructureDefinition-patient-condition-summary-examples&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 270, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-assistance-needs-profile-examples.html#l374">output&#8203;/StructureDefinition-assistance-needs-profile-examples&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 270, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-patient-condition-summary-mappings.html#l1071">output&#8203;/StructureDefinition-patient-condition-summary-mappings&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 378, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-assistance-needs-profile-mappings.html#l891">output&#8203;/StructureDefinition-assistance-needs-profile-mappings&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 351, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-patient-condition-summary-testing.html#l370">output&#8203;/StructureDefinition-patient-condition-summary-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 266, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-assistance-needs-profile-testing.html#l370">output&#8203;/StructureDefinition-assistance-needs-profile-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 266, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-patient-condition-summary.html#l5297">output&#8203;/StructureDefinition-patient-condition-summary&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 1475, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-assistance-needs-profile.html#l6361">output&#8203;/StructureDefinition-assistance-needs-profile&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 1735, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-patient-condition-summary.profile.history.html#l343">output&#8203;/StructureDefinition-patient-condition-summary&#8203;.profile&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 248, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-assistance-needs-profile.profile.history.html#l343">output&#8203;/StructureDefinition-assistance-needs-profile&#8203;.profile&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 248, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-patient-condition-summary.profile.json.html#l4287">output&#8203;/StructureDefinition-patient-condition-summary&#8203;.profile&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 2295, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-assistance-needs-profile.profile.json.html#l5595">output&#8203;/StructureDefinition-assistance-needs-profile&#8203;.profile&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 2980, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-patient-condition-summary.profile.ttl.html#l7884">output&#8203;/StructureDefinition-patient-condition-summary&#8203;.profile&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 1729, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-assistance-needs-profile.profile.ttl.html#l10344">output&#8203;/StructureDefinition-assistance-needs-profile&#8203;.profile&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 2189, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-patient-condition-summary.profile.xml.html#l7929">output&#8203;/StructureDefinition-patient-condition-summary&#8203;.profile&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 2156, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-assistance-needs-profile.profile.xml.html#l10401">output&#8203;/StructureDefinition-assistance-needs-profile&#8203;.profile&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 2771, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b><a href="ValueSet-assistance-needs-vs-testing.html#l348">output&#8203;/ValueSet-assistance-needs-vs-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 233, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
@@ -332,7 +352,7 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
      <td><b><a href="ValueSet-assistance-needs-vs.change.history.html#l317">output&#8203;/ValueSet-assistance-needs-vs&#8203;.change&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 202, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-assistance-needs-vs.html#l563">output&#8203;/ValueSet-assistance-needs-vs&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 302, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-assistance-needs-vs.html#l559">output&#8203;/ValueSet-assistance-needs-vs&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 301, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b><a href="ValueSet-assistance-needs-vs.json.html#l413">output&#8203;/ValueSet-assistance-needs-vs&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 261, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
@@ -344,13 +364,13 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
      <td><b><a href="ValueSet-assistance-needs-vs.xml.html#l455">output&#8203;/ValueSet-assistance-needs-vs&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 256, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#l617">output&#8203;/artifacts&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 337, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
+     <td><b><a href="artifacts.html#l632">output&#8203;/artifacts&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 346, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b><a href="index.html#l407">output&#8203;/index&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 240, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="toc.html#l419">output&#8203;/toc&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 158, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
+     <td><b><a href="toc.html#l427">output&#8203;/toc&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 158, column 28</a></b></td><td><b>error</b></td><td><b>The link 'https://ig.opennz.org' for &quot;FHIR New Republic&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>1</b></td><td><b>warning</b></td><td title=""><b>The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide</b></td>
@@ -366,8 +386,8 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
    </tr>
 </table>
 <hr/>
-<a name="_solution_workspace_fsh-generated_resources_CapabilityStatement-DisabilityAssistanceCapabilityStatement"> </a>
-<h2><a href="CapabilityStatement-DisabilityAssistanceCapabilityStatement.html">fsh-generated/resources/CapabilityStatement-DisabilityAssistanceCapabilityStatement.json</a> <span id="svi1" class="toggle" onclick="toggle('vi1')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi1')">(1)</span></h2>
+<a name="_solution_workspace_fsh-generated_resources_CapabilityStatement-AssistanceNeedsCapabilityStatement"> </a>
+<h2><a href="CapabilityStatement-AssistanceNeedsCapabilityStatement.html">fsh-generated/resources/CapabilityStatement-AssistanceNeedsCapabilityStatement.json</a> <span id="svi1" class="toggle" onclick="toggle('vi1')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi1')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi1"><ul style="font-size: 7px"><li>CapabilityStatement: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4B/capabilitystatement.html">CapabilityStatement</a></li></ul>
 </div>
  <table class="grid">
@@ -396,16 +416,16 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
    </tr>
 </table>
 <hr/>
-<a name="_solution_workspace_fsh-generated_resources_Condition-DisabilityAssistanceExample"> </a>
-<h2><a href="Condition-DisabilityAssistanceExample.html">fsh-generated/resources/Condition-DisabilityAssistanceExample.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>Condition: Validated against <i>this.</i><a href="StructureDefinition-patient-condition-summary.html">AssistanceNeedsProfile</a></li></ul>
+<a name="_solution_workspace_fsh-generated_resources_Condition-NeedsAssistanceExample"> </a>
+<h2><a href="Condition-NeedsAssistanceExample.html">fsh-generated/resources/Condition-NeedsAssistanceExample.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>Condition: Validated against <i>this.</i><a href="StructureDefinition-assistance-needs-profile.html">Assistance Needs Profle</a></li></ul>
 </div>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Condition&#8203;.extension[0]&#8203;.value&#8203;.ofType(CodeableConcept) (l24&#8203;/c8)</b></td><td><b>information</b></td><td title="MSG_EXPERIMENTAL"><b>Reference to experimental CodeSystem https://ig.opennz.org/CodeSystem/assistance-needs-cs|0.1.0</b></td>
+     <td><b>Condition&#8203;.extension[0]&#8203;.value&#8203;.ofType(CodeableConcept) (l51&#8203;/c8)</b></td><td><b>information</b></td><td title="MSG_EXPERIMENTAL"><b>Reference to experimental CodeSystem https://ig.opennz.org/CodeSystem/assistance-needs-cs|0.1.0</b></td>
    </tr>
 </table>
 <hr/>
@@ -429,13 +449,49 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
    </tr>
 </table>
 <hr/>
-<a name="_solution_workspace_fsh-generated_resources_Questionnaire-DisabilityAssistanceQuestionnaire"> </a>
-<h2><a href="Questionnaire-DisabilityAssistanceQuestionnaire.html">fsh-generated/resources/Questionnaire-DisabilityAssistanceQuestionnaire.json</a> <span id="svi7" class="toggle" onclick="toggle('vi7')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi7')">(1)</span></h2>
+<a name="_solution_workspace_fsh-generated_resources_Questionnaire-AssistanceNeedsQuestionnaire"> </a>
+<h2><a href="Questionnaire-AssistanceNeedsQuestionnaire.html">fsh-generated/resources/Questionnaire-AssistanceNeedsQuestionnaire.json</a> <span id="svi7" class="toggle" onclick="toggle('vi7')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi7')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi7"><ul style="font-size: 7px"><li>Questionnaire: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4B/questionnaire.html">Questionnaire</a></li></ul>
 </div>
  <table class="grid">
    <tr>
-     <td>&check;</td>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire&#8203;.item[1]&#8203;.item[0] (l1&#8203;/c16869)</b></td><td><b>error</b></td><td title="http://hl7.org/fhir/StructureDefinition/Questionnaire#que-11"><b>Constraint failed: que-11: 'If one or more answerOption is present, initial[x] must be missing' (defined in http://hl7.org/fhir/StructureDefinition/Questionnaire)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Questionnaire&#8203;.item[1]&#8203;.item[0]&#8203;.answerOption[0]&#8203;.value&#8203;.ofType(Coding) (l1&#8203;/c16817)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Questionnaire&#8203;.item[1]&#8203;.item[0]&#8203;.initial[0]&#8203;.value&#8203;.ofType(Coding) (l1&#8203;/c16866)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire&#8203;.item[1]&#8203;.item[1] (l1&#8203;/c17111)</b></td><td><b>error</b></td><td title="http://hl7.org/fhir/StructureDefinition/Questionnaire#que-11"><b>Constraint failed: que-11: 'If one or more answerOption is present, initial[x] must be missing' (defined in http://hl7.org/fhir/StructureDefinition/Questionnaire)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Questionnaire&#8203;.item[1]&#8203;.item[1]&#8203;.answerOption[0]&#8203;.value&#8203;.ofType(Coding) (l1&#8203;/c17059)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Questionnaire&#8203;.item[1]&#8203;.item[1]&#8203;.initial[0]&#8203;.value&#8203;.ofType(Coding) (l1&#8203;/c17108)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Questionnaire&#8203;.item[1]&#8203;.item[2]&#8203;.answerOption[0]&#8203;.value&#8203;.ofType(Coding) (l1&#8203;/c17561)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Questionnaire&#8203;.item[1]&#8203;.item[2]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding) (l1&#8203;/c17636)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Questionnaire&#8203;.item[1]&#8203;.item[2]&#8203;.answerOption[2]&#8203;.value&#8203;.ofType(Coding) (l1&#8203;/c17705)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Questionnaire&#8203;.item[1]&#8203;.item[2]&#8203;.answerOption[3]&#8203;.value&#8203;.ofType(Coding) (l1&#8203;/c17774)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Questionnaire&#8203;.item[1]&#8203;.item[2]&#8203;.answerOption[4]&#8203;.value&#8203;.ofType(Coding) (l1&#8203;/c17852)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Questionnaire&#8203;.item[1]&#8203;.item[2]&#8203;.answerOption[5]&#8203;.value&#8203;.ofType(Coding) (l1&#8203;/c17921)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b></td>
    </tr>
 </table>
 <hr/>
@@ -449,18 +505,33 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
    </tr>
 </table>
 <hr/>
-<a name="_solution_workspace_fsh-generated_resources_StructureDefinition-assistance-needs-ext"> </a>
-<h2><a href="StructureDefinition-assistance-needs-ext.html">fsh-generated/resources/StructureDefinition-assistance-needs-ext.json</a> <span id="svi9" class="toggle" onclick="toggle('vi9')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi9')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi9"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4B/structuredefinition.html">StructureDefinition</a></li></ul>
+<a name="_solution_workspace_fsh-generated_resources_QuestionnaireResponse-NeedsAssistanceResponse"> </a>
+<h2><a href="QuestionnaireResponse-NeedsAssistanceResponse.html">fsh-generated/resources/QuestionnaireResponse-NeedsAssistanceResponse.json</a> <span id="svi9" class="toggle" onclick="toggle('vi9')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi9')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi9"><ul style="font-size: 7px"><li>QuestionnaireResponse: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4B/questionnaireresponse.html">QuestionnaireResponse</a></li></ul>
 </div>
  <table class="grid">
    <tr>
-     <td>&check;</td>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>QuestionnaireResponse&#8203;.item[1]&#8203;.item[0]&#8203;.answer[0]&#8203;.value&#8203;.ofType(Coding) (l25&#8203;/c16)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>QuestionnaireResponse&#8203;.item[1]&#8203;.item[1]&#8203;.answer[0]&#8203;.value&#8203;.ofType(Coding) (l35&#8203;/c16)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>QuestionnaireResponse&#8203;.item[1]&#8203;.item[2]&#8203;.answer[0]&#8203;.value&#8203;.ofType(Coding) (l46&#8203;/c16)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>QuestionnaireResponse (l8/c6)</b></td><td><b>error</b></td><td title="Questionnaire_QR_Item_NotFound"><b>LinkId 'disclaimer' not found in questionnaire</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>QuestionnaireResponse.item[1] (l17/c6)</b></td><td><b>error</b></td><td title="Questionnaire_QR_Item_NotEnabled2"><b>Item has answer, even though it is not enabled (item id = 'needs')</b></td>
    </tr>
 </table>
 <hr/>
-<a name="_solution_workspace_fsh-generated_resources_StructureDefinition-patient-condition-summary"> </a>
-<h2><a href="StructureDefinition-patient-condition-summary.html">fsh-generated/resources/StructureDefinition-patient-condition-summary.json</a> <span id="svi10" class="toggle" onclick="toggle('vi10')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi10')">(1)</span></h2>
+<a name="_solution_workspace_fsh-generated_resources_StructureDefinition-assistance-needs-ext"> </a>
+<h2><a href="StructureDefinition-assistance-needs-ext.html">fsh-generated/resources/StructureDefinition-assistance-needs-ext.json</a> <span id="svi10" class="toggle" onclick="toggle('vi10')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi10')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi10"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4B/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
@@ -469,9 +540,19 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
    </tr>
 </table>
 <hr/>
+<a name="_solution_workspace_fsh-generated_resources_StructureDefinition-assistance-needs-profile"> </a>
+<h2><a href="StructureDefinition-assistance-needs-profile.html">fsh-generated/resources/StructureDefinition-assistance-needs-profile.json</a> <span id="svi11" class="toggle" onclick="toggle('vi11')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi11')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi11"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4B/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
 <a name="_solution_workspace_fsh-generated_resources_ValueSet-assistance-needs-vs"> </a>
-<h2><a href="ValueSet-assistance-needs-vs.html">fsh-generated/resources/ValueSet-assistance-needs-vs.json</a> <span id="svi11" class="toggle" onclick="toggle('vi11')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi11')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi11"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4B/valueset.html">ValueSet</a></li></ul>
+<h2><a href="ValueSet-assistance-needs-vs.html">fsh-generated/resources/ValueSet-assistance-needs-vs.json</a> <span id="svi12" class="toggle" onclick="toggle('vi12')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi12')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi12"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4B/valueset.html">ValueSet</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -487,7 +568,67 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
 <h2>MSG_EXPERIMENTAL</h2>
  <table class="grid">
    <tr style="background-color: #fffff2">
-     <td><a href="Condition-DisabilityAssistanceExample.html">fsh-generated/resources/Condition-DisabilityAssistanceExample.json</a></td><td><b>Reference to experimental CodeSystem https://ig.opennz.org/CodeSystem/assistance-needs-cs|0.1.0</b></td>
+     <td><a href="Condition-NeedsAssistanceExample.html">fsh-generated/resources/Condition-NeedsAssistanceExample.json</a></td><td><b>Reference to experimental CodeSystem https://ig.opennz.org/CodeSystem/assistance-needs-cs|0.1.0</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Questionnaire_QR_Item_NotEnabled2"> </a>
+<h2>Questionnaire_QR_Item_NotEnabled2</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="QuestionnaireResponse-NeedsAssistanceResponse.html">fsh-generated/resources/QuestionnaireResponse-NeedsAssistanceResponse.json</a></td><td><b>Item has answer, even though it is not enabled (item id = 'needs')</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Questionnaire_QR_Item_NotFound"> </a>
+<h2>Questionnaire_QR_Item_NotFound</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="QuestionnaireResponse-NeedsAssistanceResponse.html">fsh-generated/resources/QuestionnaireResponse-NeedsAssistanceResponse.json</a></td><td><b>LinkId 'disclaimer' not found in questionnaire</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="TERMINOLOGY_TX_SYSTEM_NO_CODE"> </a>
+<h2>TERMINOLOGY_TX_SYSTEM_NO_CODE</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="Questionnaire-AssistanceNeedsQuestionnaire.html">fsh-generated/resources/Questionnaire-AssistanceNeedsQuestionnaire.json</a></td><td><b>A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Questionnaire-AssistanceNeedsQuestionnaire.html">fsh-generated/resources/Questionnaire-AssistanceNeedsQuestionnaire.json</a></td><td><b>A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Questionnaire-AssistanceNeedsQuestionnaire.html">fsh-generated/resources/Questionnaire-AssistanceNeedsQuestionnaire.json</a></td><td><b>A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Questionnaire-AssistanceNeedsQuestionnaire.html">fsh-generated/resources/Questionnaire-AssistanceNeedsQuestionnaire.json</a></td><td><b>A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Questionnaire-AssistanceNeedsQuestionnaire.html">fsh-generated/resources/Questionnaire-AssistanceNeedsQuestionnaire.json</a></td><td><b>A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Questionnaire-AssistanceNeedsQuestionnaire.html">fsh-generated/resources/Questionnaire-AssistanceNeedsQuestionnaire.json</a></td><td><b>A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Questionnaire-AssistanceNeedsQuestionnaire.html">fsh-generated/resources/Questionnaire-AssistanceNeedsQuestionnaire.json</a></td><td><b>A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Questionnaire-AssistanceNeedsQuestionnaire.html">fsh-generated/resources/Questionnaire-AssistanceNeedsQuestionnaire.json</a></td><td><b>A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Questionnaire-AssistanceNeedsQuestionnaire.html">fsh-generated/resources/Questionnaire-AssistanceNeedsQuestionnaire.json</a></td><td><b>A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Questionnaire-AssistanceNeedsQuestionnaire.html">fsh-generated/resources/Questionnaire-AssistanceNeedsQuestionnaire.json</a></td><td><b>A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="QuestionnaireResponse-NeedsAssistanceResponse.html">fsh-generated/resources/QuestionnaireResponse-NeedsAssistanceResponse.json</a></td><td><b>A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="QuestionnaireResponse-NeedsAssistanceResponse.html">fsh-generated/resources/QuestionnaireResponse-NeedsAssistanceResponse.json</a></td><td><b>A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="QuestionnaireResponse-NeedsAssistanceResponse.html">fsh-generated/resources/QuestionnaireResponse-NeedsAssistanceResponse.json</a></td><td><b>A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b></td>
    </tr>
 </table>
 </body>

@@ -1,29 +1,30 @@
 NewRepublicFHIRIG : Validation Results
 =========================================
 
-err = 0, warn = 4, info = 1
+err = 4, warn = 17, info = 1
 $--
 Generated $--. FHIR version $-- for fsh.ig#$-- (canonical = https://ig.opennz.org)
- Build Errors : 71 / 4 / 0
- /solution/workspace/fsh-generated/resources/CapabilityStatement-DisabilityAssistanceCapabilityStatement : 0 / 0 / 1
+ Build Errors : 76 / 4 / 0
+ /solution/workspace/fsh-generated/resources/CapabilityStatement-AssistanceNeedsCapabilityStatement : 0 / 0 / 1
  /solution/workspace/fsh-generated/resources/CapabilityStatement-MedicationRequestCapabilityStatement : 0 / 0 / 1
  /solution/workspace/fsh-generated/resources/CodeSystem-assistance-needs-cs : 0 / 0 / 1
- /solution/workspace/fsh-generated/resources/Condition-DisabilityAssistanceExample : 0 / 0 / 2
+ /solution/workspace/fsh-generated/resources/Condition-NeedsAssistanceExample : 0 / 0 / 2
  /solution/workspace/fsh-generated/resources/ImplementationGuide-fsh.ig : 0 / 0 / 1
  /solution/workspace/fsh-generated/resources/Patient-1198 : 0 / 0 / 1
- /solution/workspace/fsh-generated/resources/Questionnaire-DisabilityAssistanceQuestionnaire : 0 / 0 / 1
+ /solution/workspace/fsh-generated/resources/Questionnaire-AssistanceNeedsQuestionnaire : 2 / 10 / 1
  /solution/workspace/fsh-generated/resources/Questionnaire-MedicationRequestQuestionnaire : 0 / 0 / 1
+ /solution/workspace/fsh-generated/resources/QuestionnaireResponse-NeedsAssistanceResponse : 2 / 3 / 1
  /solution/workspace/fsh-generated/resources/StructureDefinition-assistance-needs-ext : 0 / 0 / 1
- /solution/workspace/fsh-generated/resources/StructureDefinition-patient-condition-summary : 0 / 0 / 1
+ /solution/workspace/fsh-generated/resources/StructureDefinition-assistance-needs-profile : 0 / 0 / 1
  /solution/workspace/fsh-generated/resources/ValueSet-assistance-needs-vs : 0 / 0 / 1
 </table>
 == n/a ==
-ERROR: /solution/workspace/output/CapabilityStatement-DisabilityAssistanceCapabilityStatement-testing.html#/html/body/div/div/div/p/a at Line 233, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
-ERROR: /solution/workspace/output/CapabilityStatement-DisabilityAssistanceCapabilityStatement.change.history.html#/html/body/div/div/div/p/a at Line 202, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
-ERROR: /solution/workspace/output/CapabilityStatement-DisabilityAssistanceCapabilityStatement.html#/html/body/div/div/div/p/a at Line 273, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
-ERROR: /solution/workspace/output/CapabilityStatement-DisabilityAssistanceCapabilityStatement.json.html#/html/body/div/div/div/p/a at Line 357, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
-ERROR: /solution/workspace/output/CapabilityStatement-DisabilityAssistanceCapabilityStatement.ttl.html#/html/body/div/div/div/p/a at Line 317, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
-ERROR: /solution/workspace/output/CapabilityStatement-DisabilityAssistanceCapabilityStatement.xml.html#/html/body/div/div/div/p/a at Line 332, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
+ERROR: /solution/workspace/output/CapabilityStatement-AssistanceNeedsCapabilityStatement-testing.html#/html/body/div/div/div/p/a at Line 233, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
+ERROR: /solution/workspace/output/CapabilityStatement-AssistanceNeedsCapabilityStatement.change.history.html#/html/body/div/div/div/p/a at Line 202, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
+ERROR: /solution/workspace/output/CapabilityStatement-AssistanceNeedsCapabilityStatement.html#/html/body/div/div/div/p/a at Line 275, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
+ERROR: /solution/workspace/output/CapabilityStatement-AssistanceNeedsCapabilityStatement.json.html#/html/body/div/div/div/p/a at Line 369, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
+ERROR: /solution/workspace/output/CapabilityStatement-AssistanceNeedsCapabilityStatement.ttl.html#/html/body/div/div/div/p/a at Line 329, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
+ERROR: /solution/workspace/output/CapabilityStatement-AssistanceNeedsCapabilityStatement.xml.html#/html/body/div/div/div/p/a at Line 349, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
 ERROR: /solution/workspace/output/CapabilityStatement-MedicationRequestCapabilityStatement-testing.html#/html/body/div/div/div/p/a at Line 233, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
 ERROR: /solution/workspace/output/CapabilityStatement-MedicationRequestCapabilityStatement.change.history.html#/html/body/div/div/div/p/a at Line 202, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
 ERROR: /solution/workspace/output/CapabilityStatement-MedicationRequestCapabilityStatement.html#/html/body/div/div/div/p/a at Line 265, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
@@ -36,11 +37,11 @@ ERROR: /solution/workspace/output/CodeSystem-assistance-needs-cs.html#/html/body
 ERROR: /solution/workspace/output/CodeSystem-assistance-needs-cs.json.html#/html/body/div/div/div/p/a at Line 284, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
 ERROR: /solution/workspace/output/CodeSystem-assistance-needs-cs.ttl.html#/html/body/div/div/div/p/a at Line 281, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
 ERROR: /solution/workspace/output/CodeSystem-assistance-needs-cs.xml.html#/html/body/div/div/div/p/a at Line 278, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
-ERROR: /solution/workspace/output/Condition-DisabilityAssistanceExample.change.history.html#/html/body/div/div/div/p/a at Line 202, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
-ERROR: /solution/workspace/output/Condition-DisabilityAssistanceExample.html#/html/body/div/div/div/p/a at Line 211, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
-ERROR: /solution/workspace/output/Condition-DisabilityAssistanceExample.json.html#/html/body/div/div/div/p/a at Line 250, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
-ERROR: /solution/workspace/output/Condition-DisabilityAssistanceExample.ttl.html#/html/body/div/div/div/p/a at Line 251, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
-ERROR: /solution/workspace/output/Condition-DisabilityAssistanceExample.xml.html#/html/body/div/div/div/p/a at Line 244, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
+ERROR: /solution/workspace/output/Condition-NeedsAssistanceExample.change.history.html#/html/body/div/div/div/p/a at Line 202, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
+ERROR: /solution/workspace/output/Condition-NeedsAssistanceExample.html#/html/body/div/div/div/p/a at Line 211, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
+ERROR: /solution/workspace/output/Condition-NeedsAssistanceExample.json.html#/html/body/div/div/div/p/a at Line 277, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
+ERROR: /solution/workspace/output/Condition-NeedsAssistanceExample.ttl.html#/html/body/div/div/div/p/a at Line 272, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
+ERROR: /solution/workspace/output/Condition-NeedsAssistanceExample.xml.html#/html/body/div/div/div/p/a at Line 265, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
 ERROR: /solution/workspace/output/MedicationRequest.html#/html/body/div/div/div/p/a at Line 191, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
 ERROR: /solution/workspace/output/Patient-1198.change.history.html#/html/body/div/div/div/p/a at Line 202, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
 ERROR: /solution/workspace/output/Patient-1198.html#/html/body/div/div/div/p/a at Line 211, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
@@ -51,57 +52,80 @@ ERROR: /solution/workspace/output/PatientCondition.html#/html/body/div/div/div/p
 ERROR: /solution/workspace/output/PatientMedicationRequest.html#/html/body/div/div/div/p/a at Line 179, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
 ERROR: /solution/workspace/output/PatientSummary.html#/html/body/div/div/div/div/div/p/a at Line 176, column 47: The link '/ModifiedQuestionnaire.json' for "ModifiedQuestionnaire.json" cannot be resolved
 ERROR: /solution/workspace/output/PatientSummary.html#/html/body/div/div/div/p/a at Line 199, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
-ERROR: /solution/workspace/output/Questionnaire-DisabilityAssistanceQuestionnaire-testing.html#/html/body/div/div/div/p/a at Line 233, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
-ERROR: /solution/workspace/output/Questionnaire-DisabilityAssistanceQuestionnaire.change.history.html#/html/body/div/div/div/p/a at Line 202, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
-ERROR: /solution/workspace/output/Questionnaire-DisabilityAssistanceQuestionnaire.html#/html/body/div/div/div/p/a at Line 269, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
-ERROR: /solution/workspace/output/Questionnaire-DisabilityAssistanceQuestionnaire.json.html#/html/body/div/div/div/p/a at Line 323, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
-ERROR: /solution/workspace/output/Questionnaire-DisabilityAssistanceQuestionnaire.ttl.html#/html/body/div/div/div/p/a at Line 304, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
-ERROR: /solution/workspace/output/Questionnaire-DisabilityAssistanceQuestionnaire.xml.html#/html/body/div/div/div/p/a at Line 312, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
+ERROR: /solution/workspace/output/Questionnaire-AssistanceNeedsQuestionnaire-testing.html#/html/body/div/div/div/p/a at Line 233, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
+ERROR: /solution/workspace/output/Questionnaire-AssistanceNeedsQuestionnaire.change.history.html#/html/body/div/div/div/p/a at Line 202, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
+ERROR: /solution/workspace/output/Questionnaire-AssistanceNeedsQuestionnaire.html#/html/body/div/div/div/p/a at Line 270, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
+ERROR: /solution/workspace/output/Questionnaire-AssistanceNeedsQuestionnaire.json.html#/html/body/div/div/div/p/a at Line 394, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
+ERROR: /solution/workspace/output/Questionnaire-AssistanceNeedsQuestionnaire.ttl.html#/html/body/div/div/div/p/a at Line 343, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
+ERROR: /solution/workspace/output/Questionnaire-AssistanceNeedsQuestionnaire.xml.html#/html/body/div/div/div/p/a at Line 369, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
 ERROR: /solution/workspace/output/Questionnaire-MedicationRequestQuestionnaire-testing.html#/html/body/div/div/div/p/a at Line 233, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
 ERROR: /solution/workspace/output/Questionnaire-MedicationRequestQuestionnaire.change.history.html#/html/body/div/div/div/p/a at Line 202, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
 ERROR: /solution/workspace/output/Questionnaire-MedicationRequestQuestionnaire.html#/html/body/div/div/div/p/a at Line 267, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
 ERROR: /solution/workspace/output/Questionnaire-MedicationRequestQuestionnaire.json.html#/html/body/div/div/div/p/a at Line 275, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
 ERROR: /solution/workspace/output/Questionnaire-MedicationRequestQuestionnaire.ttl.html#/html/body/div/div/div/p/a at Line 273, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
 ERROR: /solution/workspace/output/Questionnaire-MedicationRequestQuestionnaire.xml.html#/html/body/div/div/div/p/a at Line 271, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
+ERROR: /solution/workspace/output/QuestionnaireResponse-NeedsAssistanceResponse.change.history.html#/html/body/div/div/div/p/a at Line 202, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
+ERROR: /solution/workspace/output/QuestionnaireResponse-NeedsAssistanceResponse.html#/html/body/div/div/div/p/a at Line 217, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
+ERROR: /solution/workspace/output/QuestionnaireResponse-NeedsAssistanceResponse.json.html#/html/body/div/div/div/p/a at Line 271, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
+ERROR: /solution/workspace/output/QuestionnaireResponse-NeedsAssistanceResponse.ttl.html#/html/body/div/div/div/p/a at Line 261, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
+ERROR: /solution/workspace/output/QuestionnaireResponse-NeedsAssistanceResponse.xml.html#/html/body/div/div/div/p/a at Line 267, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
 ERROR: /solution/workspace/output/StructureDefinition-assistance-needs-ext-definitions.html#/html/body/div/div/div/p/a at Line 315, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
 ERROR: /solution/workspace/output/StructureDefinition-assistance-needs-ext-mappings.html#/html/body/div/div/div/p/a at Line 255, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
 ERROR: /solution/workspace/output/StructureDefinition-assistance-needs-ext-testing.html#/html/body/div/div/div/p/a at Line 256, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
-ERROR: /solution/workspace/output/StructureDefinition-assistance-needs-ext.html#/html/body/div/div/div/p/a at Line 597, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
+ERROR: /solution/workspace/output/StructureDefinition-assistance-needs-ext.html#/html/body/div/div/div/p/a at Line 598, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
 ERROR: /solution/workspace/output/StructureDefinition-assistance-needs-ext.profile.history.html#/html/body/div/div/div/p/a at Line 238, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
 ERROR: /solution/workspace/output/StructureDefinition-assistance-needs-ext.profile.json.html#/html/body/div/div/div/p/a at Line 533, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
 ERROR: /solution/workspace/output/StructureDefinition-assistance-needs-ext.profile.ttl.html#/html/body/div/div/div/p/a at Line 470, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
 ERROR: /solution/workspace/output/StructureDefinition-assistance-needs-ext.profile.xml.html#/html/body/div/div/div/p/a at Line 495, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
-ERROR: /solution/workspace/output/StructureDefinition-patient-condition-summary-definitions.html#/html/body/div/div/div/p/a at Line 469, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
-ERROR: /solution/workspace/output/StructureDefinition-patient-condition-summary-examples.html#/html/body/div/div/div/p/a at Line 270, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
-ERROR: /solution/workspace/output/StructureDefinition-patient-condition-summary-mappings.html#/html/body/div/div/div/p/a at Line 378, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
-ERROR: /solution/workspace/output/StructureDefinition-patient-condition-summary-testing.html#/html/body/div/div/div/p/a at Line 266, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
-ERROR: /solution/workspace/output/StructureDefinition-patient-condition-summary.html#/html/body/div/div/div/p/a at Line 1475, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
-ERROR: /solution/workspace/output/StructureDefinition-patient-condition-summary.profile.history.html#/html/body/div/div/div/p/a at Line 248, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
-ERROR: /solution/workspace/output/StructureDefinition-patient-condition-summary.profile.json.html#/html/body/div/div/div/p/a at Line 2295, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
-ERROR: /solution/workspace/output/StructureDefinition-patient-condition-summary.profile.ttl.html#/html/body/div/div/div/p/a at Line 1729, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
-ERROR: /solution/workspace/output/StructureDefinition-patient-condition-summary.profile.xml.html#/html/body/div/div/div/p/a at Line 2156, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
+ERROR: /solution/workspace/output/StructureDefinition-assistance-needs-profile-definitions.html#/html/body/div/div/div/p/a at Line 598, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
+ERROR: /solution/workspace/output/StructureDefinition-assistance-needs-profile-examples.html#/html/body/div/div/div/p/a at Line 270, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
+ERROR: /solution/workspace/output/StructureDefinition-assistance-needs-profile-mappings.html#/html/body/div/div/div/p/a at Line 351, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
+ERROR: /solution/workspace/output/StructureDefinition-assistance-needs-profile-testing.html#/html/body/div/div/div/p/a at Line 266, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
+ERROR: /solution/workspace/output/StructureDefinition-assistance-needs-profile.html#/html/body/div/div/div/p/a at Line 1735, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
+ERROR: /solution/workspace/output/StructureDefinition-assistance-needs-profile.profile.history.html#/html/body/div/div/div/p/a at Line 248, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
+ERROR: /solution/workspace/output/StructureDefinition-assistance-needs-profile.profile.json.html#/html/body/div/div/div/p/a at Line 2980, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
+ERROR: /solution/workspace/output/StructureDefinition-assistance-needs-profile.profile.ttl.html#/html/body/div/div/div/p/a at Line 2189, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
+ERROR: /solution/workspace/output/StructureDefinition-assistance-needs-profile.profile.xml.html#/html/body/div/div/div/p/a at Line 2771, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
 ERROR: /solution/workspace/output/ValueSet-assistance-needs-vs-testing.html#/html/body/div/div/div/p/a at Line 233, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
 ERROR: /solution/workspace/output/ValueSet-assistance-needs-vs.change.history.html#/html/body/div/div/div/p/a at Line 202, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
-ERROR: /solution/workspace/output/ValueSet-assistance-needs-vs.html#/html/body/div/div/div/p/a at Line 302, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
+ERROR: /solution/workspace/output/ValueSet-assistance-needs-vs.html#/html/body/div/div/div/p/a at Line 301, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
 ERROR: /solution/workspace/output/ValueSet-assistance-needs-vs.json.html#/html/body/div/div/div/p/a at Line 261, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
 ERROR: /solution/workspace/output/ValueSet-assistance-needs-vs.ttl.html#/html/body/div/div/div/p/a at Line 262, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
 ERROR: /solution/workspace/output/ValueSet-assistance-needs-vs.xml.html#/html/body/div/div/div/p/a at Line 256, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
-ERROR: /solution/workspace/output/artifacts.html#/html/body/div/div/div/p/a at Line 337, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
+ERROR: /solution/workspace/output/artifacts.html#/html/body/div/div/div/p/a at Line 346, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
 ERROR: /solution/workspace/output/index.html#/html/body/div/div/div/p/a at Line 240, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
 ERROR: /solution/workspace/output/toc.html#/html/body/div/div/div/p/a at Line 158, column 28: The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
-== fsh-generated/resources/CapabilityStatement-DisabilityAssistanceCapabilityStatement.json ==
+== fsh-generated/resources/CapabilityStatement-AssistanceNeedsCapabilityStatement.json ==
 == fsh-generated/resources/CapabilityStatement-MedicationRequestCapabilityStatement.json ==
 == fsh-generated/resources/CodeSystem-assistance-needs-cs.json ==
-== fsh-generated/resources/Condition-DisabilityAssistanceExample.json ==
-INFORMATION: Condition/DisabilityAssistanceExample: Condition.extension[0].value.ofType(CodeableConcept): Reference to experimental CodeSystem https://ig.opennz.org/CodeSystem/assistance-needs-cs|0.1.0
+== fsh-generated/resources/Condition-NeedsAssistanceExample.json ==
+INFORMATION: Condition/NeedsAssistanceExample: Condition.extension[0].value.ofType(CodeableConcept): Reference to experimental CodeSystem https://ig.opennz.org/CodeSystem/assistance-needs-cs|0.1.0
 == fsh-generated/resources/ImplementationGuide-fsh.ig.json ==
 == fsh-generated/resources/Patient-1198.json ==
-== fsh-generated/resources/Questionnaire-DisabilityAssistanceQuestionnaire.json ==
+== fsh-generated/resources/Questionnaire-AssistanceNeedsQuestionnaire.json ==
+ERROR: Questionnaire/AssistanceNeedsQuestionnaire: Questionnaire.item[1].item[0]: Constraint failed: que-11: 'If one or more answerOption is present, initial[x] must be missing' (defined in http://hl7.org/fhir/StructureDefinition/Questionnaire)
+WARNING: Questionnaire/AssistanceNeedsQuestionnaire: Questionnaire.item[1].item[0].answerOption[0].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Questionnaire/AssistanceNeedsQuestionnaire: Questionnaire.item[1].item[0].initial[0].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+ERROR: Questionnaire/AssistanceNeedsQuestionnaire: Questionnaire.item[1].item[1]: Constraint failed: que-11: 'If one or more answerOption is present, initial[x] must be missing' (defined in http://hl7.org/fhir/StructureDefinition/Questionnaire)
+WARNING: Questionnaire/AssistanceNeedsQuestionnaire: Questionnaire.item[1].item[1].answerOption[0].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Questionnaire/AssistanceNeedsQuestionnaire: Questionnaire.item[1].item[1].initial[0].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Questionnaire/AssistanceNeedsQuestionnaire: Questionnaire.item[1].item[2].answerOption[0].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Questionnaire/AssistanceNeedsQuestionnaire: Questionnaire.item[1].item[2].answerOption[1].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Questionnaire/AssistanceNeedsQuestionnaire: Questionnaire.item[1].item[2].answerOption[2].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Questionnaire/AssistanceNeedsQuestionnaire: Questionnaire.item[1].item[2].answerOption[3].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Questionnaire/AssistanceNeedsQuestionnaire: Questionnaire.item[1].item[2].answerOption[4].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Questionnaire/AssistanceNeedsQuestionnaire: Questionnaire.item[1].item[2].answerOption[5].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 == fsh-generated/resources/Questionnaire-MedicationRequestQuestionnaire.json ==
+== fsh-generated/resources/QuestionnaireResponse-NeedsAssistanceResponse.json ==
+WARNING: QuestionnaireResponse/NeedsAssistanceResponse: QuestionnaireResponse.item[1].item[0].answer[0].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: QuestionnaireResponse/NeedsAssistanceResponse: QuestionnaireResponse.item[1].item[1].answer[0].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: QuestionnaireResponse/NeedsAssistanceResponse: QuestionnaireResponse.item[1].item[2].answer[0].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+ERROR: QuestionnaireResponse/NeedsAssistanceResponse: QuestionnaireResponse: LinkId 'disclaimer' not found in questionnaire
+ERROR: QuestionnaireResponse/NeedsAssistanceResponse: QuestionnaireResponse.item[1]: Item has answer, even though it is not enabled (item id = 'needs')
 == fsh-generated/resources/StructureDefinition-assistance-needs-ext.json ==
-== fsh-generated/resources/StructureDefinition-patient-condition-summary.json ==
+== fsh-generated/resources/StructureDefinition-assistance-needs-profile.json ==
 == fsh-generated/resources/ValueSet-assistance-needs-vs.json ==

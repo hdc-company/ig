@@ -10,7 +10,7 @@
   "name" : "NewRepublicFHIRIG",
   "title" : "New Republic FHIR Implementation Guide",
   "status" : "draft",
-  "date" : "2024-06-13T05:29:47+00:00",
+  "date" : "2024-06-21T01:45:26+00:00",
   "publisher" : "FHIR New Republic",
   "contact" : [{
     "name" : "FHIR New Republic",
@@ -615,18 +615,6 @@
         "valueString" : "CapabilityStatement"
       }],
       "reference" : {
-        "reference" : "CapabilityStatement/DisabilityAssistanceCapabilityStatement"
-      },
-      "name" : "API for Disability Assisance",
-      "description" : "Disability Assistance Requirements and Summary",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CapabilityStatement"
-      }],
-      "reference" : {
         "reference" : "CapabilityStatement/MedicationRequestCapabilityStatement"
       },
       "name" : "API for Medication Summary",
@@ -660,6 +648,30 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CapabilityStatement"
+      }],
+      "reference" : {
+        "reference" : "CapabilityStatement/AssistanceNeedsCapabilityStatement"
+      },
+      "name" : "Assistance Needs API",
+      "description" : "Disability Assistance Requirements and Summary",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/assistance-needs-profile"
+      },
+      "name" : "Assistance Needs Profle",
+      "description" : "Extension of Conditions for capturing Patient assistance needs",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
@@ -672,26 +684,26 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
+        "valueString" : "Condition"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/patient-condition-summary"
+        "reference" : "Condition/NeedsAssistanceExample"
       },
-      "name" : "AssistanceNeedsProfile",
-      "description" : "Summary of Patient Conditions",
-      "exampleBoolean" : false
+      "name" : "NeedsAssistanceExample",
+      "description" : "Required Assistance: A New Zealand Sign Language interpreter",
+      "exampleCanonical" : "https://ig.opennz.org/StructureDefinition/assistance-needs-profile"
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Condition"
+        "valueString" : "QuestionnaireResponse"
       }],
       "reference" : {
-        "reference" : "Condition/DisabilityAssistanceExample"
+        "reference" : "QuestionnaireResponse/NeedsAssistanceResponse"
       },
-      "name" : "DisabilityAssistanceExample",
-      "description" : "Required Assistance: A New Zealand Sign Language interpreter",
-      "exampleCanonical" : "https://ig.opennz.org/StructureDefinition/patient-condition-summary"
+      "name" : "NeedsAssistanceResponse",
+      "description" : "Example response for NZ Sign Language Assistance",
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
@@ -699,7 +711,7 @@
         "valueString" : "Questionnaire"
       }],
       "reference" : {
-        "reference" : "Questionnaire/DisabilityAssistanceQuestionnaire"
+        "reference" : "Questionnaire/AssistanceNeedsQuestionnaire"
       },
       "name" : "Questionnaire Disability Assistance",
       "description" : "Disability Assistance Requirements",

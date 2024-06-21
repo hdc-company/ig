@@ -14,8 +14,8 @@
   "profiles": {
     "Condition": [
       {
-        "url": "https://ig.opennz.org/StructureDefinition/patient-condition-summary",
-        "title": "AssistanceNeedsProfile"
+        "url": "https://ig.opennz.org/StructureDefinition/assistance-needs-profile",
+        "title": "Assistance Needs Profle"
       }
     ]
   },
@@ -34,6 +34,9 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/questionnaire-hidden": [
+      "Questionnaire.item.item"
     ],
     "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl": [
       "Questionnaire.item.item"
