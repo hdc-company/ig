@@ -10,7 +10,7 @@
   "name" : "NewRepublicFHIRIG",
   "title" : "New Republic FHIR Implementation Guide",
   "status" : "draft",
-  "date" : "2024-06-21T01:45:26+00:00",
+  "date" : "2024-06-21T04:15:22+00:00",
   "publisher" : "FHIR New Republic",
   "contact" : [{
     "name" : "FHIR New Republic",
@@ -600,18 +600,6 @@
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Patient"
-      }],
-      "reference" : {
-        "reference" : "Patient/1198"
-      },
-      "name" : "1198",
-      "description" : "Example Patient Sign Language interpreter needs",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CapabilityStatement"
       }],
       "reference" : {
@@ -728,6 +716,30 @@
       "name" : "Questionnaire Prescribed Medication Search",
       "description" : "Prescribed Medication (MedicationRequest)",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/ZHI0010"
+      },
+      "name" : "ZHI0010",
+      "description" : "Example Patient Sign Language interpreter needs",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/ZHI0020"
+      },
+      "name" : "ZHI0020",
+      "description" : "Example Patient not requiring assistance",
+      "exampleBoolean" : true
     }],
     "page" : {
       "nameUrl" : "toc.html",

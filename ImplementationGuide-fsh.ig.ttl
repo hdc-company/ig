@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "NewRepublicFHIRIG"] ; # 
   fhir:title [ fhir:v "New Republic FHIR Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-06-21T01:45:26+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-06-21T04:15:22+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "FHIR New Republic"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "FHIR New Republic" ] ;
@@ -512,18 +512,6 @@
      fhir:resource ( [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Patient" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://ig.opennz.org/Patient/1198> ;
-         fhir:reference [ fhir:v "Patient/1198" ]
-       ] ;
-       fhir:name [ fhir:v "1198" ] ;
-       fhir:description [ fhir:v "Example Patient Sign Language interpreter needs" ] ;
-       fhir:example [ fhir:v "true"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "CapabilityStatement" ]
        ] ) ;
        fhir:reference [
@@ -644,6 +632,30 @@
        fhir:name [ fhir:v "Questionnaire Prescribed Medication Search" ] ;
        fhir:description [ fhir:v "Prescribed Medication (MedicationRequest)" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Patient" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://ig.opennz.org/Patient/ZHI0010> ;
+         fhir:reference [ fhir:v "Patient/ZHI0010" ]
+       ] ;
+       fhir:name [ fhir:v "ZHI0010" ] ;
+       fhir:description [ fhir:v "Example Patient Sign Language interpreter needs" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Patient" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://ig.opennz.org/Patient/ZHI0020> ;
+         fhir:reference [ fhir:v "Patient/ZHI0020" ]
+       ] ;
+       fhir:name [ fhir:v "ZHI0020" ] ;
+       fhir:description [ fhir:v "Example Patient not requiring assistance" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] ) ;
      fhir:page [
        fhir:name [ fhir:v "toc.html"^^xsd:anyURI ] ;

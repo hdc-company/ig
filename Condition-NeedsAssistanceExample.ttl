@@ -18,7 +18,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition </b><a name=\"NeedsAssistanceExample\"> </a><a name=\"hcNeedsAssistanceExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceCondition &quot;NeedsAssistanceExample&quot; Version&quot;0.0.1&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-assistance-needs-profile.html\">Assistance Needs Profle</a></p></div><p><b>Assistance Needs</b>: A New Zealand Sign Language interpreter <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-assistance-needs-cs.html\">Assistance Code System</a>#171671000210109)</span></p><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>category</b>: Level of dependence <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#717831006)</span></p><p><b>code</b>: Assisted <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#371152001)</span></p><p><b>subject</b>: <a href=\"Patient-1198.html\">Patient/1198: Marieke Christabel</a> &quot; GILBERT&quot;</p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition </b><a name=\"NeedsAssistanceExample\"> </a><a name=\"hcNeedsAssistanceExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceCondition &quot;NeedsAssistanceExample&quot; Version&quot;0.0.1&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-assistance-needs-profile.html\">Assistance Needs Profle</a></p></div><p><b>Assistance Needs</b>: A New Zealand Sign Language interpreter <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-assistance-needs-cs.html\">Assistance Code System</a>#171671000210109)</span></p><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>category</b>: Level of dependence <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#717831006)</span></p><p><b>code</b>: Assisted <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#371152001)</span></p><p><b>subject</b>: <a href=\"Patient/rid\">Patient/rid: Marieke Christabel</a></p></div>"
   ] ; # 
   fhir:extension ( [
      fhir:url [ fhir:v "https://ig.opennz.org/StructureDefinition/assistance-needs-ext"^^xsd:anyURI ] ;
@@ -54,13 +54,13 @@
      ] )
   ] ; # 
   fhir:subject [
-     fhir:link <https://ig.opennz.org/Patient/1198> ;
-     fhir:reference [ fhir:v "Patient/1198" ] ;
+     fhir:link <https://ig.opennz.org/Patient/rid> ;
+     fhir:reference [ fhir:v "Patient/rid" ] ;
      fhir:type [ fhir:v "Patient"^^xsd:anyURI ] ;
      fhir:identifier [
        fhir:use [ fhir:v "official" ] ;
        fhir:system [ fhir:v "https://standards.digital.health.nz/ns/nhi-id"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "1198" ]
+       fhir:value [ fhir:v "ZHI0010" ]
      ] ;
      fhir:display [ fhir:v "Marieke Christabel" ]
   ] . # 

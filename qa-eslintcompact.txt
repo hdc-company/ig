@@ -20,6 +20,12 @@ Generic: line 0, col 0, Error - The link 'https://ig.opennz.org' for "FHIR New R
 Generic: line 0, col 0, Error - The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Error - The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Error - The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved (NOTFOUND)
+Generic: line 0, col 0, Error - The link 'Patient/rid' for "Patient/rid: Marieke Christabel" cannot be resolved (NOTFOUND)
+Generic: line 0, col 0, Error - The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved (NOTFOUND)
+Generic: line 0, col 0, Error - The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved (NOTFOUND)
+Generic: line 0, col 0, Error - The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved (NOTFOUND)
+Generic: line 0, col 0, Error - The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved (NOTFOUND)
+Generic: line 0, col 0, Error - The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Error - The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Error - The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Error - The link 'https://ig.opennz.org' for "FHIR New Republic" cannot be resolved (NOTFOUND)
@@ -82,6 +88,8 @@ Generic: line 0, col 0, Warning - An HTML fragment from the set [cross-version-a
 Generic: line 0, col 0, Warning - An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide (NOTFOUND)
 Generic: line 0, col 0, Warning - The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide (NOTFOUND)
 /solution/workspace/fsh-generated/resources/Condition-NeedsAssistanceExample.json: line 51, col 8, Info - Reference to experimental CodeSystem https://ig.opennz.org/CodeSystem/assistance-needs-cs|0.1.0 (BUSINESSRULE)
+/solution/workspace/fsh-generated/resources/Condition-NeedsAssistanceExample.json: line 10, col 4, Error - Unable to resolve resource with reference 'Patient/rid' (STRUCTURE)
+/solution/workspace/fsh-generated/resources/Condition-NeedsAssistanceExample.json: line 0, col 0, Error - Hyperlink 'Patient/rid' at 'div/p/a' for 'Patient/rid: Marieke Christabel' does not resolve (INVALID)
 /solution/workspace/fsh-generated/resources/Questionnaire-AssistanceNeedsQuestionnaire.json: line 1, col 16869, Error - Constraint failed: que-11: 'If one or more answerOption is present, initial[x] must be missing' (defined in http://hl7.org/fhir/StructureDefinition/Questionnaire) (INVARIANT)
 /solution/workspace/fsh-generated/resources/Questionnaire-AssistanceNeedsQuestionnaire.json: line 1, col 16817, Warning - A code with no system has no defined meaning, and it cannot be validated. A system should be provided (CODEINVALID)
 /solution/workspace/fsh-generated/resources/Questionnaire-AssistanceNeedsQuestionnaire.json: line 1, col 16866, Warning - A code with no system has no defined meaning, and it cannot be validated. A system should be provided (CODEINVALID)
@@ -100,5 +108,5 @@ Generic: line 0, col 0, Warning - The HTML fragment 'globals-table.xhtml' is not
 /solution/workspace/fsh-generated/resources/QuestionnaireResponse-NeedsAssistanceResponse.json: line 8, col 6, Error - LinkId 'disclaimer' not found in questionnaire (NOTFOUND)
 /solution/workspace/fsh-generated/resources/QuestionnaireResponse-NeedsAssistanceResponse.json: line 17, col 6, Error - Item has answer, even though it is not enabled (item id = 'needs') (INVALID)
 
-err = 4, warn = 17, info = 1
+err = 6, warn = 17, info = 1
 IG Publisher Version: 1.6.11
