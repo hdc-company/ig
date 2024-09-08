@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="ZHI0020"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Patient ZHI0020</b></p><a name="ZHI0020"> </a><a name="hcZHI0020"> </a><a name="hcZHI0020-en-US"> </a><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Gjorgji Ninurta  Male, DoB: 1956-10-31 ( https://standards.digital.health.nz/ns/nhi-id#ZHI0020 (use: official, ))</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Ways to contact the Patient">Contact Detail</td><td colspan="3">39 Oleander Grove, Waikanae Beach, Waikanae 5036, New Zealand(home)</td></tr></table></div>
+  </text>
+  <identifier>
+    <use value="official"/>
+    <system value="https://standards.digital.health.nz/ns/nhi-id"/>
+    <value value="ZHI0020"/>
+  </identifier>
+  <name>
+    <use value="usual"/>
+    <family value="Ninurta"/>
+    <given value="Gjorgji"/>
+  </name>
+  <gender value="male"/>
+  <birthDate value="1956-10-31"/>
+  <address>
+    <use value="home"/>
+    <text value="39 Oleander Grove, Waikanae Beach, Waikanae 5036, New Zealand"/>
+    <line value="39 Oleander Grove"/>
+    <line value="Waikanae Beach"/>
+    <city value="Waikanae"/>
+    <postalCode value="5036"/>
+    <country value="NZL"/>
+  </address>
+</Patient>

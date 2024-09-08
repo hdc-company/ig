@@ -1,0 +1,16 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "https://ig.opennz.org/ValueSet/assistance-needs-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "AssistanceNeedsValueSet",
+      "title" : "Assistance Needs ValueSet",
+      "description" : "A ValueSet including all codes from the Assistance Needs CodeSystem.",
+      "systems" : ["https://ig.opennz.org/CodeSystem/assistance-needs-cs"],
+      "uses" : {
+      },
+      "StructureDefinition-assistance-needs-ext.html" : "Assistance Needs"
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+URL,Version,Status,OIDs,Name,Title,Descriptino,Uses,Used,Sources
+https://ig.opennz.org/ValueSet/assistance-needs-vs,0.1.0,draft,,AssistanceNeedsValueSet,Assistance Needs ValueSet,"A ValueSet including all codes from the Assistance Needs CodeSystem.",,"Internal"
