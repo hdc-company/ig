@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="assistance-needs-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet assistance-needs-vs</b></p><a name="assistance-needs-vs"> </a><a name="hcassistance-needs-vs"> </a><a name="assistance-needs-vs-en-US"> </a><ul><li>Include all codes defined in <a href="CodeSystem-assistance-needs-cs.html"><code>https://ig.opennz.org/CodeSystem/assistance-needs-cs</code></a></li></ul></div>
+  </text>
+  <url value="https://ig.opennz.org/ValueSet/assistance-needs-vs"/>
+  <version value="0.1.0"/>
+  <name value="AssistanceNeedsValueSet"/>
+  <title value="Assistance Needs ValueSet"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2024-09-11T22:43:21+00:00"/>
+  <publisher value="Open Standards NZ"/>
+  <contact>
+    <name value="Open Standards NZ"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://opennz.org"/>
+    </telecom>
+  </contact>
+  <description value="A ValueSet including all codes from the Assistance Needs CodeSystem."/>
+  <compose>
+    <include>
+      <system value="https://ig.opennz.org/CodeSystem/assistance-needs-cs"/>
+    </include>
+  </compose>
+</ValueSet>

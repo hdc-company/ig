@@ -1,0 +1,52 @@
+{
+  "resourceType" : "Condition",
+  "id" : "NeedsAssistanceExample",
+  "meta" : {
+    "versionId" : "0.0.1",
+    "profile" : ["https://ig.opennz.org/StructureDefinition/assistance-needs-profile"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Condition NeedsAssistanceExample</b></p><a name=\"NeedsAssistanceExample\"> </a><a name=\"hcNeedsAssistanceExample\"> </a><a name=\"NeedsAssistanceExample-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">version: 0.0.1</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-assistance-needs-profile.html\">Assistance Needs Profle</a></p></div><p><b>Assistance Needs</b>: <span title=\"Codes:{https://ig.opennz.org/CodeSystem/assistance-needs-cs 171671000210109}\">A New Zealand Sign Language interpreter</span></p><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>category</b>: <span title=\"Codes:{http://snomed.info/sct 717831006}\">Level of dependence</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 371152001}\">Assisted</span></p><p><b>subject</b>: <a href=\"Patient/rid\">Marieke Christabel</a></p></div>"
+  },
+  "extension" : [{
+    "url" : "https://ig.opennz.org/StructureDefinition/assistance-needs-ext",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://ig.opennz.org/CodeSystem/assistance-needs-cs",
+        "code" : "171671000210109",
+        "display" : "A New Zealand Sign Language interpreter"
+      }]
+    }
+  }],
+  "clinicalStatus" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+      "code" : "active"
+    }]
+  },
+  "category" : [{
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "717831006",
+      "display" : "Level of dependence"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "371152001",
+      "display" : "Assisted"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/rid",
+    "type" : "Patient",
+    "identifier" : {
+      "use" : "official",
+      "system" : "https://standards.digital.health.nz/ns/nhi-id",
+      "value" : "ZHI0010"
+    },
+    "display" : "Marieke Christabel"
+  }
+}

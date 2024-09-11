@@ -1,0 +1,32 @@
+{
+  "resourceType" : "Patient",
+  "id" : "ZHI0010",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/Patient"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient ZHI0010</b></p><a name=\"ZHI0010\"> </a><a name=\"hcZHI0010\"> </a><a name=\"ZHI0010-en-US\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Marieke Christabel  Female, DoB: 1987-08-06 ( https://standards.digital.health.nz/ns/nhi-id#NHI#ZHI0010\u00a0(use:\u00a0official,\u00a0))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\">219 Hunter Street, Whataupoko, LGisborne 4010, New Zealand(home)</td></tr></table></div>"
+  },
+  "identifier" : [{
+    "use" : "official",
+    "system" : "https://standards.digital.health.nz/ns/nhi-id",
+    "value" : "ZHI0010"
+  }],
+  "name" : [{
+    "use" : "usual",
+    "family" : "Christabel",
+    "given" : ["Marieke"]
+  }],
+  "gender" : "female",
+  "birthDate" : "1987-08-06",
+  "address" : [{
+    "use" : "home",
+    "text" : "219 Hunter Street, Whataupoko, LGisborne 4010, New Zealand",
+    "line" : ["219 Hunter Street",
+    "Whataupoko"],
+    "city" : "LGisborne",
+    "postalCode" : "4010",
+    "country" : "NZL"
+  }]
+}

@@ -1,0 +1,399 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Questionnaire Disability Assistance - XML Representation - Open NZ FHIR Implementation Guide v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"6.2"}
+    h3,h4,h5,h6{--heading-prefix:"6.2"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Open NZ FHIR Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - release
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4B/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Use Case Guide
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="AssistanceNeeds.html">Assistance Needs</a>
+      </li>
+      <li>
+        <a href="MedicationRequest.html">Medication Request</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="PatientSummary.html">API User Guide</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Questionnaire Disability Assistance</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 7" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">Open NZ FHIR Implementation Guide - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://ig.opennz.org/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="Questionnaire-AssistanceNeedsQuestionnaire.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li class="active">
+      <a href="#">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Questionnaire-AssistanceNeedsQuestionnaire.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Questionnaire-AssistanceNeedsQuestionnaire.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: Questionnaire Disability Assistance - XML Representation</h2>
+
+  <table class="colsd">
+    <tr>
+
+      <td colspan="2">
+        
+          Draft
+          
+            as of 2024-09-11
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="Questionnaire-AssistanceNeedsQuestionnaire.xml" no-download="true">Raw xml</a> | <a href="Questionnaire-AssistanceNeedsQuestionnaire.xml" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="xml" style="white-space: pre; text-wrap: nowrap;"><code style="white-space: pre; text-wrap: nowrap;">
+
+&lt;<a href="http://hl7.org/fhir/R4B/questionnaire.html#Questionnaire">Questionnaire</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
+  &lt;<a href="http://hl7.org/fhir/R4B/questionnaire.html#Questionnaire.id">id</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#id">value</a>=&quot;AssistanceNeedsQuestionnaire&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4B/questionnaire.html#Questionnaire.text">text</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/narrative.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;extensions&quot;/&gt;
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: Questionnaire AssistanceNeedsQuestionnaire&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;AssistanceNeedsQuestionnaire&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcAssistanceNeedsQuestionnaire&quot;&gt; &lt;/a&gt;&lt;a name=&quot;AssistanceNeedsQuestionnaire-en-US&quot;&gt; &lt;/a&gt;&lt;b&gt;Structure&lt;/b&gt;&lt;table border=&quot;1&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;&quot;&gt;&lt;tr style=&quot;border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top&quot;&gt;&lt;th style=&quot;vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;a href=&quot;http://hl7.org/fhir/R4B/formats.html#table&quot; title=&quot;The linkID for the item&quot;&gt;LinkID&lt;/a&gt;&lt;/th&gt;&lt;th style=&quot;vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;a href=&quot;http://hl7.org/fhir/R4B/formats.html#table&quot; title=&quot;Text for the item&quot;&gt;Text&lt;/a&gt;&lt;/th&gt;&lt;th style=&quot;vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;a href=&quot;http://hl7.org/fhir/R4B/formats.html#table&quot; title=&quot;Minimum and Maximum # of times the item can appear in the instance&quot;&gt;Cardinality&lt;/a&gt;&lt;/th&gt;&lt;th style=&quot;vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;a href=&quot;http://hl7.org/fhir/R4B/formats.html#table&quot; title=&quot;The type of the item&quot;&gt;Type&lt;/a&gt;&lt;/th&gt;&lt;th style=&quot;vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;a href=&quot;http://hl7.org/fhir/R4B/formats.html#table&quot; title=&quot;Other attributes of the item&quot;&gt;Flags&lt;/a&gt;&lt;/th&gt;&lt;th style=&quot;vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;a href=&quot;http://hl7.org/fhir/R4B/formats.html#table&quot; title=&quot;Additional information about the item&quot;&gt;Description &amp;amp; Constraints&lt;/a&gt;&lt;span style=&quot;float: right&quot;&gt;&lt;a href=&quot;http://hl7.org/fhir/R4B/formats.html#table&quot; title=&quot;Legend for this format&quot;&gt;&lt;img src=&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC&quot; alt=&quot;doco&quot; style=&quot;background-color: inherit&quot;/&gt;&lt;/a&gt;&lt;/span&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr style=&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white&quot;&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)&quot; class=&quot;hierarchy&quot;&gt;&lt;img src=&quot;tbl_spacer.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;icon_q_root.gif&quot; alt=&quot;.&quot; style=&quot;background-color: white; background-color: inherit&quot; title=&quot;QuestionnaireRoot&quot; class=&quot;hierarchy&quot;/&gt; DisabilityAssistanceQuestionnaire&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;Disability Assistance Requirements&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;Questionnaire&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;https://ig.opennz.org/Questionnaire/AssistanceNeedsQuestionnaire#0.1.0&lt;/td&gt;&lt;/tr&gt;
+&lt;tr style=&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7&quot;&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)&quot; id=&quot;item.patient&quot; class=&quot;hierarchy&quot;&gt;&lt;img src=&quot;tbl_spacer.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_vjoin.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;icon-q-string.png&quot; alt=&quot;.&quot; style=&quot;background-color: #F7F7F7; background-color: inherit&quot; title=&quot;string&quot; class=&quot;hierarchy&quot;/&gt; patient&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;Patient&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;0..1&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;a href=&quot;http://hl7.org/fhir/R4B/codesystem-item-type.html#item-type-string&quot;&gt;string&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;/&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;/&gt;&lt;/tr&gt;
+&lt;tr style=&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white&quot;&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)&quot; id=&quot;item.needs&quot; class=&quot;hierarchy&quot;&gt;&lt;img src=&quot;tbl_spacer.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_vjoin_end.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;icon-q-group.png&quot; alt=&quot;.&quot; style=&quot;background-color: white; background-color: inherit&quot; title=&quot;group&quot; class=&quot;hierarchy&quot;/&gt; needs&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;Individual Need:. Assistance&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;0..1&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;a href=&quot;http://hl7.org/fhir/R4B/codesystem-item-type.html#item-type-group&quot;&gt;group&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;/&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;Enable When: &lt;span&gt;&lt;a href=&quot;#item.patient&quot;&gt;patient&lt;/a&gt; exists &lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr style=&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7&quot;&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)&quot; id=&quot;item.category&quot; class=&quot;hierarchy&quot;&gt;&lt;img src=&quot;tbl_spacer.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_blank.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_vjoin.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;icon-q-coding.png&quot; alt=&quot;.&quot; style=&quot;background-color: #F7F7F7; background-color: inherit&quot; title=&quot;coding&quot; class=&quot;hierarchy&quot;/&gt; category&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;null&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;0..1&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;a href=&quot;http://hl7.org/fhir/R4B/codesystem-item-type.html#item-type-choice&quot;&gt;choice&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;a href=&quot;http://hl7.org/fhir/R4B/extension-questionnaire-hidden.html&quot; title=&quot;Is a hidden item&quot;&gt;&lt;img src=&quot;icon-qi-hidden.png&quot; alt=&quot;icon&quot;/&gt;&lt;/a&gt;&lt;img src=&quot;icon-qi-hidden.png&quot; alt=&quot;icon&quot;/&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;Options: &lt;a href=&quot;#opt-item.category&quot;&gt;1 option&lt;/a&gt;&lt;br/&gt;Initial Value: Coding = &lt;span title=&quot;null&quot;&gt;[not stated]&lt;/span&gt;#717831006 &amp;quot;717831006&amp;quot;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr style=&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white&quot;&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)&quot; id=&quot;item.code&quot; class=&quot;hierarchy&quot;&gt;&lt;img src=&quot;tbl_spacer.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_blank.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_vjoin.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;icon-q-coding.png&quot; alt=&quot;.&quot; style=&quot;background-color: white; background-color: inherit&quot; title=&quot;coding&quot; class=&quot;hierarchy&quot;/&gt; code&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;null&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;0..1&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;a href=&quot;http://hl7.org/fhir/R4B/codesystem-item-type.html#item-type-choice&quot;&gt;choice&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;a href=&quot;http://hl7.org/fhir/R4B/extension-questionnaire-hidden.html&quot; title=&quot;Is a hidden item&quot;&gt;&lt;img src=&quot;icon-qi-hidden.png&quot; alt=&quot;icon&quot;/&gt;&lt;/a&gt;&lt;img src=&quot;icon-qi-hidden.png&quot; alt=&quot;icon&quot;/&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;Options: &lt;a href=&quot;#opt-item.code&quot;&gt;1 option&lt;/a&gt;&lt;br/&gt;Initial Value: Coding = &lt;span title=&quot;null&quot;&gt;[not stated]&lt;/span&gt;#371152001 &amp;quot;371152001&amp;quot;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr style=&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7&quot;&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck000.png)&quot; id=&quot;item.needs-assistance&quot; class=&quot;hierarchy&quot;&gt;&lt;img src=&quot;tbl_spacer.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_blank.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;tbl_vjoin_end.png&quot; alt=&quot;.&quot; style=&quot;background-color: inherit&quot; class=&quot;hierarchy&quot;/&gt;&lt;img src=&quot;icon-q-coding.png&quot; alt=&quot;.&quot; style=&quot;background-color: #F7F7F7; background-color: inherit&quot; title=&quot;coding&quot; class=&quot;hierarchy&quot;/&gt; needs-assistance&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;What type of assistance to you require?&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;0..1&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;&lt;a href=&quot;http://hl7.org/fhir/R4B/codesystem-item-type.html#item-type-choice&quot;&gt;choice&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;/&gt;&lt;td style=&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px&quot; class=&quot;hierarchy&quot;&gt;Options: &lt;a href=&quot;#opt-item.needs-assistance&quot;&gt;6 options&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td colspan=&quot;6&quot; class=&quot;hierarchy&quot;&gt;&lt;br/&gt;&lt;a href=&quot;http://hl7.org/fhir/R4B/formats.html#table&quot; title=&quot;Legend for this format&quot;&gt;&lt;img src=&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC&quot; alt=&quot;doco&quot; style=&quot;background-color: inherit&quot;/&gt; Documentation for this format&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr/&gt;&lt;p&gt;&lt;b&gt;Options Sets&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;opt-item.category&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;Answer options for category &lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li style=&quot;font-size: 11px&quot;&gt;null#717831006&lt;/li&gt;&lt;/ul&gt;&lt;a name=&quot;opt-item.code&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;Answer options for code &lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li style=&quot;font-size: 11px&quot;&gt;null#371152001&lt;/li&gt;&lt;/ul&gt;&lt;a name=&quot;opt-item.needs-assistance&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;Answer options for needs-assistance &lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li style=&quot;font-size: 11px&quot;&gt;null#171671000210109 (&amp;quot;A New Zealand Sign Language interpreter&amp;quot;)&lt;/li&gt;&lt;li style=&quot;font-size: 11px&quot;&gt;null#133920001 (&amp;quot;Support to make decisions&amp;quot;)&lt;/li&gt;&lt;li style=&quot;font-size: 11px&quot;&gt;null#amr (&amp;quot;Assistance to move around&amp;quot;)&lt;/li&gt;&lt;li style=&quot;font-size: 11px&quot;&gt;null#lat (&amp;quot;A longer appointment time&amp;quot;)&lt;/li&gt;&lt;li style=&quot;font-size: 11px&quot;&gt;null#qse (&amp;quot;A quiet or low sensory environment&amp;quot;)&lt;/li&gt;&lt;li style=&quot;font-size: 11px&quot;&gt;null#msm (&amp;quot;More space to move around&amp;quot;)&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+  &lt;/text&gt;
+  &lt;<a href="http://hl7.org/fhir/R4B/questionnaire.html#Questionnaire.url">url</a>
+       <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">value</a>=&quot;https://ig.opennz.org/Questionnaire/AssistanceNeedsQuestionnaire&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4B/questionnaire.html#Questionnaire.identifier">identifier</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;official&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;DisabilityAssistanceQuestionnaire&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#Identifier#Identifier.period">period</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#Period#Period.start">start</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#dateTime">value</a>=&quot;2023-07-19&quot;/&gt;
+    &lt;/period&gt;
+  &lt;/identifier&gt;
+  &lt;<a href="http://hl7.org/fhir/R4B/questionnaire.html#Questionnaire.version">version</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;0.1.0&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4B/questionnaire.html#Questionnaire.name">name</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;DisabilityAssistanceQuestionnaire&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4B/questionnaire.html#Questionnaire.title">title</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;Questionnaire Disability Assistance&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4B/questionnaire.html#Questionnaire.status">status</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;draft&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4B/questionnaire.html#Questionnaire.subjectType">subjectType</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;Patient&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4B/questionnaire.html#Questionnaire.date">date</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#dateTime">value</a>=&quot;2024-09-11T22:43:21+00:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4B/questionnaire.html#Questionnaire.publisher">publisher</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;Open Standards NZ&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4B/questionnaire.html#Questionnaire.contact">contact</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;Open Standards NZ&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;url&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;https://opennz.org&quot;/&gt;
+    &lt;/telecom&gt;
+  &lt;/contact&gt;
+  &lt;<a href="http://hl7.org/fhir/R4B/questionnaire.html#Questionnaire.description">description</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#markdown">value</a>=&quot;Disability Assistance Requirements&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4B/questionnaire.html#Questionnaire.item">item</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/questionnaire.html#Questionnaire.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;patient&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/questionnaire.html#Questionnaire.item.text">text</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;Patient&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/questionnaire.html#Questionnaire.item.type">type</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;string&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/questionnaire.html#Questionnaire.item.required">required</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
+  &lt;/item&gt;
+  &lt;<a href="http://hl7.org/fhir/R4B/questionnaire.html#Questionnaire.item">item</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/questionnaire.html#Questionnaire.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;needs&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/questionnaire.html#Questionnaire.item.prefix">prefix</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;Individual Need:&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/questionnaire.html#Questionnaire.item.text">text</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;Assistance&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/questionnaire.html#Questionnaire.item.type">type</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;group&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/questionnaire.html#Questionnaire.item.enableWhen">enableWhen</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4B/questionnaire.html#Questionnaire.item.enableWhen.question">question</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;patient&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4B/questionnaire.html#Questionnaire.item.enableWhen.operator">operator</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;exists&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4B/questionnaire.html#Questionnaire.item.enableWhen.answer[x]">answerBoolean</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
+    &lt;/enableWhen&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/questionnaire.html#Questionnaire.item.item">item</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4B/questionnaire.html#Questionnaire.item.extension">extension</a>
+                 <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/questionnaire-hidden&quot;&gt;
+        &lt;<a href="http://hl7.org/fhir/R4B/extensibility.html#Extension#Extension.value[x]">valueBoolean</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;<a href="http://hl7.org/fhir/R4B/questionnaire.html#Questionnaire.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;category&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4B/questionnaire.html#Questionnaire.item.type">type</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;choice&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4B/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4B/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;717831006&quot;/&gt;
+        &lt;/valueCoding&gt;
+      &lt;/answerOption&gt;
+      &lt;<a href="http://hl7.org/fhir/R4B/questionnaire.html#Questionnaire.item.initial">initial</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4B/questionnaire.html#Questionnaire.item.initial.value[x]">valueCoding</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;717831006&quot;/&gt;
+        &lt;/valueCoding&gt;
+      &lt;/initial&gt;
+    &lt;/item&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/questionnaire.html#Questionnaire.item.item">item</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4B/questionnaire.html#Questionnaire.item.extension">extension</a>
+                 <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/questionnaire-hidden&quot;&gt;
+        &lt;<a href="http://hl7.org/fhir/R4B/extensibility.html#Extension#Extension.value[x]">valueBoolean</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;<a href="http://hl7.org/fhir/R4B/questionnaire.html#Questionnaire.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;code&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4B/questionnaire.html#Questionnaire.item.type">type</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;choice&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4B/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4B/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;371152001&quot;/&gt;
+        &lt;/valueCoding&gt;
+      &lt;/answerOption&gt;
+      &lt;<a href="http://hl7.org/fhir/R4B/questionnaire.html#Questionnaire.item.initial">initial</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4B/questionnaire.html#Questionnaire.item.initial.value[x]">valueCoding</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;371152001&quot;/&gt;
+        &lt;/valueCoding&gt;
+      &lt;/initial&gt;
+    &lt;/item&gt;
+    &lt;<a href="http://hl7.org/fhir/R4B/questionnaire.html#Questionnaire.item.item">item</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4B/questionnaire.html#Questionnaire.item.extension">extension</a>
+                 <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl&quot;&gt;
+        &lt;<a href="http://hl7.org/fhir/R4B/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhir/questionnaire-item-control&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;drop-down&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;Drop down&quot;/&gt;
+          &lt;/coding&gt;
+          &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;Drop down&quot;/&gt;
+        &lt;/valueCodeableConcept&gt;
+      &lt;/extension&gt;
+      &lt;<a href="http://hl7.org/fhir/R4B/questionnaire.html#Questionnaire.item.linkId">linkId</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;needs-assistance&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4B/questionnaire.html#Questionnaire.item.text">text</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;What type of assistance to you require?&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4B/questionnaire.html#Questionnaire.item.type">type</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;choice&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4B/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4B/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;171671000210109&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;A New Zealand Sign Language interpreter&quot;/&gt;
+        &lt;/valueCoding&gt;
+      &lt;/answerOption&gt;
+      &lt;<a href="http://hl7.org/fhir/R4B/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4B/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;133920001&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;Support to make decisions&quot;/&gt;
+        &lt;/valueCoding&gt;
+      &lt;/answerOption&gt;
+      &lt;<a href="http://hl7.org/fhir/R4B/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4B/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;amr&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;Assistance to move around&quot;/&gt;
+        &lt;/valueCoding&gt;
+      &lt;/answerOption&gt;
+      &lt;<a href="http://hl7.org/fhir/R4B/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4B/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;lat&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;A longer appointment time&quot;/&gt;
+        &lt;/valueCoding&gt;
+      &lt;/answerOption&gt;
+      &lt;<a href="http://hl7.org/fhir/R4B/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4B/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;qse&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;A quiet or low sensory environment&quot;/&gt;
+        &lt;/valueCoding&gt;
+      &lt;/answerOption&gt;
+      &lt;<a href="http://hl7.org/fhir/R4B/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4B/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#code">value</a>=&quot;msm&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4B/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4B/datatypes.html#string">value</a>=&quot;More space to move around&quot;/&gt;
+        &lt;/valueCoding&gt;
+      &lt;/answerOption&gt;
+    &lt;/item&gt;
+  &lt;/item&gt;
+&lt;/Questionnaire&gt;</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://opennz.org">Open Standards NZ</a>.  Package fsh.ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4B/">FHIR 4.3.0</a>. Generated <span title="Wed, Sep 11, 2024 22:43+0000">2024-09-11</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

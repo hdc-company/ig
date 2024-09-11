@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="assistance-needs-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem assistance-needs-cs</b></p><a name="assistance-needs-cs"> </a><a name="hcassistance-needs-cs"> </a><a name="assistance-needs-cs-en-US"> </a><p>This case-sensitive code system <code>https://ig.opennz.org/CodeSystem/assistance-needs-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">171671000210109<a name="assistance-needs-cs-171671000210109"> </a></td><td>A New Zealand Sign Language interpreter</td></tr><tr><td style="white-space:nowrap">133920001<a name="assistance-needs-cs-133920001"> </a></td><td>Support to make decisions</td></tr><tr><td style="white-space:nowrap">amr<a name="assistance-needs-cs-amr"> </a></td><td>Assistance to move around</td></tr><tr><td style="white-space:nowrap">lat<a name="assistance-needs-cs-lat"> </a></td><td>A longer appointment time</td></tr><tr><td style="white-space:nowrap">qse<a name="assistance-needs-cs-qse"> </a></td><td>A quiet or low sensory environment</td></tr><tr><td style="white-space:nowrap">msm<a name="assistance-needs-cs-msm"> </a></td><td>More space to move around</td></tr></table></div>
+  </text>
+  <url value="https://ig.opennz.org/CodeSystem/assistance-needs-cs"/>
+  <version value="0.1.0"/>
+  <name value="AssistanceNeedsCodeSystem"/>
+  <title value="Assistance Code System"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2024-09-11T22:43:21+00:00"/>
+  <publisher value="Open Standards NZ"/>
+  <contact>
+    <name value="Open Standards NZ"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://opennz.org"/>
+    </telecom>
+  </contact>
+  <description value="Appointment Assistance Needs."/>
+  <purpose value="List of supported assistance needs."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="6"/>
+  <concept>
+    <code value="171671000210109"/>
+    <display value="A New Zealand Sign Language interpreter"/>
+  </concept>
+  <concept>
+    <code value="133920001"/>
+    <display value="Support to make decisions"/>
+  </concept>
+  <concept>
+    <code value="amr"/>
+    <display value="Assistance to move around"/>
+  </concept>
+  <concept>
+    <code value="lat"/>
+    <display value="A longer appointment time"/>
+  </concept>
+  <concept>
+    <code value="qse"/>
+    <display value="A quiet or low sensory environment"/>
+  </concept>
+  <concept>
+    <code value="msm"/>
+    <display value="More space to move around"/>
+  </concept>
+</CodeSystem>
