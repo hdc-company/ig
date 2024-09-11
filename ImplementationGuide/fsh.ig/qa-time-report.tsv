@@ -1,0 +1,14 @@
+Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	responsesForQuestionnaire	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+/fsh-generated/resources/ImplementationGuide-fsh.ig.json	5096	-	0	0	0	0	0	0	5	548	0	0	0	0	0	0	0	0	0	0	550	99	0	0	0	0	3	0	1
+fsh-generated/resources/CapabilityStatement-PatientSummaryCapabilityStatement.json	3533	14	0	0	1	0	0	0	0	57	0	0	0	0	0	0	0	0	0	0	643	42	0	0	0	0	2	0	0
+fsh-generated/resources/CodeSystem-assistance-needs-cs.json	1004	10	1	0	0	0	0	0	0	25	0	0	1	0	0	0	0	0	0	0	552	3374	0	0	0	0	0	0	1
+fsh-generated/resources/Condition-NeedsAssistanceExample.json	1376	11	0	0	0	0	0	0	0	62	0	0	0	0	0	0	0	0	0	0	429	29	0	0	0	0	0	0	0
+fsh-generated/resources/Patient-ZHI0010.json	754	11	0	0	0	0	0	0	0	645	0	0	0	0	0	0	0	0	0	0	343	27	0	0	0	0	0	0	0
+fsh-generated/resources/Patient-ZHI0020.json	755	10	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	289	18	0	0	0	0	0	0	0
+fsh-generated/resources/Questionnaire-AssistanceNeedsQuestionnaire.json	4006	15	0	0	0	0	0	0	1	33	0	0	0	0	0	0	0	0	0	0	1006	40	0	0	0	0	1	0	0
+fsh-generated/resources/Questionnaire-MedicationRequestQuestionnaire.json	712	11	0	0	0	0	0	0	0	13	0	0	0	0	0	0	0	0	0	0	617	22	0	0	0	0	1	0	0
+fsh-generated/resources/QuestionnaireResponse-NeedsAssistanceResponse.json	1285	10	1	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	380	23	0	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-PatientProfile.json	819	5	0	0	0	0	0	100	0	46	0	0	0	0	0	0	0	3	0	0	820	3423	0	0	0	0	13	1	3
+fsh-generated/resources/StructureDefinition-assistance-needs-ext.json	1432	6	0	0	0	0	0	15	0	17	0	0	0	0	0	0	0	0	0	0	554	186	0	0	0	0	2	0	0
+fsh-generated/resources/StructureDefinition-assistance-needs-profile.json	4971	5	0	0	0	0	0	59	1	48	0	0	0	0	0	0	0	1	0	0	781	589	0	0	0	0	15	0	2
+fsh-generated/resources/ValueSet-assistance-needs-vs.json	470	4	0	0	0	0	0	0	0	118	0	0	0	0	0	0	0	0	0	0	523	9779	0	0	0	0	1	0	0

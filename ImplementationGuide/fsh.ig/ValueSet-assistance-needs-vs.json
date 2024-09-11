@@ -1,0 +1,29 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "assistance-needs-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet assistance-needs-vs</b></p><a name=\"assistance-needs-vs\"> </a><a name=\"hcassistance-needs-vs\"> </a><a name=\"assistance-needs-vs-en-US\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-assistance-needs-cs.html\"><code>https://ig.opennz.org/CodeSystem/assistance-needs-cs</code></a></li></ul></div>"
+  },
+  "url" : "https://ig.opennz.org/ValueSet/assistance-needs-vs",
+  "version" : "0.1.0",
+  "name" : "AssistanceNeedsValueSet",
+  "title" : "Assistance Needs ValueSet",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2024-09-11T02:51:28+00:00",
+  "publisher" : "Open Standards NZ",
+  "contact" : [{
+    "name" : "Open Standards NZ",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://ig.opennz.org"
+    }]
+  }],
+  "description" : "A ValueSet including all codes from the Assistance Needs CodeSystem.",
+  "compose" : {
+    "include" : [{
+      "system" : "https://ig.opennz.org/CodeSystem/assistance-needs-cs"
+    }]
+  }
+}
