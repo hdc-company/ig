@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "OpenNZFHIRIG"] ; # 
   fhir:title [ fhir:v "Open NZ FHIR Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-09-11T02:51:28+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-09-11T03:42:57+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Open Standards NZ"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Open Standards NZ" ] ;
