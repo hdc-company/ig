@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "0fe4463d-0d84-48a8-8b96-eea15cf3ccbb",
+  "id" : "4f40eeee-da25-49cd-86eb-901a1b53080f",
   "meta" : {
-    "lastUpdated" : "2024-09-11T22:43:21.903+00:00"
+    "lastUpdated" : "2024-11-03T22:10:48.072+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -11,18 +11,18 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-assistance-needs-cs.html\">codesystem Assistance Code System v0.1.0 (CodeSystem)</a></p><p>This value set contains 6 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://ig.opennz.org/CodeSystem/assistance-needs-cs-171671000210109\"> </a>\u00a0\u00a0<a href=\"CodeSystem-assistance-needs-cs.html#assistance-needs-cs-171671000210109\">171671000210109</a></td><td>https://ig.opennz.org/CodeSystem/assistance-needs-cs</td><td>A New Zealand Sign Language interpreter</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://ig.opennz.org/CodeSystem/assistance-needs-cs-133920001\"> </a>\u00a0\u00a0<a href=\"CodeSystem-assistance-needs-cs.html#assistance-needs-cs-133920001\">133920001</a></td><td>https://ig.opennz.org/CodeSystem/assistance-needs-cs</td><td>Support to make decisions</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://ig.opennz.org/CodeSystem/assistance-needs-cs-amr\"> </a>\u00a0\u00a0<a href=\"CodeSystem-assistance-needs-cs.html#assistance-needs-cs-amr\">amr</a></td><td>https://ig.opennz.org/CodeSystem/assistance-needs-cs</td><td>Assistance to move around</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://ig.opennz.org/CodeSystem/assistance-needs-cs-lat\"> </a>\u00a0\u00a0<a href=\"CodeSystem-assistance-needs-cs.html#assistance-needs-cs-lat\">lat</a></td><td>https://ig.opennz.org/CodeSystem/assistance-needs-cs</td><td>A longer appointment time</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://ig.opennz.org/CodeSystem/assistance-needs-cs-qse\"> </a>\u00a0\u00a0<a href=\"CodeSystem-assistance-needs-cs.html#assistance-needs-cs-qse\">qse</a></td><td>https://ig.opennz.org/CodeSystem/assistance-needs-cs</td><td>A quiet or low sensory environment</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://ig.opennz.org/CodeSystem/assistance-needs-cs-msm\"> </a>\u00a0\u00a0<a href=\"CodeSystem-assistance-needs-cs.html#assistance-needs-cs-msm\">msm</a></td><td>https://ig.opennz.org/CodeSystem/assistance-needs-cs</td><td>More space to move around</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-assistance-needs-cs.html\">codesystem Assistance Code System v1.2.0 (CodeSystem)</a></p><p>This value set contains 6 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://ig.opennz.org/CodeSystem/assistance-needs-cs-171671000210109\"> </a>\u00a0\u00a0<a href=\"CodeSystem-assistance-needs-cs.html#assistance-needs-cs-171671000210109\">171671000210109</a></td><td>https://ig.opennz.org/CodeSystem/assistance-needs-cs</td><td>A New Zealand Sign Language interpreter</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://ig.opennz.org/CodeSystem/assistance-needs-cs-133920001\"> </a>\u00a0\u00a0<a href=\"CodeSystem-assistance-needs-cs.html#assistance-needs-cs-133920001\">133920001</a></td><td>https://ig.opennz.org/CodeSystem/assistance-needs-cs</td><td>Support to make decisions</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://ig.opennz.org/CodeSystem/assistance-needs-cs-amr\"> </a>\u00a0\u00a0<a href=\"CodeSystem-assistance-needs-cs.html#assistance-needs-cs-amr\">amr</a></td><td>https://ig.opennz.org/CodeSystem/assistance-needs-cs</td><td>Assistance to move around</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://ig.opennz.org/CodeSystem/assistance-needs-cs-lat\"> </a>\u00a0\u00a0<a href=\"CodeSystem-assistance-needs-cs.html#assistance-needs-cs-lat\">lat</a></td><td>https://ig.opennz.org/CodeSystem/assistance-needs-cs</td><td>A longer appointment time</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://ig.opennz.org/CodeSystem/assistance-needs-cs-qse\"> </a>\u00a0\u00a0<a href=\"CodeSystem-assistance-needs-cs.html#assistance-needs-cs-qse\">qse</a></td><td>https://ig.opennz.org/CodeSystem/assistance-needs-cs</td><td>A quiet or low sensory environment</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://ig.opennz.org/CodeSystem/assistance-needs-cs-msm\"> </a>\u00a0\u00a0<a href=\"CodeSystem-assistance-needs-cs.html#assistance-needs-cs-msm\">msm</a></td><td>https://ig.opennz.org/CodeSystem/assistance-needs-cs</td><td>More space to move around</td></tr></table></div>"
       },
       "url" : "https://ig.opennz.org/ValueSet/assistance-needs-vs",
-      "version" : "0.1.0",
+      "version" : "1.2.0",
       "name" : "AssistanceNeedsValueSet",
       "title" : "Assistance Needs ValueSet",
-      "status" : "draft",
+      "status" : "active",
       "experimental" : true,
-      "date" : "2024-09-11T22:43:21+00:00",
+      "date" : "2024-11-03T22:10:48+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:829d5678-8179-42ac-a497-cc0cf5e413a7",
-        "timestamp" : "2024-09-11T22:44:15+00:00",
+        "identifier" : "urn:uuid:5715d146-651a-434d-86ee-8c1d8e5e5726",
+        "timestamp" : "2024-11-03T22:11:45+00:00",
         "total" : 6,
         "offset" : 0,
         "parameter" : [{
@@ -39,7 +39,7 @@
         },
         {
           "name" : "used-codesystem",
-          "valueUri" : "https://ig.opennz.org/CodeSystem/assistance-needs-cs|0.1.0"
+          "valueUri" : "https://ig.opennz.org/CodeSystem/assistance-needs-cs|1.2.0"
         }],
         "contains" : [{
           "system" : "https://ig.opennz.org/CodeSystem/assistance-needs-cs",

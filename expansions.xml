@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="0fe4463d-0d84-48a8-8b96-eea15cf3ccbb"/>
+  <id value="4f40eeee-da25-49cd-86eb-901a1b53080f"/>
   <meta>
-    <lastUpdated value="2024-09-11T22:43:21.903+00:00"/>
+    <lastUpdated value="2024-11-03T22:10:48.072+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -17,7 +17,7 @@
               <b>Generated Narrative: ValueSet </b>
             </p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-assistance-needs-cs.html">codesystem Assistance Code System v0.1.0 (CodeSystem)</a>
+              <a href="CodeSystem-assistance-needs-cs.html">codesystem Assistance Code System v1.2.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 6 concepts</p>
             <table class="codes">
@@ -84,15 +84,15 @@
           </div>
         </text>
         <url value="https://ig.opennz.org/ValueSet/assistance-needs-vs"/>
-        <version value="0.1.0"/>
+        <version value="1.2.0"/>
         <name value="AssistanceNeedsValueSet"/>
         <title value="Assistance Needs ValueSet"/>
-        <status value="draft"/>
+        <status value="active"/>
         <experimental value="true"/>
-        <date value="2024-09-11T22:43:21+00:00"/>
+        <date value="2024-11-03T22:10:48+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:829d5678-8179-42ac-a497-cc0cf5e413a7"/>
-          <timestamp value="2024-09-11T22:44:15+00:00"/>
+          <identifier value="urn:uuid:5715d146-651a-434d-86ee-8c1d8e5e5726"/>
+          <timestamp value="2024-11-03T22:11:45+00:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>
@@ -109,7 +109,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://ig.opennz.org/CodeSystem/assistance-needs-cs|0.1.0"/>
+            <valueUri value="https://ig.opennz.org/CodeSystem/assistance-needs-cs|1.2.0"/>
           </parameter>
           <contains>
             <system value="https://ig.opennz.org/CodeSystem/assistance-needs-cs"/>

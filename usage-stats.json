@@ -1,6 +1,6 @@
 {
   "package": "fsh.ig",
-  "version": "0.1.0",
+  "version": "1.2.0",
   "fhirVersion": "4.3.0",
   "extensions": [
     {

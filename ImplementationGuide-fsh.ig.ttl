@@ -13,11 +13,11 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide fsh.ig</b></p><a name=\"fsh.ig\"> </a><a name=\"hcfsh.ig\"> </a><a name=\"fsh.ig-en-US\"> </a><h2>OpenNZFHIRIG</h2><p>The official URL for this implementation guide is: </p><pre>https://ig.opennz.org/ImplementationGuide/fsh.ig</pre></div>"
   ] ; # 
   fhir:url [ fhir:v "https://ig.opennz.org/ImplementationGuide/fsh.ig"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:version [ fhir:v "1.2.0"] ; # 
   fhir:name [ fhir:v "OpenNZFHIRIG"] ; # 
   fhir:title [ fhir:v "Open NZ FHIR Implementation Guide"] ; # 
-  fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-09-11T22:43:21+00:00"^^xsd:dateTime] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2024-11-03T22:10:48+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Open Standards NZ"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Open Standards NZ" ] ;
@@ -647,6 +647,17 @@
        ] ;
        fhir:name [ fhir:v "Questionnaire Prescribed Medication Search" ] ;
        fhir:description [ fhir:v "Prescribed Medication (MedicationRequest)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "OperationDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://ig.opennz.org/OperationDefinition/VersionOperation> ;
+         fhir:reference [ fhir:v "OperationDefinition/VersionOperation" ]
+       ] ;
+       fhir:name [ fhir:v "Retrieve Release ID and Component Semver" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

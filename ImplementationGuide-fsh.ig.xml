@@ -6,11 +6,11 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide fsh.ig</b></p><a name="fsh.ig"> </a><a name="hcfsh.ig"> </a><a name="fsh.ig-en-US"> </a><h2>OpenNZFHIRIG</h2><p>The official URL for this implementation guide is: </p><pre>https://ig.opennz.org/ImplementationGuide/fsh.ig</pre></div>
   </text>
   <url value="https://ig.opennz.org/ImplementationGuide/fsh.ig"/>
-  <version value="0.1.0"/>
+  <version value="1.2.0"/>
   <name value="OpenNZFHIRIG"/>
   <title value="Open NZ FHIR Implementation Guide"/>
-  <status value="draft"/>
-  <date value="2024-09-11T22:43:21+00:00"/>
+  <status value="active"/>
+  <date value="2024-11-03T22:10:48+00:00"/>
   <publisher value="Open Standards NZ"/>
   <contact>
     <name value="Open Standards NZ"/>
@@ -560,6 +560,16 @@
       </reference>
       <name value="Questionnaire Prescribed Medication Search"/>
       <description value="Prescribed Medication (MedicationRequest)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="OperationDefinition"/>
+      </extension>
+      <reference>
+        <reference value="OperationDefinition/VersionOperation"/>
+      </reference>
+      <name value="Retrieve Release ID and Component Semver"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

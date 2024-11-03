@@ -6,11 +6,11 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide fsh.ig</b></p><a name=\"fsh.ig\"> </a><a name=\"hcfsh.ig\"> </a><a name=\"fsh.ig-en-US\"> </a><h2>OpenNZFHIRIG</h2><p>The official URL for this implementation guide is: </p><pre>https://ig.opennz.org/ImplementationGuide/fsh.ig</pre></div>"
   },
   "url" : "https://ig.opennz.org/ImplementationGuide/fsh.ig",
-  "version" : "0.1.0",
+  "version" : "1.2.0",
   "name" : "OpenNZFHIRIG",
   "title" : "Open NZ FHIR Implementation Guide",
-  "status" : "draft",
-  "date" : "2024-09-11T22:43:21+00:00",
+  "status" : "active",
+  "date" : "2024-11-03T22:10:48+00:00",
   "publisher" : "Open Standards NZ",
   "contact" : [{
     "name" : "Open Standards NZ",
@@ -727,6 +727,17 @@
       },
       "name" : "Questionnaire Prescribed Medication Search",
       "description" : "Prescribed Medication (MedicationRequest)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "OperationDefinition"
+      }],
+      "reference" : {
+        "reference" : "OperationDefinition/VersionOperation"
+      },
+      "name" : "Retrieve Release ID and Component Semver",
       "exampleBoolean" : false
     },
     {

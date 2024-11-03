@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<OperationDefinition xmlns="http://hl7.org/fhir">
+  <id value="VersionOperation"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: OperationDefinition VersionOperation</b></p><a name="VersionOperation"> </a><a name="hcVersionOperation"> </a><a name="VersionOperation-en-US"> </a><p>URL: [base]/$version</p><h3>Parameters</h3><table class="grid"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>OUT</td><td>return</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R4B/operationoutcome.html">OperationOutcome</a></td><td/><td><div><p>Result of the version operation.</p>
+</div></td></tr></table></div>
+  </text>
+  <url value="https://ig.opennz.org/OperationDefinition/VersionOperation"/>
+  <version value="1.2.0"/>
+  <name value="$version"/>
+  <title value="Retrieve Release ID and Component Semver"/>
+  <status value="draft"/>
+  <kind value="operation"/>
+  <date value="2024-11-03T22:10:48+00:00"/>
+  <publisher value="Open Standards NZ"/>
+  <contact>
+    <name value="Open Standards NZ"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://opennz.org"/>
+    </telecom>
+  </contact>
+  <code value="version"/>
+  <system value="true"/>
+  <type value="false"/>
+  <instance value="false"/>
+  <parameter>
+    <name value="return"/>
+    <use value="out"/>
+    <min value="1"/>
+    <max value="1"/>
+    <documentation value="Result of the version operation."/>
+    <type value="OperationOutcome"/>
+  </parameter>
+</OperationDefinition>

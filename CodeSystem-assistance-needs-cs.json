@@ -6,12 +6,12 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem assistance-needs-cs</b></p><a name=\"assistance-needs-cs\"> </a><a name=\"hcassistance-needs-cs\"> </a><a name=\"assistance-needs-cs-en-US\"> </a><p>This case-sensitive code system <code>https://ig.opennz.org/CodeSystem/assistance-needs-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">171671000210109<a name=\"assistance-needs-cs-171671000210109\"> </a></td><td>A New Zealand Sign Language interpreter</td></tr><tr><td style=\"white-space:nowrap\">133920001<a name=\"assistance-needs-cs-133920001\"> </a></td><td>Support to make decisions</td></tr><tr><td style=\"white-space:nowrap\">amr<a name=\"assistance-needs-cs-amr\"> </a></td><td>Assistance to move around</td></tr><tr><td style=\"white-space:nowrap\">lat<a name=\"assistance-needs-cs-lat\"> </a></td><td>A longer appointment time</td></tr><tr><td style=\"white-space:nowrap\">qse<a name=\"assistance-needs-cs-qse\"> </a></td><td>A quiet or low sensory environment</td></tr><tr><td style=\"white-space:nowrap\">msm<a name=\"assistance-needs-cs-msm\"> </a></td><td>More space to move around</td></tr></table></div>"
   },
   "url" : "https://ig.opennz.org/CodeSystem/assistance-needs-cs",
-  "version" : "0.1.0",
+  "version" : "1.2.0",
   "name" : "AssistanceNeedsCodeSystem",
   "title" : "Assistance Code System",
-  "status" : "draft",
+  "status" : "active",
   "experimental" : true,
-  "date" : "2024-09-11T22:43:21+00:00",
+  "date" : "2024-11-03T22:10:48+00:00",
   "publisher" : "Open Standards NZ",
   "contact" : [{
     "name" : "Open Standards NZ",

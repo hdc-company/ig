@@ -1,22 +1,23 @@
 OpenNZFHIRIG : Validation Results
 =========================================
 
-err = 17, warn = 34, info = 3
-IG Publisher Version: 1.6.24
-Generated Wed Sep 11 23:03:04 UTC 2024. FHIR version 4.3.0 for fsh.ig#0.1.0 (canonical = https://ig.opennz.org)
- Build Errors : 32 / 6 / 2
- /solution/workspace/fsh-generated/resources/CapabilityStatement-PatientSummaryCapabilityStatement : 0 / 14 / 1
+err = 17, warn = 44, info = 3
+IG Publisher Version: 1.7.1
+Generated Sun Nov 03 22:30:21 UTC 2024. FHIR version 4.3.0 for fsh.ig#1.2.0 (canonical = https://ig.opennz.org)
+ Build Errors : 32 / 7 / 2
+ /solution/workspace/fsh-generated/resources/CapabilityStatement-PatientSummaryCapabilityStatement : 0 / 15 / 1
  /solution/workspace/fsh-generated/resources/CodeSystem-assistance-needs-cs : 0 / 0 / 1
  /solution/workspace/fsh-generated/resources/Condition-NeedsAssistanceExample : 2 / 0 / 2
  /solution/workspace/fsh-generated/resources/ImplementationGuide-fsh.ig : 0 / 0 / 1
+ /solution/workspace/fsh-generated/resources/OperationDefinition-VersionOperation : 0 / 1 / 1
  /solution/workspace/fsh-generated/resources/Patient-ZHI0010 : 0 / 0 / 1
  /solution/workspace/fsh-generated/resources/Patient-ZHI0020 : 0 / 0 / 1
  /solution/workspace/fsh-generated/resources/Questionnaire-AssistanceNeedsQuestionnaire : 2 / 10 / 1
  /solution/workspace/fsh-generated/resources/Questionnaire-MedicationRequestQuestionnaire : 0 / 0 / 1
  /solution/workspace/fsh-generated/resources/QuestionnaireResponse-NeedsAssistanceResponse : 2 / 3 / 1
  /solution/workspace/fsh-generated/resources/StructureDefinition-PatientProfile : 4 / 1 / 1
- /solution/workspace/fsh-generated/resources/StructureDefinition-assistance-needs-ext : 0 / 0 / 1
- /solution/workspace/fsh-generated/resources/StructureDefinition-assistance-needs-profile : 0 / 0 / 1
+ /solution/workspace/fsh-generated/resources/StructureDefinition-assistance-needs-ext : 0 / 2 / 1
+ /solution/workspace/fsh-generated/resources/StructureDefinition-assistance-needs-profile : 0 / 5 / 1
  /solution/workspace/fsh-generated/resources/ValueSet-assistance-needs-vs : 0 / 0 / 1
 </table>
 == n/a ==
@@ -24,6 +25,7 @@ WARNING: ImplementationGuide.dependency[2].url: The canonical URL for an Impleme
 INFORMATION: ImplementationGuide.dependency[2].url: The correct canonical URL for this dependency is http://hl7.org.nz/fhir/ImplementationGuide/fhir.org.nz.ig.base
 WARNING: ImplementationGuide.dependency[3].url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
 INFORMATION: ImplementationGuide.dependency[3].url: The correct canonical URL for this dependency is https://fhir-ig.digital.health.nz/hnz-digital-tooling/ImplementationGuide/tewhatuora.digitaltooling
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource OperationDefinition/VersionOperation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Patient.name.use: The reference http://hl7.org/fhir/ValueSet/name-use|4.0.1 could not be resolved
 ERROR: Patient.gender: The reference http://hl7.org/fhir/ValueSet/administrative-gender|4.0.1 could not be resolved
 ERROR: Patient.link.type: The reference http://hl7.org/fhir/ValueSet/link-type|4.0.1 could not be resolved
@@ -75,12 +77,15 @@ WARNING: CapabilityStatement/PatientSummaryCapabilityStatement: CapabilityStatem
 WARNING: CapabilityStatement/PatientSummaryCapabilityStatement: CapabilityStatement.rest[0].resource[0].conditionalDelete: ValueSet 'http://hl7.org/fhir/ValueSet/conditional-delete-status|4.0.1' not found
 WARNING: CapabilityStatement/PatientSummaryCapabilityStatement: CapabilityStatement.rest[0].resource[0].searchParam[0].type: ValueSet 'http://hl7.org/fhir/ValueSet/search-param-type|4.0.1' not found
 WARNING: CapabilityStatement/PatientSummaryCapabilityStatement: CapabilityStatement.rest[0].interaction[0].code: ValueSet 'http://hl7.org/fhir/ValueSet/system-restful-interaction|4.0.1' not found
+WARNING: CapabilityStatement/PatientSummaryCapabilityStatement: CapabilityStatement.rest[0].interaction[1].code: ValueSet 'http://hl7.org/fhir/ValueSet/system-restful-interaction|4.0.1' not found
 == fsh-generated/resources/CodeSystem-assistance-needs-cs.json ==
 == fsh-generated/resources/Condition-NeedsAssistanceExample.json ==
-INFORMATION: Condition/NeedsAssistanceExample: Condition.extension[0].value.ofType(CodeableConcept): Reference to experimental CodeSystem https://ig.opennz.org/CodeSystem/assistance-needs-cs|0.1.0
+INFORMATION: Condition/NeedsAssistanceExample: Condition.extension[0].value.ofType(CodeableConcept): Reference to experimental CodeSystem https://ig.opennz.org/CodeSystem/assistance-needs-cs|1.2.0
 ERROR: Condition/NeedsAssistanceExample: Condition.subject: Unable to resolve resource with reference 'Patient/rid'
 ERROR: Condition.text.div: Hyperlink 'Patient/rid' at 'div/p/a' for 'Marieke Christabel' does not resolve
 == fsh-generated/resources/ImplementationGuide-fsh.ig.json ==
+== fsh-generated/resources/OperationDefinition-VersionOperation.json ==
+WARNING: OperationDefinition/VersionOperation: OperationDefinition: Constraint failed: opd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' (defined in http://hl7.org/fhir/StructureDefinition/OperationDefinition)
 == fsh-generated/resources/Patient-ZHI0010.json ==
 == fsh-generated/resources/Patient-ZHI0020.json ==
 == fsh-generated/resources/Questionnaire-AssistanceNeedsQuestionnaire.json ==
@@ -110,5 +115,12 @@ ERROR: StructureDefinition/PatientProfile: StructureDefinition.snapshot.element[
 ERROR: StructureDefinition/PatientProfile: StructureDefinition.snapshot.element[87].binding.valueSet: Canonical URL 'http://hl7.org/fhir/ValueSet/link-type|4.0.1' does not resolve
 WARNING: StructureDefinition.where(url = 'https://ig.opennz.org/StructureDefinition/PatientProfile'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-assistance-needs-ext.json ==
+WARNING: StructureDefinition/assistance-needs-ext: StructureDefinition.differential.element[3].binding: The definition for the element 'Extension.value[x]' binds to the value set 'https://ig.opennz.org/ValueSet/assistance-needs-vs' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/assistance-needs-ext: StructureDefinition.snapshot.element[4].binding: The definition for the element 'Extension.value[x]' binds to the value set 'https://ig.opennz.org/ValueSet/assistance-needs-vs' which is experimental, but this structure is not labeled as experimental
 == fsh-generated/resources/StructureDefinition-assistance-needs-profile.json ==
+WARNING: StructureDefinition/assistance-needs-profile: StructureDefinition.snapshot.element[15].binding: The definition for the element 'Condition.code' binds to the value set 'http://hl7.org/fhir/ValueSet/condition-code' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/assistance-needs-profile: StructureDefinition.snapshot.element[16].binding: The definition for the element 'Condition.bodySite' binds to the value set 'http://hl7.org/fhir/ValueSet/body-site' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/assistance-needs-profile: StructureDefinition.snapshot.element[37].binding: The definition for the element 'Condition.stage.summary' binds to the value set 'http://hl7.org/fhir/ValueSet/condition-stage' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/assistance-needs-profile: StructureDefinition.snapshot.element[39].binding: The definition for the element 'Condition.stage.type' binds to the value set 'http://hl7.org/fhir/ValueSet/condition-stage-type' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/assistance-needs-profile: StructureDefinition.snapshot.element[44].binding: The definition for the element 'Condition.evidence.code' binds to the value set 'http://hl7.org/fhir/ValueSet/manifestation-or-symptom' which is experimental, but this structure is not labeled as experimental
 == fsh-generated/resources/ValueSet-assistance-needs-vs.json ==
