@@ -10,7 +10,7 @@
   "name" : "OpenNZFHIRIG",
   "title" : "Open NZ FHIR Implementation Guide",
   "status" : "active",
-  "date" : "2024-11-03T22:10:48+00:00",
+  "date" : "2024-11-28T19:58:40+00:00",
   "publisher" : "Open Standards NZ",
   "contact" : [{
     "name" : "Open Standards NZ",
@@ -30,7 +30,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "6.0.2"
+    "version" : "6.1.0"
   },
   {
     "id" : "hl7ext",
@@ -332,7 +332,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools#0.2.0"
+      "valueCode" : "hl7.fhir.uv.tools.r4#0.3.0"
     },
     {
       "extension" : [{

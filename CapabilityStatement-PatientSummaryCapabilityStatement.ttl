@@ -32,7 +32,7 @@
        fhir:extension ( [
          fhir:extension ( [
            fhir:url [ fhir:v "key"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "Correlation-Id" ]
+           fhir:value [ fhir:v "X-Correlation-Id" ]
          ] [
            fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
            fhir:value [ fhir:v "https://raw.githubusercontent.com/tewhatuora/schemas/main/fhir-definitions-oas/id-definition.json"^^xsd:anyURI ]

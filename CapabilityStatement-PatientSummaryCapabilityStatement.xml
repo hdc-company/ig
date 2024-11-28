@@ -24,7 +24,7 @@
     <extension url="globalHeaders">
       <extension url="https://fhir-ig.digital.health.nz/hnz-digital-tooling/StructureDefinition/custom-headers-extension">
         <extension url="key">
-          <valueString value="Correlation-Id"/>
+          <valueString value="X-Correlation-Id"/>
         </extension>
         <extension url="value">
           <valueUri value="https://raw.githubusercontent.com/tewhatuora/schemas/main/fhir-definitions-oas/id-definition.json"/>

@@ -26,7 +26,7 @@ paths:
         - system
       operationId: systemInteractions
       parameters:
-        - name: Correlation-Id
+        - name: X-Correlation-Id
           in: header
           required: true
           schema:
@@ -836,7 +836,7 @@ paths:
             application/json:
               schema: *a1
       parameters:
-        - name: Correlation-Id
+        - name: X-Correlation-Id
           in: header
           required: true
           schema:
@@ -880,7 +880,7 @@ paths:
         - Condition
       operationId: readCondition
       parameters:
-        - name: Correlation-Id
+        - name: X-Correlation-Id
           in: header
           required: true
           schema:
@@ -2890,7 +2890,7 @@ paths:
         - Condition
       operationId: vreadCondition
       parameters:
-        - name: Correlation-Id
+        - name: X-Correlation-Id
           in: header
           required: true
           schema:
@@ -2948,7 +2948,7 @@ paths:
         - Condition
       operationId: searchCondition
       parameters:
-        - name: Correlation-Id
+        - name: X-Correlation-Id
           in: header
           required: true
           schema:
@@ -3032,7 +3032,7 @@ paths:
         - metadata
       operationId: getCapabilityStatement
       parameters:
-        - name: Correlation-Id
+        - name: X-Correlation-Id
           in: header
           required: true
           schema:
@@ -5401,7 +5401,7 @@ paths:
                               - url: https://fhir-ig.digital.health.nz/hnz-digital-tooling/StructureDefinition/custom-headers-extension
                                 extension:
                                   - url: key
-                                    valueString: Correlation-Id
+                                    valueString: X-Correlation-Id
                                   - url: value
                                     valueUri: https://raw.githubusercontent.com/tewhatuora/schemas/main/fhir-definitions-oas/id-definition.json
                                   - url: required

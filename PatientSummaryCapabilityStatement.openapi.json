@@ -36,7 +36,7 @@
         "operationId": "systemInteractions",
         "parameters": [
           {
-            "name": "Correlation-Id",
+            "name": "X-Correlation-Id",
             "in": "header",
             "required": true,
             "schema": {
@@ -3081,7 +3081,7 @@
         },
         "parameters": [
           {
-            "name": "Correlation-Id",
+            "name": "X-Correlation-Id",
             "in": "header",
             "required": true,
             "schema": {
@@ -3143,7 +3143,7 @@
         "operationId": "readCondition",
         "parameters": [
           {
-            "name": "Correlation-Id",
+            "name": "X-Correlation-Id",
             "in": "header",
             "required": true,
             "schema": {
@@ -7000,7 +7000,7 @@
         "operationId": "vreadCondition",
         "parameters": [
           {
-            "name": "Correlation-Id",
+            "name": "X-Correlation-Id",
             "in": "header",
             "required": true,
             "schema": {
@@ -10866,7 +10866,7 @@
         "operationId": "searchCondition",
         "parameters": [
           {
-            "name": "Correlation-Id",
+            "name": "X-Correlation-Id",
             "in": "header",
             "required": true,
             "schema": {
@@ -14767,7 +14767,7 @@
         "operationId": "getCapabilityStatement",
         "parameters": [
           {
-            "name": "Correlation-Id",
+            "name": "X-Correlation-Id",
             "in": "header",
             "required": true,
             "schema": {
@@ -16607,7 +16607,7 @@
                                   "extension": [
                                     {
                                       "url": "key",
-                                      "valueString": "Correlation-Id"
+                                      "valueString": "X-Correlation-Id"
                                     },
                                     {
                                       "url": "value",
