@@ -18,7 +18,7 @@
   fhir:title [ fhir:v "Retrieve Release ID and Component Semver"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:kind [ fhir:v "operation"] ; # 
-  fhir:date [ fhir:v "2024-11-28T19:58:40+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-11-28T22:16:49+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Open Standards NZ"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Open Standards NZ" ] ;

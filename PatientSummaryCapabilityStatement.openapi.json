@@ -3,7 +3,7 @@
   "x-capabilitystatement-url": "https://ig.opennz.org/CapabilityStatement/PatientSummaryCapabilityStatement",
   "x-capabilitystatement-id": "PatientSummaryCapabilityStatement",
   "info": {
-    "version": "1.2.1",
+    "version": "1.2.2",
     "title": "Patient Summary Operations",
     "description": "Patient Summary Operations",
     "license": {
@@ -16652,7 +16652,7 @@
                         "description": "Patient Summary",
                         "url": "https://server.fire.ly/r4"
                       },
-                      "version": "1.2.1",
+                      "version": "1.2.2",
                       "contact": [
                         {
                           "name": "Example Contact Details",

@@ -25,9 +25,9 @@
       "http://hl7.org/fhir/R4B/valueset-condition-stage-type.html" : "Condition Stage Type",
       "http://hl7.org/fhir/R4B/valueset-manifestation-or-symptom.html" : "Manifestation and Symptom Codes",
       "http://hl7.org/fhir/R4B/valueset-body-site.html" : "SNOMED CT Body Structures",
-      "http://hl7.org/fhir/R4B/valueset-condition-stage.html" : "Condition Stage",
       "http://hl7.org/fhir/R4B/valueset-condition-severity.html" : "Condition/Diagnosis Severity",
-      "http://hl7.org/fhir/R4B/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes"
+      "http://hl7.org/fhir/R4B/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes",
+      "http://hl7.org/fhir/R4B/valueset-condition-stage.html" : "Condition Stage"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/condition-category",

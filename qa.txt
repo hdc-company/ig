@@ -3,7 +3,7 @@ OpenNZFHIRIG : Validation Results
 
 err = 17, warn = 44, info = 3
 IG Publisher Version: 1.7.5
-Generated Thu Nov 28 20:18:06 UTC 2024. FHIR version 4.3.0 for fsh.ig#1.2.0 (canonical = https://ig.opennz.org)
+Generated Thu Nov 28 22:36:01 UTC 2024. FHIR version 4.3.0 for fsh.ig#1.2.0 (canonical = https://ig.opennz.org)
  Build Errors : 32 / 7 / 2
  /solution/workspace/fsh-generated/resources/CapabilityStatement-PatientSummaryCapabilityStatement : 0 / 15 / 1
  /solution/workspace/fsh-generated/resources/CodeSystem-assistance-needs-cs : 0 / 0 / 1
